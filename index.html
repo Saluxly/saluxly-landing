@@ -199,7 +199,7 @@ body{
 }
 .heart-container:hover{transform:scale(1.02)}
 .heart-container:active{transform:scale(0.98)}
-
+.heart-bg-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;pointer-events:none;opacity:0.4}
 /* SVG heart conduction overlay */
 .heart-svg{position:absolute;top:0;left:0;width:100%;height:100%}
 .heart-svg .sa-node,.heart-svg .av-node{
@@ -427,10 +427,9 @@ footer a:hover{text-decoration:underline}
   <div class="conduction-wrapper">
     <div class="conduction-visual reveal">
       <div class="heart-container" id="heartDemo" onclick="triggerHeart()">
-        <!-- Simple anatomical heart outline -->
+        <img src="heart_saluxly.png" alt="" class="heart-bg-img">
+        <!-- Conduction overlay -->
         <svg viewBox="0 0 320 320" class="heart-svg" id="heartSvg">
-          <!-- Heart shape background -->
-          <path d="M160,280 C80,230 20,180 20,120 C20,70 60,40 100,40 C130,40 150,60 160,80 C170,60 190,40 220,40 C260,40 300,70 300,120 C300,180 240,230 160,280Z" fill="none" stroke="var(--border)" stroke-width="2"/>
           <!-- SA Node -->
           <circle class="sa-node sa-node-pulse" cx="100" cy="80" r="10" style="transform-origin:100px 80px"/>
           <!-- SA to AV paths -->
