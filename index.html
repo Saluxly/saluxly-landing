@@ -431,34 +431,39 @@ footer a:hover{text-decoration:underline}
         <!-- Conduction overlay -->
         <svg viewBox="0 0 320 320" class="heart-svg" id="heartSvg">
           <!-- SA Node -->
-          <circle class="sa-node sa-node-pulse" cx="100" cy="80" r="10" style="transform-origin:100px 80px"/>
+          <circle class="sa-node sa-node-pulse" cx="90" cy="160" r="10" style="transform-origin:90px 160px"/>
           <!-- SA to AV paths -->
-          <path class="path-line path-sa-av" d="M100,80 Q130,100 150,130 Q160,150 160,170" stroke-dasharray="150" stroke-dashoffset="150"/>
-          <path class="path-line path-sa-av" d="M100,80 Q120,120 140,150 Q150,165 160,170" stroke-dasharray="160" stroke-dashoffset="160" style="animation-delay:0.2s"/>
+          <path class="path-line path-sa-av" d="M 90,160 L 150,200" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
+          <path class="path-line path-sa-av" d="M 90,160 Q 80,200 150,200" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
+          <path class="path-line path-sa-av" d="M 90,160 Q 52,220 150,200" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="100"/>
+          <path class="path-line path-sa-av" d="M 90,160 Q 152,140 150,200" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
+          <!-- SA to Junction -->
+          <path class="path-linepath-sa-av" d="M 90,160 Q 123,130 160,140" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
           <!-- AV Node -->
-          <circle class="av-node" cx="160" cy="170" r="8" style="transform-origin:160px 170px"/>
+          <circle class="av-node" cx="150" cy="200" r="8" style="transform-origin:150px 200px"/>
           <!-- Bundle of His -->
-          <path class="path-line path-his" d="M160,170 L160,220" stroke-width="4" stroke-dasharray="50" stroke-dashoffset="50"/>
-          <!-- Left & Right branches -->
-          <path class="path-line path-div1" d="M160,220 Q130,245 110,270" stroke-width="3.5" stroke-dasharray="80" stroke-dashoffset="80"/>
-          <path class="path-line path-div2" d="M160,220 Q190,245 210,270" stroke-width="3.5" stroke-dasharray="80" stroke-dashoffset="80"/>
-          <!-- Purkinje fibers left -->
-          <path class="path-line path-purk" d="M110,270 Q95,278 80,275" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M110,270 Q100,285 90,290" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M110,270 Q115,285 120,295" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <!-- Purkinje fibers right -->
-          <path class="path-line path-purk" d="M210,270 Q225,278 240,275" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M210,270 Q220,285 230,290" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M210,270 Q205,285 200,295" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-his" d="M 150,200 Q 185,241 200,270" stroke-width="5" stroke-dasharray="100" stroke-dashoffset="100"/>
+          <!-- Left branch -->
+          <path class="path-line path-div1" d="M 200,270 C 180,272 136,266 110,240" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
+          <!-- Right branch -->
+          <path class="path-line path-div2" d="M 200,270 C 214,264 218,220 206,180" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
+          <!-- Purkinje left -->
+          <path class="path-line path-purk" d="M 114,244 Q 122,232 132,226" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 140,262 Q 148,248 156,234" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 181,270 Q 176,256 172,240" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <!-- Purkinje right -->
+          <path class="path-line path-purk" d="M 208,186 Q 192,189 180,196" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 213,210 Q 200,209 186,208" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 210,256 Q 206,238 200,230" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
           <!-- Terminal dots -->
-          <circle class="dot dot-early" cx="110" cy="270" r="4"/>
-          <circle class="dot dot-early" cx="210" cy="270" r="4"/>
-          <circle class="dot dot-late" cx="80" cy="275" r="3"/>
-          <circle class="dot dot-late" cx="90" cy="290" r="3"/>
-          <circle class="dot dot-late" cx="120" cy="295" r="3"/>
-          <circle class="dot dot-late" cx="240" cy="275" r="3"/>
-          <circle class="dot dot-late" cx="230" cy="290" r="3"/>
-          <circle class="dot dot-late" cx="200" cy="295" r="3"/>
+          <circle class="dot dot-early" cx="110" cy="240" r="3.5"/>
+          <circle class="dot dot-early" cx="206" cy="180" r="3.5"/>
+          <circle class="dot dot-late" cx="132" cy="226" r="3"/>
+          <circle class="dot dot-late" cx="156" cy="234" r="3"/>
+          <circle class="dot dot-late" cx="172" cy="240" r="3"/>
+          <circle class="dot dot-late" cx="180" cy="196" r="3"/>
+          <circle class="dot dot-late" cx="186" cy="208" r="3"/>
+          <circle class="dot dot-late" cx="200" cy="230" r="3"/>
         </svg>
       </div>
     </div>
