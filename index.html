@@ -231,20 +231,20 @@ body{
 @keyframes fadeOut{from{opacity:1}to{opacity:0}}
 @keyframes nodeDisappear{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}
 
-/* Deactivate: reverse order — Purkinje first, SA last */
-.heart-container.deactivate .dot-late{animation:fadeOut 0.1s 0s linear forwards}
-.heart-container.deactivate .path-purk{animation:fadeOut 0.15s 0s linear forwards}
-.heart-container.deactivate .dot-early{animation:fadeOut 0.1s 0.15s linear forwards}
-.heart-container.deactivate .path-div1{animation:fadeOut 0.15s 0.15s linear forwards}
-.heart-container.deactivate .path-div2{animation:fadeOut 0.15s 0.15s linear forwards}
-.heart-container.deactivate .path-his{animation:fadeOut 0.15s 0.3s linear forwards}
-.heart-container.deactivate .dot-junc{animation:fadeOut 0.1s 0.3s linear forwards}
-.heart-container.deactivate .path-junc{animation:fadeOut 0.15s 0.3s linear forwards}
-.heart-container.deactivate .av-node{animation:nodeDisappear 0.1s 0.45s cubic-bezier(0.34,1.56,0.64,1) forwards}
-.heart-container.deactivate .path-sa-av{animation:fadeOut 0.15s 0.45s linear forwards}
-.heart-container.deactivate .path-sa-junc{animation:fadeOut 0.15s 0.45s linear forwards}
-.heart-container.deactivate .sa-node{animation:nodeDisappear 0.1s 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
-.heart-container.deactivate .sa-node-pulse{animation:nodeDisappear 0.1s 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+/* Deactivate: all simultaneous 300ms, SA node last (200ms delay + 100ms) */
+.heart-container.deactivate .dot-late{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .dot-early{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .dot-junc{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-purk{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-div1{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-div2{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-his{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-junc{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .av-node{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-sa-av{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .path-sa-junc{animation:fadeOut 0.3s linear forwards}
+.heart-container.deactivate .sa-node{animation:nodeDisappear 0.1s 0.2s linear forwards}
+.heart-container.deactivate .sa-node-pulse{animation:nodeDisappear 0.1s 0.2s linear forwards}
 @keyframes drawPath{to{stroke-dashoffset:0}}
 @keyframes dotAppear{to{opacity:1}}
 @keyframes saPulse{0%{transform:scale(1)}100%{transform:scale(1.15)}}
