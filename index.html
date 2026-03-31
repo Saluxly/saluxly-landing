@@ -428,7 +428,7 @@ footer a:hover{text-decoration:underline}
 <section class="conduction-section" id="conduction">
   <div class="conduction-wrapper">
     <div class="conduction-visual reveal">
-      <div class="heart-container" id="heartDemo" onclick="triggerHeart()">
+      <div class="heart-container" id="heartDemo">
         <img src="heart_anatomy.png" alt="" class="heart-bg-img">
         <!-- Conduction overlay -->
         <svg viewBox="0 0 320 320" class="heart-svg" id="heartSvg">
@@ -480,7 +480,6 @@ footer a:hover{text-decoration:underline}
       <p class="section-label" data-en="Signature interaction" data-es="Interacción característica">Signature interaction</p>
       <h2 data-en="Cardiac Conduction.<br>Every heartbeat counts." data-es="Conducción Cardíaca.<br>Cada latido cuenta.">Cardiac Conduction.<br>Every heartbeat counts.</h2>
       <p data-en="When you heart an article, Saluxly traces the electrical pathway of a real human heart — from the SA node through the Bundle of His to the Purkinje fibers. Medicine isn't just what you read. It's what you feel." data-es="Cuando le das corazón a un artículo, Saluxly traza el recorrido eléctrico de un corazón humano real — desde el nodo SA, pasando por el Haz de His, hasta las fibras de Purkinje. La medicina no es solo lo que lees. Es lo que sientes.">When you heart an article, Saluxly traces the electrical pathway of a real human heart — from the SA node through the Bundle of His to the Purkinje fibers. Medicine isn't just what you read. It's what you feel.</p>
-      <span class="tap-hint" data-en="← Tap the heart to see it" data-es="← Toca el corazón para verlo">← Tap the heart to see it</span>
     </div>
   </div>
 </section>
@@ -590,7 +589,7 @@ function setLang(lang){
 }
 
 // === HEART CONDUCTION ===
-let heartActive=false;
+let heartActive=false; const heartObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting&&!heartActive){heartActive=true;document.getElementById("heartDemo").classList.add("active")}})},{threshold:0.5}); heartObs.observe(document.getElementById("heartDemo"));
 function triggerHeart(){
   const c=document.getElementById('heartDemo');
   if(heartActive){c.classList.remove('active');heartActive=false}
