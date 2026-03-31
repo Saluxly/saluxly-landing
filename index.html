@@ -228,6 +228,23 @@ body{
 .heart-container.active .sa-node-pulse{animation:nodeAppear 0.2s forwards,saPulse 1.6s 1.5s ease-in-out infinite alternate}
 
 @keyframes nodeAppear{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes nodeDisappear{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}
+
+/* Deactivate: reverse order — Purkinje first, SA last */
+.heart-container.deactivate .dot-late{animation:fadeOut 0.1s 0s linear forwards}
+.heart-container.deactivate .path-purk{animation:fadeOut 0.15s 0s linear forwards}
+.heart-container.deactivate .dot-early{animation:fadeOut 0.1s 0.15s linear forwards}
+.heart-container.deactivate .path-div1{animation:fadeOut 0.15s 0.15s linear forwards}
+.heart-container.deactivate .path-div2{animation:fadeOut 0.15s 0.15s linear forwards}
+.heart-container.deactivate .path-his{animation:fadeOut 0.15s 0.3s linear forwards}
+.heart-container.deactivate .dot-junc{animation:fadeOut 0.1s 0.3s linear forwards}
+.heart-container.deactivate .path-junc{animation:fadeOut 0.15s 0.3s linear forwards}
+.heart-container.deactivate .av-node{animation:nodeDisappear 0.1s 0.45s cubic-bezier(0.34,1.56,0.64,1) forwards}
+.heart-container.deactivate .path-sa-av{animation:fadeOut 0.15s 0.45s linear forwards}
+.heart-container.deactivate .path-sa-junc{animation:fadeOut 0.15s 0.45s linear forwards}
+.heart-container.deactivate .sa-node{animation:nodeDisappear 0.1s 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+.heart-container.deactivate .sa-node-pulse{animation:nodeDisappear 0.1s 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
 @keyframes drawPath{to{stroke-dashoffset:0}}
 @keyframes dotAppear{to{opacity:1}}
 @keyframes saPulse{0%{transform:scale(1)}100%{transform:scale(1.15)}}
@@ -428,7 +445,7 @@ footer a:hover{text-decoration:underline}
 <section class="conduction-section" id="conduction">
   <div class="conduction-wrapper">
     <div class="conduction-visual reveal">
-      <div class="heart-container" id="heartDemo">
+      <div class="heart-container" id="heartDemo" onclick="triggerHeart()">
         <img src="heart_anatomy.png" alt="" class="heart-bg-img">
         <!-- Conduction overlay -->
         <svg viewBox="0 0 320 320" class="heart-svg" id="heartSvg">
@@ -589,11 +606,30 @@ function setLang(lang){
 }
 
 // === HEART CONDUCTION ===
-let heartActive=false; const heartObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting&&!heartActive){heartActive=true;document.getElementById("heartDemo").classList.add("active")}})},{threshold:0.5}); heartObs.observe(document.getElementById("heartDemo"));
+let heartActive=false;
+let heartScrolled=false;
+const heartObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting&&!heartScrolled){
+      heartScrolled=true;
+      heartActive=true;
+      document.getElementById("heartDemo").classList.remove("deactivate");
+      document.getElementById("heartDemo").classList.add("active");
+    }
+  });
+},{threshold:0.9});
+heartObs.observe(document.getElementById("heartDemo"));
 function triggerHeart(){
   const c=document.getElementById('heartDemo');
-  if(heartActive){c.classList.remove('active');heartActive=false}
-  else{c.classList.add('active');heartActive=true}
+  if(heartActive){
+    c.classList.remove('active');
+    c.classList.add('deactivate');
+    heartActive=false;
+  } else {
+    c.classList.remove('deactivate');
+    c.classList.add('active');
+    heartActive=true;
+  }
 }
 
 // === SPECIALTY CHIPS ===
