@@ -433,46 +433,46 @@ footer a:hover{text-decoration:underline}
         <!-- Conduction overlay -->
         <svg viewBox="0 0 320 320" class="heart-svg" id="heartSvg">
           <!-- SA Node -->
-          <circle class="sa-node sa-node-pulse" cx="90" cy="160" r="10" style="transform-origin:90px 160px"/>
+          <circle class="sa-node sa-node-pulse" cx="105" cy="130" r="10" style="transform-origin:105px 130px"/>
           <!-- SA to AV paths -->
-          <path class="path-line path-sa-av" d="M 90,160 L 150,200" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
-          <path class="path-line path-sa-av" d="M 90,160 Q 80,200 150,200" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
-          <path class="path-line path-sa-av" d="M 90,160 Q 52,220 150,200" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="100"/>
-          <path class="path-line path-sa-av" d="M 90,160 Q 152,140 150,200" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
+          <path class="path-line path-sa-av" d="M 105,130 L 165,170" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
+          <path class="path-line path-sa-av" d="M 105,130 Q 95,170 165,170" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
+          <path class="path-line path-sa-av" d="M 105,130 Q 67,190 165,170" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="100"/>
+          <path class="path-line path-sa-av" d="M 105,130 Q 167,110 165,170" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
           <!-- SA to Junction -->
-          <path class="path-line path-sa-av" d="M 90,160 Q 123,130 160,140" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
+          <path class="path-line path-sa-av" d="M 105,130 Q 138,100 175,110" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
           <!-- AV Node -->
+          <circle class="av-node" cx="165" cy="170" r="8" style="transform-origin:165px 170px"/>
           <!-- Junction branches -->
-          <path class="path-line path-junc" d="M 160,140 Q 156,157 160,170" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
-          <path class="path-line path-junc" d="M 160,140 Q 167,152 170,160" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
-          <path class="path-line path-junc" d="M 160,140 Q 174,141 184,146" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
-          <circle class="dot dot-junc" cx="160" cy="170" r="3"/>
-          <circle class="dot dot-junc" cx="170" cy="160" r="3"/>
-          <circle class="dot dot-junc" cx="184" cy="146" r="3"/>
-          <circle class="av-node" cx="150" cy="200" r="8" style="transform-origin:150px 200px"/>
+          <path class="path-line path-junc" d="M 175,110 Q 171,127 175,140" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
+          <path class="path-line path-junc" d="M 175,110 Q 182,122 185,130" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
+          <path class="path-line path-junc" d="M 175,110 Q 189,111 199,116" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
+          <circle class="dot dot-junc" cx="175" cy="140" r="3"/>
+          <circle class="dot dot-junc" cx="185" cy="130" r="3"/>
+          <circle class="dot dot-junc" cx="199" cy="116" r="3"/>
           <!-- Bundle of His -->
-          <path class="path-line path-his" d="M 150,200 Q 185,241 200,270" stroke-width="5" stroke-dasharray="100" stroke-dashoffset="100"/>
+          <path class="path-line path-his" d="M 165,170 Q 200,211 215,240" stroke-width="5" stroke-dasharray="100" stroke-dashoffset="100"/>
           <!-- Left branch -->
-          <path class="path-line path-div1" d="M 200,270 C 180,272 136,266 110,240" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
+          <path class="path-line path-div1" d="M 215,240 C 195,242 151,236 125,210" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
           <!-- Right branch -->
-          <path class="path-line path-div2" d="M 200,270 C 214,264 218,220 206,180" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
+          <path class="path-line path-div2" d="M 215,240 C 229,234 233,190 221,150" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
           <!-- Purkinje left -->
-          <path class="path-line path-purk" d="M 114,244 Q 122,232 132,226" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 140,262 Q 148,248 156,234" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 181,270 Q 176,256 172,240" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 129,214 Q 137,202 147,196" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 155,232 Q 163,218 171,204" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 196,240 Q 191,226 187,210" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
           <!-- Purkinje right -->
-          <path class="path-line path-purk" d="M 208,186 Q 192,189 180,196" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 213,210 Q 200,209 186,208" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 210,256 Q 206,238 200,230" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 223,156 Q 207,159 195,166" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 228,180 Q 215,179 201,178" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
+          <path class="path-line path-purk" d="M 225,226 Q 221,208 215,200" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
           <!-- Terminal dots -->
-          <circle class="dot dot-early" cx="110" cy="240" r="3.5"/>
-          <circle class="dot dot-early" cx="206" cy="180" r="3.5"/>
-          <circle class="dot dot-late" cx="132" cy="226" r="3"/>
-          <circle class="dot dot-late" cx="156" cy="234" r="3"/>
-          <circle class="dot dot-late" cx="172" cy="240" r="3"/>
-          <circle class="dot dot-late" cx="180" cy="196" r="3"/>
-          <circle class="dot dot-late" cx="186" cy="208" r="3"/>
-          <circle class="dot dot-late" cx="200" cy="230" r="3"/>
+          <circle class="dot dot-early" cx="125" cy="210" r="3.5"/>
+          <circle class="dot dot-early" cx="221" cy="150" r="3.5"/>
+          <circle class="dot dot-late" cx="147" cy="196" r="3"/>
+          <circle class="dot dot-late" cx="171" cy="204" r="3"/>
+          <circle class="dot dot-late" cx="187" cy="210" r="3"/>
+          <circle class="dot dot-late" cx="195" cy="166" r="3"/>
+          <circle class="dot dot-late" cx="201" cy="178" r="3"/>
+          <circle class="dot dot-late" cx="215" cy="200" r="3"/>
         </svg>
       </div>
     </div>
