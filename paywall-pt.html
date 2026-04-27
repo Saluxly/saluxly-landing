@@ -316,8 +316,29 @@
       font-size: 12px;
       font-weight: 400;
       color: var(--gray-medium);
-      margin-bottom: 16px;
+      margin-bottom: 0;
       line-height: 1.4;
+    }
+
+    .limited-access-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      padding: 0;
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .limited-access-link:hover,
+    .limited-access-link:active {
+      text-decoration: underline;
     }
 
     /* Footer links */
@@ -453,6 +474,10 @@
 
     <!-- Small disclaimer -->
     <p class="small-text">Cancele quando quiser. Sem compromisso.</p>
+
+    <button class="limited-access-link" type="button" data-pw-close="anything">
+      Continuar com acesso limitado
+    </button>
 
     <!-- Footer links -->
     <div class="footer">
