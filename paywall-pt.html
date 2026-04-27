@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Saluxly Premium</title>
+
+  <!-- Superwall Paywall.js runtime -->
+  <script async src="https://cdn.superwall.me/runtime/entrypoint.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --bg: #1C1C1E;
+      --bg-elevated: #2C2C2E;
+      --orange: #F97316;
+      --orange-light: #FB923C;
+      --orange-dark: #EA580C;
+      --white: #FFFFFF;
+      --gray-light: rgba(255, 255, 255, 0.7);
+      --gray-medium: rgba(255, 255, 255, 0.5);
+      --gray-border: rgba(255, 255, 255, 0.1);
+      --gray-border-strong: rgba(255, 255, 255, 0.18);
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
+    }
+
+    /* Subtle background gradient — orange glow at top */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120%;
+      height: 60vh;
+      background: radial-gradient(ellipse at center top, rgba(249, 115, 22, 0.18) 0%, rgba(249, 115, 22, 0.05) 30%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 16px 24px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Close button — top right */
+    .close-btn {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
+      color: var(--white);
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      transition: background 0.2s;
+      z-index: 10;
+    }
+
+    .close-btn:active {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 56px 0 32px;
+    }
+
+    .hero-icon {
+      width: 176px;
+      height: 176px;
+      margin: 0 auto 24px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    .brand .accent {
+      color: var(--orange);
+    }
+
+    .headline {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .subhead {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--gray-light);
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    /* Features list */
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(249, 115, 22, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--orange);
+      stroke-width: 3;
+      fill: none;
+    }
+
+    /* Plans */
+    .plans {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .plan {
+      position: relative;
+      background: var(--bg-elevated);
+      border: 1.5px solid var(--gray-border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .plan.selected {
+      border-color: var(--orange);
+      background: rgba(249, 115, 22, 0.08);
+    }
+
+    .plan-radio {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid var(--gray-border-strong);
+      flex-shrink: 0;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .plan.selected .plan-radio {
+      border-color: var(--orange);
+    }
+
+    .plan.selected .plan-radio::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    .plan-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .plan-title {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+
+    .plan-subtitle {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--gray-light);
+    }
+
+    .plan-price-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+    }
+
+    .plan-price {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .plan-period {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--gray-light);
+    }
+
+    /* Best value badge on annual */
+    .badge {
+      position: absolute;
+      top: -10px;
+      left: 16px;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    /* CTA button */
+    .cta {
+      width: 100%;
+      height: 56px;
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      border-radius: 16px;
+      font-family: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.05s;
+      box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
+      margin-bottom: 14px;
+    }
+
+    .cta:active {
+      transform: scale(0.98);
+      background: var(--orange-dark);
+    }
+
+    .small-text {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--gray-medium);
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    /* Footer links */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-bottom: 8px;
+    }
+
+    .footer a {
+      color: var(--gray-medium);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .footer a:active {
+      color: var(--white);
+    }
+
+    .footer .dot {
+      color: var(--gray-medium);
+      font-size: 12px;
+    }
+
+    /* Responsive: smaller screens */
+    @media (max-height: 700px) {
+      .hero {
+        padding: 32px 0 20px;
+      }
+      .hero-icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 16px;
+      }
+      .headline {
+        font-size: 26px;
+      }
+      .features {
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Close button -->
+    <button class="close-btn" data-pw-close="anything" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Hero -->
+    <div class="hero">
+      <img class="hero-icon" src="saluxly-logo.svg" alt="Saluxly">
+
+      <h1 class="headline" data-pw-var="title">Desbloqueie o Salux<span style="color: #F97316;">ly</span> Premium</h1>
+      <p class="subhead" data-pw-var="subtitle">Reviews médicos ilimitados.<br>Selecionados para você.</p>
+    </div>
+
+    <!-- Features -->
+    <ul class="features">
+      <li class="feature">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+        </span>
+        <span>Artigos ilimitados todos os dias</span>
+      </li>
+      <li class="feature">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+        </span>
+        <span>Pesquisas ilimitadas</span>
+      </li>
+      <li class="feature">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+        </span>
+        <span>Todas as especialidades médicas</span>
+      </li>
+      <li class="feature">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+        </span>
+        <span>Tradução de títulos para o português</span>
+      </li>
+      <li class="feature">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>
+        </span>
+        <span>Feed personalizado para seu papel</span>
+      </li>
+    </ul>
+
+    <!-- Plans -->
+    <div class="plans">
+      <!-- Annual (selected by default, with badge) -->
+      <div class="plan selected" data-pw-product="primary" onclick="selectPlan(this, 'primary')">
+        <div class="badge">Melhor Valor · Economize 42%</div>
+        <div class="plan-radio"></div>
+        <div class="plan-info">
+          <div class="plan-title">Anual</div>
+          <div class="plan-subtitle">7 dias grátis · $2.92/mês, cobrado anualmente</div>
+        </div>
+        <div class="plan-price-wrap">
+          <div class="plan-price" data-pw-var="primary_price_string">$34.99</div>
+          <div class="plan-period">por ano</div>
+        </div>
+      </div>
+
+      <!-- Monthly -->
+      <div class="plan" data-pw-product="secondary" onclick="selectPlan(this, 'secondary')">
+        <div class="plan-radio"></div>
+        <div class="plan-info">
+          <div class="plan-title">Mensal</div>
+          <div class="plan-subtitle">7 dias grátis incluídos</div>
+        </div>
+        <div class="plan-price-wrap">
+          <div class="plan-price" data-pw-var="secondary_price_string">$4.99</div>
+          <div class="plan-period">por mês</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <button class="cta" id="cta-btn" data-pw-purchase="primary" data-pw-var="cta_text">Iniciar Teste Grátis 7 Dias</button>
+
+    <!-- Small disclaimer -->
+    <p class="small-text">Cancele quando quiser. Sem compromisso.</p>
+
+    <!-- Footer links -->
+    <div class="footer">
+      <a href="https://saluxly.com/terms.html" data-pw-link="terms">Termos</a>
+      <span class="dot">·</span>
+      <a href="https://saluxly.com/privacy.html" data-pw-link="privacy">Privacidade</a>
+      <span class="dot">·</span>
+      <a href="#" data-pw-restore="anything">Restaurar Compra</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Plan selection logic — toggles between primary (annual) and secondary (monthly)
+    function selectPlan(el, type) {
+      document.querySelectorAll('.plan').forEach(p => p.classList.remove('selected'));
+      el.classList.add('selected');
+
+      // Update CTA's purchase target
+      const cta = document.getElementById('cta-btn');
+      cta.setAttribute('data-pw-purchase', type);
+
+      cta.textContent = 'Iniciar Teste Grátis 7 Dias';
+    }
+  </script>
+</body>
+</html>
