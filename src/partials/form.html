@@ -1,0 +1,18 @@
+{{#if launched}}
+<div class="store" data-store>
+  <a class="store-badge" href="{{app_store_url}}" rel="noopener"><img src="/assets/img/app-store-badge.svg" alt="{{t.store.apple}}" width="180" height="60"></a>
+  {{#if play_store_url}}<a class="store-badge" href="{{play_store_url}}" rel="noopener"><img src="/assets/img/google-play-badge.png" alt="{{t.store.google}}" width="202" height="60"></a>{{/if}}
+</div>
+{{else}}
+<form class="waitlist" id="{{id}}" method="post" action="{{waitlist_action}}" novalidate data-waitlist>
+  <div class="waitlist-row">
+    <label class="field">
+      <span class="visually-hidden">{{t.form.label}}</span>
+      <input type="email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder="{{t.form.placeholder}}" aria-describedby="{{id}}-msg">
+    </label>
+    <div class="trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button class="button button--form" type="submit" data-label="{{t.form.button}}" data-busy="{{t.form.joining}}">{{t.form.button}}</button>
+  </div>
+  <p class="form-msg" id="{{id}}-msg" aria-live="polite" data-invalid="{{t.form.invalid}}" data-error="{{t.form.error}}" data-success="{{t.form.success}}"></p>
+</form>
+{{/if}}

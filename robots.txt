@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /drafts/
+Sitemap: https://saluxly.com/sitemap.xml

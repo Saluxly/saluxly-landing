@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+</head>
+<body>
+{{> bar}}
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <h1>{{t.hero.h1}}</h1>
+      <p class="lead lead--hero">{{t.hero.lead}}</p>
+      <div class="hero-form" id="waitlist">
+        {{> form id=waitlist-form}}
+        <p class="note">{{#if launched}}{{t.hero.note_launched}}{{else}}{{t.hero.note}}{{/if}}</p>
+      </div>
+    </div>
+    <div class="hero-visual" role="img" aria-label="{{t.hero.visual_alt}}">
+      <div class="hero-mark">{{> mark}}</div>
+      <svg class="hero-fiber" viewBox="0 0 540 260" aria-hidden="true"><path class="fiber-path" d="M0 50 C 120 50, 160 190, 300 200 S 460 150, 520 160"/><circle cx="240" cy="188" r="2.4" fill="#FB9338"/><circle cx="470" cy="153" r="2.4" fill="#FB9338"/><circle cx="0" cy="50" r="6" fill="url(#node)"/></svg>
+      <div class="hero-phone">{{> phone screen=feed alt=@t.product.blocks.0.alt loading=eager priority=1}}</div>
+      <div class="hero-page">{{> page}}</div>
+    </div>
+  </div>
+</section>
+
+<section class="claim">
+  <div class="wrap claim-inner">
+    <h2 class="h2 h2--claim">{{t.claim.h2}}</h2>
+    <div class="rows">
+      {{#each t.claim.rows}}<div class="row"><h3 class="row-title">{{title}}</h3><p class="row-text">{{text}}</p></div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <h2 class="h2">{{t.how.h2}}</h2>
+    <div class="steps-wrap">
+      <svg class="steps-fiber" viewBox="0 0 1200 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22 H1200" fill="none" stroke="#D76821" stroke-width="1.2"/></svg>
+      <svg class="steps-nodes" viewBox="0 0 1200 44" aria-hidden="true"><circle cx="0" cy="22" r="6" fill="url(#node)"/><circle cx="416" cy="22" r="2.4" fill="#FB9338"/><circle cx="832" cy="22" r="2.4" fill="#FB9338"/></svg>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-number" aria-hidden="true">1</span>
+          <h3 class="step-title">{{t.how.steps.0.title}}</h3>
+          <p class="step-text">{{t.how.steps.0.text}}</p>
+          <div class="step-visual"><div class="chips" aria-hidden="true">{{#each t.how.chips.on}}<span class="chip chip--on">{{this}}</span>{{/each}}{{#each t.how.chips.off}}<span class="chip">{{this}}</span>{{/each}}</div></div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">2</span>
+          <h3 class="step-title">{{t.how.steps.1.title}}</h3>
+          <p class="step-text">{{t.how.steps.1.text}}</p>
+          <div class="step-visual"><div class="feed-row" aria-hidden="true"><div class="thumb"><i class="thumb-head" style="background:#4B3A8C"></i><i class="thumb-line"></i><i class="thumb-line thumb-line--short"></i><div class="thumb-cols"><i></i><i></i></div></div><div class="feed-row-text"><div class="feed-row-title">{{t.how.row.title}}</div><div class="feed-row-journal">{{t.how.row.journal}}</div><div class="feed-row-meta">{{#each t.how.row.meta}}<span>{{this}}</span>{{/each}}</div></div><svg class="heart heart--on" viewBox="0 0 24 24" role="img" aria-label="{{t.how.row.saved}}"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div></div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">3</span>
+          <h3 class="step-title">{{t.how.steps.2.title}}</h3>
+          <p class="step-text">{{t.how.steps.2.text}}</p>
+          <div class="step-visual"><div class="step-read" aria-hidden="true"><div class="page-mini">{{> page}}</div><span class="aa">{{t.how.aa}}</span></div></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="product" id="product">
+  <div class="wrap">
+    <h2 class="h2">{{t.product.h2}}</h2>
+    <p class="lead">{{t.product.lead}}</p>
+    <div class="blocks">
+      {{#each t.product.blocks}}<div class="block">
+        <div class="block-visual"><div class="block-phone">{{> phone screen=@screen alt=@alt loading=lazy}}</div></div>
+        <div class="block-copy"><h3 class="h3">{{title}}</h3><p class="block-text">{{text}}</p></div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="sources">
+  <div class="wrap sources-inner">
+    <div class="sources-copy">
+      <h2 class="h2">{{t.sources.h2}}</h2>
+      <p class="lead lead--block">{{t.sources.lead}}</p>
+      <div class="legend" aria-hidden="true"><div class="page-small">{{> page}}</div>{{> sheet}}</div>
+      <p class="note">{{t.sources.legend}}</p>
+    </div>
+    <ol class="pipeline">
+      {{#each t.sources.steps}}<li class="pipe"><span class="pipe-node" aria-hidden="true"></span><div class="pipe-body"><h3 class="pipe-title">{{title}}</h3><p class="pipe-text">{{text}}</p></div></li>
+      {{/each}}
+    </ol>
+  </div>
+</section>
+
+<section class="practice">
+  <div class="wrap practice-inner">
+    <div class="practice-copy">
+      <h2 class="h2">{{t.practice.h2}}</h2>
+      <p class="lead lead--block">{{t.practice.lead}}</p>
+    </div>
+    <div class="practice-detail">
+      <div class="rows rows--practice">
+        {{#each t.practice.rows}}<div class="row"><h3 class="row-title">{{title}}</h3><p class="row-text">{{text}}</p></div>
+        {{/each}}
+      </div>
+      <ul class="specialties" aria-label="{{t.nav.product}}">
+        {{#each t.practice.specialties}}<li class="chip chip--plain">{{this}}</li>{{/each}}
+        <li class="chip-more chip-more--desktop">{{t.practice.more}}</li><li class="chip-more chip-more--mobile">{{t.practice.more_mobile}}</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <h2 class="h2">{{t.pricing.h2}}</h2>
+    <p class="lead">{{t.pricing.lead}}</p>
+    <table class="plans">
+      <thead><tr>
+        <th scope="col"><span class="visually-hidden">{{t.pricing.price_label}}</span></th>
+        <th scope="col" class="plan-head"><span class="plan-name">{{t.pricing.plans.free.name}}</span><span class="plan-sub">{{t.pricing.plans.free.sub}}</span></th>
+        <th scope="col" class="plan-head plan-head--best"><span class="plan-best">{{t.pricing.best}}</span><span class="plan-name">{{t.pricing.plans.yearly.name}}</span><span class="plan-sub">{{t.pricing.plans.yearly.sub}}</span></th>
+        <th scope="col" class="plan-head"><span class="plan-name">{{t.pricing.plans.monthly.name}}</span><span class="plan-sub">{{t.pricing.plans.monthly.sub}}</span></th>
+      </tr></thead>
+      <tbody>
+        {{#each t.pricing.rows}}<tr><th scope="row">{{label}}</th><td>{{free}}</td><td class="best">{{yearly}}</td><td>{{monthly}}</td></tr>
+        {{/each}}
+        <tr class="plan-price"><th scope="row">{{t.pricing.price_label}}</th><td>{{t.pricing.plans.free.price}}</td><td class="best">{{t.pricing.plans.yearly.price}}</td><td>{{t.pricing.plans.monthly.price}}</td></tr>
+      </tbody>
+    </table>
+    <div class="plans-stack" aria-hidden="true">
+      <div class="plan-card plan-card--best"><div class="plan-best">{{t.pricing.best}}</div><div class="plan-card-head"><span class="plan-name">{{t.pricing.plans.yearly.name}}</span><span class="plan-name">{{t.pricing.plans.yearly.price}}</span></div><div class="plan-sub">{{t.pricing.plans.yearly.sub}}</div>{{#each t.pricing.rows}}<div class="plan-line"><span>{{label}}</span><span>{{yearly}}</span></div>{{/each}}</div>
+      <div class="plan-card"><div class="plan-card-head"><span class="plan-name">{{t.pricing.plans.monthly.name}}</span><span class="plan-name">{{t.pricing.plans.monthly.price}}</span></div><div class="plan-sub">{{t.pricing.plans.monthly.sub}}</div>{{#each t.pricing.rows}}<div class="plan-line"><span>{{label}}</span><span>{{monthly}}</span></div>{{/each}}</div>
+      <div class="plan-card"><div class="plan-card-head"><span class="plan-name">{{t.pricing.plans.free.name}}</span><span class="plan-name">{{t.pricing.plans.free.price}}</span></div><div class="plan-sub">{{t.pricing.plans.free.sub}}</div>{{#each t.pricing.rows}}<div class="plan-line"><span>{{label}}</span><span>{{free}}</span></div>{{/each}}</div>
+    </div>
+    <p class="note note--pricing">{{t.pricing.note}}</p>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-inner">
+    <h2 class="h2">{{t.faq.h2}}</h2>
+    <div class="questions">
+      {{#each t.faq.items}}<details class="q"{{#if @first}} open{{/if}}><summary><span>{{q}}</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>{{a}}</p></details>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap final-inner">
+    <div class="final-mark">{{> mark}}</div>
+    <h2 class="h2 h2--final">{{t.final.h2}}</h2>
+    <p class="lead lead--block">{{t.final.lead}}</p>
+    <div class="final-form" id="waitlist-final">{{> form id=waitlist-final-form}}</div>
+  </div>
+</section>
+
+</main>
+{{> footer}}
+</body>
+</html>

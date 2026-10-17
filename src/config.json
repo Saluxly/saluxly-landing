@@ -1,0 +1,12 @@
+{
+  "_comment": "The only place the waitlist destination and the launch state live. `endpoint` receives a POST with email, lang and page; `fields` are sent along (a form service's access key, for example); `honeypot` is the trap field's name, never sent when filled. When the v2 backend is deployed, point `endpoint` at https://api.saluxly.com/v1/waitlist and empty `fields`.",
+  "site": "https://saluxly.com",
+  "waitlist": {
+    "endpoint": "https://api.web3forms.com/submit",
+    "fields": { "access_key": "PUT-THE-WEB3FORMS-ACCESS-KEY-HERE", "subject": "Saluxly waitlist", "from_name": "saluxly.com" },
+    "honeypot": "website"
+  },
+  "launched": false,
+  "app_store_url": "",
+  "play_store_url": ""
+}

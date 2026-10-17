@@ -1,0 +1,164 @@
+{
+  "lang": "es",
+  "name": "Español",
+  "title": "Saluxly — Deja que los artículos te encuentren",
+  "description": "Saluxly lee PubMed por ti y arma cada día un feed de artículos de revisión de tu especialidad, con el PDF original dentro de la app. Primero en iPhone y iPad.",
+  "support_title": "Soporte — Saluxly",
+  "support_description": "Ayuda con Saluxly: suscripciones, restaurar una compra, artículos que no abren y cómo borrar tu cuenta.",
+  "nav": {
+    "skip": "Ir al contenido",
+    "home": "Inicio de Saluxly",
+    "how": "Cómo funciona",
+    "product": "Producto",
+    "pricing": "Precios",
+    "faq": "Preguntas",
+    "join": "Unirme a la lista",
+    "menu": "Menú",
+    "close": "Cerrar menú",
+    "language": "Idioma",
+    "main": "Principal"
+  },
+  "hero": {
+    "h1": "Deja que los artículos te encuentren.",
+    "lead": "Saluxly lee PubMed por ti y arma cada día un feed de artículos de revisión de tu especialidad, con el PDF original dentro de la app.",
+    "note": "Primero en iPhone y iPad. Gratis los primeros 7 días, sin tarjeta. Un correo cuando lancemos, nada más.",
+    "note_launched": "Gratis los primeros 7 días, sin tarjeta.",
+    "visual_alt": "El feed de Saluxly en un iPhone, con la primera página de un artículo de revisión al lado."
+  },
+  "form": {
+    "label": "Correo electrónico",
+    "placeholder": "tu@hospital.org",
+    "button": "Unirme a la lista",
+    "joining": "Registrando…",
+    "invalid": "Escribe un correo como nombre@hospital.org.",
+    "success": "Ya estás en la lista. Te escribiremos una sola vez, cuando Saluxly salga.",
+    "error": "No pudimos guardar tu correo. Inténtalo en un momento o escríbenos a contact@saluxly.com."
+  },
+  "store": {
+    "apple": "Descárgala en el App Store",
+    "google": "Disponible en Google Play",
+    "qr": "Escanea para instalar"
+  },
+  "claim": {
+    "h2": "PubMed suma más de un millón de registros nuevos al año. Tú necesitas cinco.",
+    "rows": [
+      {"title": "Solo artículos de revisión, de los últimos cinco años.", "text": "Revisiones sistemáticas, metaanálisis, guías y revisiones narrativas. Sin estudios primarios que cribar."},
+      {"title": "Revistas que pasan un filtro de calidad.", "text": "Indexadas en MEDLINE o con un historial de citas establecido, ordenadas por impacto dentro de cada especialidad."},
+      {"title": "Elegidos para tu especialidad y tu profesión.", "text": "Más de cuarenta especialidades y seis profesiones, en inglés, español o portugués."}
+    ]
+  },
+  "how": {
+    "h2": "Tres pasos, y después funciona solo.",
+    "steps": [
+      {"title": "Elige tus especialidades", "text": "Una o varias. Médicos, residentes, estudiantes, dentistas, enfermeras y nutriólogos tienen cada uno un feed propio."},
+      {"title": "Abre el feed", "text": "Artículos de revisión nuevos cada día, ordenados para ti. Marca con un corazón los que quieras conservar."},
+      {"title": "Lee el artículo", "text": "El PDF original se abre dentro de la app, con subrayados, notas y un resumen en lenguaje sencillo a un toque."}
+    ],
+    "chips": {"on": ["Obstetricia", "Neonatología"], "off": ["Cardiología", "Toda la medicina"]},
+    "row": {"title": "Restricción del crecimiento fetal: tamizaje, diagnóstico y momento del parto", "journal": "Journal of Clinical Medicine", "meta": ["Revisión", "2025", "16 páginas"], "saved": "Guardado"},
+    "aa": "Aa"
+  },
+  "product": {
+    "h2": "Hecha para la forma en que leen los médicos.",
+    "lead": "Poco tiempo y mucha exigencia. Saluxly te trae el artículo, no una colección de enlaces.",
+    "blocks": [
+      {"screen": "feed", "title": "Elegidos para ti, no para los anunciantes.", "text": "Cada artículo de tu feed está ahí por tus especialidades y por lo que lees, nunca porque alguien pagó por ese lugar. Sin anuncios, sin patrocinios, sin farmacéuticas.", "alt": "La pantalla del feed: una lista de artículos de revisión elegidos para las especialidades del lector."},
+      {"screen": "reader", "title": "El artículo original, tal como lo publicó la revista.", "text": "Los artículos con licencia abierta (CC BY y CC0) se abren dentro de Saluxly en un lector nativo. Subraya, toma notas y consérvalos sin conexión. Todo lo demás se abre en PubMed Central o en el sitio de la revista, claramente señalado.", "alt": "La pantalla del lector: el PDF original de un artículo con un pasaje subrayado."},
+      {"screen": "summary", "title": "Entiéndelo en dos minutos.", "text": "Aa te da un resumen en lenguaje sencillo hecho a partir del propio artículo. Ask AI responde tus preguntas sobre lo que estás leyendo. Los dos pueden equivocarse, así que el artículo siempre está a un toque.", "alt": "La hoja de resumen: qué pregunta el artículo, qué encontró y qué significa para la práctica."},
+      {"screen": "search", "title": "Un buscador que habla medicina.", "text": "Escribe en inglés, español o portugués, con abreviaturas o errores de dedo. Saluxly traduce tus palabras a encabezados de materia médica y te devuelve las revisiones que tratan de tu tema, no las que apenas lo mencionan.", "alt": "La pantalla del buscador: la consulta “aspirina preeclampsia prevención” entendida como tres conceptos médicos, con las revisiones que coinciden."}
+    ]
+  },
+  "sources": {
+    "h2": "De dónde sale cada artículo.",
+    "lead": "Todo el recorrido, sin nada oculto. Datos de los artículos por cortesía de la U.S. National Library of Medicine.",
+    "legend": "Una página sólida significa que el PDF está en la app. Una página en contorno significa que se abre en su fuente.",
+    "steps": [
+      {"title": "Indexado en PubMed", "text": "Artículos de revisión, revisiones sistemáticas, metaanálisis y guías publicados en los últimos cinco años."},
+      {"title": "Pasa un filtro de calidad", "text": "Revistas indexadas en MEDLINE o con un historial de citas establecido, ordenadas por impacto dentro de su especialidad."},
+      {"title": "Se revisa su licencia", "text": "Los artículos con licencia abierta (CC BY o CC0) se alojan y se abren dentro de la app. Los demás se abren en PubMed Central o en el sitio de la revista."},
+      {"title": "Con crédito, siempre", "text": "Cada artículo lleva sus autores, revista, año y licencia, con un enlace al registro de PubMed."}
+    ]
+  },
+  "practice": {
+    "h2": "Hecha para la forma en que ejerces.",
+    "lead": "Seis profesiones, más de cuarenta especialidades, una app. Elige las tuyas en el primer minuto y cámbialas cuando quieras.",
+    "rows": [
+      {"title": "Médicos y residentes", "text": "Tus especialidades, más las revisiones de toda la medicina que todos deberían conocer."},
+      {"title": "Estudiantes de medicina", "text": "Los temas centrales de los años clínicos, al nivel de una rotación."},
+      {"title": "Dentistas, enfermeras y nutriólogos", "text": "Un feed hecho con las revistas de tu propia profesión, no una copia filtrada del de medicina."}
+    ],
+    "specialties": [
+      "Alergia e inmunología", "Anestesiología", "Cardiología", "Cirugía de colon y recto", "Cirugía de tórax y cardiovascular", "Cirugía general", "Cirugía plástica",
+      "Cirugía vascular", "Dermatología", "Endocrinología", "Enfermedad pulmonar", "Enfermería", "Farmacología", "Gastroenterología",
+      "Genética", "Geriatría", "Ginecología y obstetricia", "Hematología", "Infectología", "Medicina crítica", "Medicina de urgencias",
+      "Medicina familiar", "Medicina física y rehabilitación", "Medicina interna", "Medicina nuclear", "Nefrología", "Neonatología", "Neurocirugía",
+      "Neurología", "Nutrición", "Odontología", "Oftalmología", "Oncología", "Otorrinolaringología", "Patología", "Pediatría",
+      "Psiquiatría", "Radiología", "Reumatología", "Salud pública", "Traumatología y ortopedia", "Urología"
+    ],
+    "more": "y más",
+    "more_mobile": "y 26 más"
+  },
+  "pricing": {
+    "h2": "Gratis los primeros 7 días. Sin tarjeta.",
+    "lead": "Después, quédate con el plan gratuito o suscríbete. El cobro es por el App Store; cancela cuando quieras.",
+    "best": "Mejor precio",
+    "plans": {
+      "free": {"name": "Gratis", "sub": "Después de los primeros 7 días", "price": "$0"},
+      "yearly": {"name": "Anual", "sub": "$2.92 al mes, en un solo cobro al año", "price": "$34.99 al año"},
+      "monthly": {"name": "Mensual", "sub": "Cobro cada mes", "price": "$4.99 al mes"}
+    },
+    "rows": [
+      {"label": "Feed diario", "free": "30 artículos al día", "yearly": "Sin límite", "monthly": "Sin límite"},
+      {"label": "Artículos que puedes abrir", "free": "3 al día", "yearly": "Ilimitados", "monthly": "Ilimitados"},
+      {"label": "Búsquedas nuevas", "free": "3 al día", "yearly": "Ilimitadas", "monthly": "Ilimitadas"},
+      {"label": "Resumen y Ask AI", "free": "Con cada artículo que abras", "yearly": "Incluidos", "monthly": "Incluidos"},
+      {"label": "Guardar y leer sin conexión", "free": "Incluido", "yearly": "Incluido", "monthly": "Incluido"}
+    ],
+    "price_label": "Precio",
+    "note": "Precios en dólares estadounidenses; los precios locales y los impuestos pueden variar. Las suscripciones se renuevan solas hasta que las canceles en los ajustes de tu App Store."
+  },
+  "faq": {
+    "h2": "Preguntas, respondidas.",
+    "items": [
+      {"q": "¿Saluxly es un libro de texto o una referencia clínica?", "a": "No. Saluxly es un feed de lectura de artículos de revisión de la literatura médica. Te ayuda a seguir lo que se publica en tu campo; no sustituye una referencia clínica, una guía ni tu propio juicio."},
+      {"q": "¿De dónde salen los artículos?", "a": "De PubMed, la base de datos de la U.S. National Library of Medicine. Saluxly conserva artículos de revisión, revisiones sistemáticas, metaanálisis y guías de los últimos cinco años, publicados en revistas que pasan su filtro de calidad."},
+      {"q": "¿Puedo leer el artículo completo?", "a": "Sí. Los artículos con licencia abierta (CC BY o CC0) se abren dentro de la app como el PDF original. Los demás se abren en PubMed Central o en el sitio de la revista en una vista de navegador, donde muchos son gratis."},
+      {"q": "¿Es legal leer los PDF en la app?", "a": "Sí. Saluxly solo aloja artículos cuya licencia lo permite, da crédito a sus autores y a su revista, y enlaza los demás a su fuente en lugar de copiarlos."},
+      {"q": "¿En qué idiomas funciona?", "a": "La app funciona en inglés, español y portugués. Los artículos están en inglés, con los títulos traducidos automáticamente. Puedes buscar en cualquiera de los tres idiomas."},
+      {"q": "¿Necesito una clave de hospital o de universidad?", "a": "No. Todo lo que hay en Saluxly tiene licencia abierta o es gratis en su fuente. Solo necesitas un correo electrónico."},
+      {"q": "¿En qué dispositivos la puedo usar?", "a": "Primero en iPhone y iPad, con un diseño para iPad y un widget en la pantalla de inicio. Android viene después, y hay una versión web planeada."},
+      {"q": "¿Qué hacen con mis datos?", "a": "Tu correo sirve para iniciar sesión. Lo que lees y guardas personaliza tu feed. Saluxly no muestra anuncios, no usa rastreadores publicitarios y no vende tus datos. Puedes borrar tu cuenta desde la app cuando quieras."}
+    ]
+  },
+  "final": {
+    "h2": "Sé de los primeros en leer.",
+    "lead": "Un correo cuando Saluxly salga en iPhone y iPad. Nada más."
+  },
+  "footer": {
+    "text": "Saluxly es una herramienta de lectura para profesionales de la salud. No es un dispositivo médico y no da consejo médico. Datos de los artículos por cortesía de la U.S. National Library of Medicine. Saluxly no está afiliada a la NLM, los NIH ni el HHS, ni cuenta con su respaldo.",
+    "copyright": "© 2026 Saluxly, Inc.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "support": "Soporte",
+    "delete": "Borrar tu cuenta",
+    "legal": "Legal"
+  },
+  "support": {
+    "h1": "Soporte",
+    "lead": "Escríbenos y te responde una persona, normalmente en dos días hábiles.",
+    "email_button": "Escribir a contact@saluxly.com",
+    "questions_h": "Preguntas frecuentes",
+    "questions": [
+      {"title": "Administrar o cancelar tu suscripción", "text": "Las suscripciones las cobra Apple. Abre Ajustes en tu iPhone, toca tu nombre, luego Suscripciones y elige Saluxly. Al cancelar conservas el acceso hasta el final del periodo que pagaste."},
+      {"title": "Restaurar una compra en un dispositivo nuevo", "text": "Inicia sesión con la misma cuenta, abre Perfil en la app y toca Restaurar compras."},
+      {"title": "Un artículo no abre", "text": "Los artículos marcados con una página en contorno se abren en PubMed Central o en el sitio de la revista, que puede tardar o mostrar su propia comprobación de seguridad. Inténtalo en un minuto o abre el registro de PubMed desde los detalles del artículo."},
+      {"title": "Cambiar tu idioma, profesión o especialidades", "text": "Los tres están en Perfil. Los cambios se aplican en tu siguiente feed."}
+    ],
+    "delete_h": "Borrar tu cuenta",
+    "delete_text": "Borrar tu cuenta elimina tu perfil, tu historial de lectura y tus artículos guardados. Las suscripciones se cancelan aparte, en los ajustes de tu App Store.",
+    "delete_steps": ["Abre Saluxly y ve a Perfil.", "Toca Borrar cuenta, al final.", "Confirma. Tus datos se eliminan en un plazo de 30 días."],
+    "delete_mail_before": "¿Ya desinstalaste la app? Escribe a",
+    "delete_mail_after": "desde el correo de tu cuenta con el asunto “Delete my account”.",
+    "delete_subject": "Delete my account"
+  }
+}

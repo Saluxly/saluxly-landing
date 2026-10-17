@@ -1,1303 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- SEO Primary -->
-<title>Saluxly — Personalized Medical Literature for Healthcare Professionals</title>
-<meta name="description" content="Saluxly delivers a personalized feed of curated PubMed review articles to medical professionals and students. AI-powered classification matches you with relevant research across 40+ specialties — 600,000+ peer-reviewed reviews, no ads, no sponsored content.">
-<meta name="keywords" content="medical articles, PubMed, medical students, healthcare professionals, review articles, systematic reviews, meta-analysis, medical research, clinical guidelines, medical education, residency, medical specialties, evidence-based medicine, medical journals, Scimago, SJR, continuing medical education, CME, artículos médicos, educación médica, profesionais de saúde, revisões sistemáticas, artigos médicos">
-<meta name="author" content="Saluxly, Inc.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://saluxly.com">
-
-<!-- Open Graph -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saluxly — Let the papers find you</title>
+<meta name="description" content="Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.">
+<link rel="canonical" href="https://saluxly.com/">
+<link rel="alternate" hreflang="en" href="https://saluxly.com/">
+<link rel="alternate" hreflang="es" href="https://saluxly.com/es/">
+<link rel="alternate" hreflang="pt" href="https://saluxly.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://saluxly.com/">
+<meta name="theme-color" content="#17100C">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/favicon-180.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://saluxly.com">
-<meta property="og:title" content="Saluxly — Let the papers find you">
-<meta property="og:description" content="AI-powered personalized feed of curated PubMed review articles for medical professionals and students. 600,000+ peer-reviewed reviews across 40+ specialties.">
 <meta property="og:site_name" content="Saluxly">
+<meta property="og:title" content="Saluxly — Let the papers find you">
+<meta property="og:description" content="Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.">
+<meta property="og:url" content="https://saluxly.com/">
+<meta property="og:image" content="https://saluxly.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="es_ES">
-<meta property="og:locale:alternate" content="pt_BR">
-
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Saluxly — Let the papers find you">
-<meta name="twitter:description" content="AI-powered personalized feed of curated PubMed review articles for medical professionals and students.">
+<meta name="twitter:description" content="Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.">
+<meta name="twitter:image" content="https://saluxly.com/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/newsreader-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/hanken-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script>window.SALUXLY={"waitlist":{"endpoint":"https://api.web3forms.com/submit","fields":{"access_key":"PUT-THE-WEB3FORMS-ACCESS-KEY-HERE","subject":"Saluxly waitlist","from_name":"saluxly.com"},"honeypot":"website"},"launched":false}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Saluxly, Inc.","url":"https://saluxly.com","email":"contact@saluxly.com","logo":"https://saluxly.com/assets/img/favicon-512.png"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Saluxly","applicationCategory":"MedicalApplication","operatingSystem":"iOS","inLanguage":["en","es","pt"],"url":"https://saluxly.com/","description":"Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]</script>
 
-<!-- Hreflang for multilingual SEO -->
-<link rel="alternate" hreflang="en" href="https://saluxly.com">
-<link rel="alternate" hreflang="es" href="https://saluxly.com?lang=es">
-<link rel="alternate" hreflang="pt" href="https://saluxly.com?lang=pt">
-<link rel="alternate" hreflang="x-default" href="https://saluxly.com">
-
-<link rel="icon" type="image/svg+xml" href="saluxly-logo.svg">
-
-<!-- Fonts: Inter for UI/body, Newsreader (serif) for editorial headlines -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Saluxly",
-  "applicationCategory": "HealthApplication",
-  "operatingSystem": "iOS, Android, Web",
-  "description": "Personalized feed of curated PubMed review articles for medical professionals and students, powered by AI classification across 40+ medical specialties.",
-  "url": "https://saluxly.com",
-  "author": {
-    "@type": "Organization",
-    "name": "Saluxly, Inc."
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "featureList": [
-    "AI-powered article classification",
-    "40+ medical specialties",
-    "600,000+ curated review articles",
-    "Personalized feed algorithm",
-    "PubMed integration",
-    "Multi-language support (English, Spanish, Portuguese)",
-    "Scimago journal quality scoring (Q1-Q4)",
-    "Structured abstracts"
-  ]
-}
-</script>
-
-<style>
-:root{
-  /* Light / cream surfaces */
-  --bg-gradient-start:#FFF7EF;--bg-gradient-mid:#FFF2E6;--bg-gradient-end:#FFFBF6;
-  --surface:#FFFFFF;--surface-secondary:#FBF6EF;
-  /* Dark surfaces */
-  --ink:#0D0D0F;--ink-soft:#1C1C1E;--ink-line:rgba(255,255,255,0.10);
-  /* Text */
-  --text-primary:#16161A;--text-secondary:#5C5C66;--text-tertiary:#9A9AA3;--text-on-dark:#F5F5F7;
-  /* Brand */
-  --accent:#F97316;--accent-dark:#E8710A;--accent-light:#FFF4E6;
-  /* Lines */
-  --border:#ECE4D8;--divider:#F4EEE5;
-  /* Type */
-  --font-ui:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  --font-serif:'Newsreader',Georgia,'Times New Roman',serif;
-  /* Shadows */
-  --shadow-sm:0 1px 2px rgba(20,16,8,0.04),0 1px 3px rgba(20,16,8,0.05);
-  --shadow-md:0 4px 14px rgba(20,16,8,0.06);
-  --shadow-lg:0 18px 50px rgba(20,16,8,0.10);
-  --shadow-xl:0 30px 80px rgba(20,16,8,0.16);
-  --radius:18px;--radius-lg:24px;--radius-sm:12px;
-}
-
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-
-body{
-  font-family:var(--font-ui);color:var(--text-primary);
-  background:linear-gradient(180deg,var(--bg-gradient-start) 0%,var(--bg-gradient-mid) 48%,var(--bg-gradient-end) 100%);
-  background-attachment:fixed;min-height:100vh;overflow-x:hidden;
-  font-size:16px;line-height:1.6;
-  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-}
-
-img{max-width:100%;display:block}
-a{color:inherit}
-
-.serif{font-family:var(--font-serif)}
-
-/* ===== SHARED LAYOUT ===== */
-.container{max-width:1160px;margin:0 auto;padding:0 24px}
-section{position:relative}
-.eyebrow{
-  font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--accent);margin-bottom:14px;
-}
-.section-title{
-  font-family:var(--font-serif);font-weight:500;
-  font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-0.015em;
-  color:var(--text-primary);max-width:18ch;
-}
-.section-title.center{margin-left:auto;margin-right:auto;text-align:center;max-width:22ch}
-.section-lead{
-  font-size:clamp(17px,2vw,20px);line-height:1.65;color:var(--text-secondary);
-  max-width:62ch;margin-top:18px;
-}
-.section-lead.center{margin-left:auto;margin-right:auto;text-align:center}
-
-/* ===== BUTTONS ===== */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  font-family:var(--font-ui);font-size:15px;font-weight:600;line-height:1;
-  padding:14px 22px;border-radius:var(--radius-sm);border:1px solid transparent;
-  cursor:pointer;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease,color .2s ease;
-}
-.btn-accent{background:var(--accent);color:#fff;box-shadow:0 6px 20px rgba(249,115,22,0.28)}
-.btn-accent:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(249,115,22,0.36);background:var(--accent-dark)}
-.btn-outline-light{background:rgba(255,255,255,0.04);color:#fff;border-color:rgba(255,255,255,0.22)}
-.btn-outline-light:hover{background:rgba(255,255,255,0.10);border-color:rgba(255,255,255,0.4);transform:translateY(-2px)}
-.btn-outline-dark{background:#fff;color:var(--text-primary);border-color:var(--border)}
-.btn-outline-dark:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--accent)}
-.btn-ghost{background:transparent;color:var(--text-secondary);padding:10px 14px}
-.btn-ghost:hover{color:var(--accent)}
-
-/* Google Play badge button */
-.btn-play{
-  display:inline-flex;align-items:center;gap:12px;text-decoration:none;
-  background:#000;color:#fff;border-radius:12px;padding:11px 20px;
-  border:1px solid rgba(255,255,255,0.14);transition:transform .2s ease,box-shadow .2s ease;
-}
-.btn-play:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.28)}
-.btn-play svg{width:24px;height:26px;flex-shrink:0}
-.btn-play .pt{display:flex;flex-direction:column;line-height:1.1;text-align:left}
-.btn-play .pt small{font-size:10px;font-weight:500;letter-spacing:0.04em;opacity:0.8;text-transform:uppercase}
-.btn-play .pt strong{font-size:17px;font-weight:600;letter-spacing:0.01em}
-.btn-play.on-light{box-shadow:var(--shadow-sm)}
-
-/* ===== NAV ===== */
-.nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  background:rgba(13,13,15,0.72);backdrop-filter:saturate(160%) blur(18px);
-  -webkit-backdrop-filter:saturate(160%) blur(18px);
-  border-bottom:1px solid var(--ink-line);transition:background .3s ease;
-}
-.nav-inner{
-  max-width:1160px;margin:0 auto;padding:12px 24px;
-  display:flex;align-items:center;justify-content:space-between;gap:18px;
-}
-.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo{width:30px;height:30px;border-radius:8px}
-.nav-name{font-size:19px;font-weight:700;color:#fff;letter-spacing:-0.01em}
-.nav-name span{color:var(--accent)}
-.nav-links{display:flex;align-items:center;gap:8px}
-.nav-anchor{
-  color:rgba(255,255,255,0.62);text-decoration:none;font-size:14px;font-weight:500;
-  padding:8px 12px;border-radius:8px;transition:color .2s,background .2s;
-}
-.nav-anchor:hover{color:#fff;background:rgba(255,255,255,0.06)}
-.nav-right{display:flex;align-items:center;gap:14px}
-.lang-toggle{
-  display:flex;background:rgba(255,255,255,0.08);border-radius:999px;padding:3px;gap:2px;
-  border:1px solid rgba(255,255,255,0.08);
-}
-.lang-btn{
-  padding:6px 11px;font-size:12px;font-weight:600;border:none;cursor:pointer;border-radius:999px;
-  background:transparent;color:rgba(255,255,255,0.55);transition:all .22s;font-family:var(--font-ui);
-}
-.lang-btn:hover{color:#fff}
-.lang-btn.active{background:var(--accent);color:#fff}
-.nav-cta{
-  display:inline-flex;align-items:center;gap:7px;background:var(--accent);color:#fff;
-  font-size:13.5px;font-weight:600;padding:9px 15px;border-radius:10px;text-decoration:none;
-  transition:transform .2s,background .2s;
-}
-.nav-cta:hover{transform:translateY(-1px);background:var(--accent-dark)}
-.nav-anchors{display:flex;align-items:center;gap:4px}
-
-/* ===== HERO (DARK) ===== */
-.hero{
-  background:radial-gradient(120% 90% at 75% 0%,#1a1a1f 0%,var(--ink) 55%);
-  color:var(--text-on-dark);position:relative;overflow:hidden;
-  padding:148px 24px 96px;
-}
-.hero::after{
-  content:"";position:absolute;left:0;right:0;bottom:-1px;height:140px;
-  background:linear-gradient(180deg,rgba(255,251,246,0),var(--bg-gradient-start));
-  pointer-events:none;z-index:3;
-}
-/* legibility scrim behind hero text (sits above ambient graphic, below content) */
-.hero::before{
-  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(62% 58% at 46% 42%,rgba(13,13,15,0.82),rgba(13,13,15,0) 72%);
-}
-.hero-inner{max-width:1000px;margin:0 auto;position:relative;z-index:2;text-align:center}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:12.5px;font-weight:600;letter-spacing:0.02em;
-  color:rgba(255,255,255,0.78);background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.12);border-radius:999px;padding:7px 15px;margin-bottom:26px;
-}
-.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px 2px rgba(249,115,22,0.7)}
-.hero-tagline{
-  font-family:var(--font-serif);font-weight:500;
-  font-size:clamp(42px,8vw,86px);line-height:1.02;letter-spacing:-0.03em;
-  color:#fff;margin-bottom:22px;
-}
-.hero-tagline em{font-style:italic;color:var(--accent)}
-.hero-subtitle{
-  font-size:clamp(17px,2.2vw,21px);line-height:1.6;color:rgba(245,245,247,0.72);
-  max-width:60ch;margin:0 auto 38px;
-}
-.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
-.hero-ios{
-  display:flex;flex-direction:column;align-items:center;gap:12px;margin:8px auto 0;max-width:440px;
-}
-.hero-ios-note{font-size:13px;color:rgba(245,245,247,0.5)}
-
-/* email capture */
-.ios-form{display:flex;gap:8px;width:100%;max-width:420px}
-.ios-form input[type=email]{
-  flex:1;min-width:0;font-family:var(--font-ui);font-size:14.5px;
-  padding:12px 16px;border-radius:11px;border:1px solid rgba(255,255,255,0.16);
-  background:rgba(255,255,255,0.05);color:#fff;outline:none;transition:border-color .2s,background .2s;
-}
-.ios-form input[type=email]::placeholder{color:rgba(255,255,255,0.4)}
-.ios-form input[type=email]:focus{border-color:var(--accent);background:rgba(255,255,255,0.09)}
-.ios-form button{
-  white-space:nowrap;background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);
-  border-radius:11px;padding:12px 18px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--font-ui);
-  transition:background .2s,border-color .2s;
-}
-.ios-form button:hover{background:var(--accent);border-color:var(--accent)}
-.ios-form.on-light input[type=email]{background:#fff;border-color:var(--border);color:var(--text-primary)}
-.ios-form.on-light input[type=email]::placeholder{color:var(--text-tertiary)}
-.ios-form.on-light button{background:var(--text-primary);color:#fff;border-color:var(--text-primary)}
-.ios-form.on-light button:hover{background:var(--accent);border-color:var(--accent)}
-.ios-msg{font-size:13px;font-weight:500;min-height:18px;color:var(--accent)}
-.ios-msg.ok{color:#34D399}
-
-/* stat counters */
-.hero-stats{
-  display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin-top:58px;
-  border-top:1px solid rgba(255,255,255,0.1);padding-top:34px;
-}
-.stat{display:flex;flex-direction:column;align-items:center;padding:0 34px;position:relative}
-.stat + .stat::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:rgba(255,255,255,0.1)}
-.stat-number{font-size:clamp(28px,4vw,40px);font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1}
-.stat-number .plus{color:var(--accent)}
-.stat-label{font-size:13px;color:rgba(245,245,247,0.55);margin-top:8px;font-weight:500}
-
-/* ===== AMBIENT CARDIAC CONDUCTION BACKGROUND (hero + final CTA) ===== */
-/* Glowing orange conduction pathway (SA -> AV -> His -> branches -> Purkinje),
-   offset to one side and masked so it never sits behind the centered text. */
-.conduction-bg{
-  position:absolute;top:50%;right:-3%;transform:translateY(-50%);
-  width:min(620px,66%);aspect-ratio:1/1;z-index:0;pointer-events:none;
-  opacity:0.9;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 42%,#000 100%);
-          mask-image:linear-gradient(90deg,transparent 0%,#000 42%,#000 100%);
-}
-.conduction-bg svg{width:100%;height:100%;overflow:visible}
-/* faint always-on structure */
-.cond-base{stroke:rgba(249,115,22,0.16);fill:none;stroke-linecap:round}
-.cond-node-base{fill:rgba(249,115,22,0.20)}
-/* glowing animated impulse traces */
-.cond-trace{
-  stroke:var(--accent);fill:none;stroke-linecap:round;
-  filter:drop-shadow(0 0 5px rgba(249,115,22,0.95));
-  stroke-dasharray:340;stroke-dashoffset:340;opacity:0;
-}
-.cond-draw1{animation:condDraw1 5s ease-in-out infinite}
-.cond-draw2{animation:condDraw2 5s ease-in-out infinite}
-.cond-draw3{animation:condDraw3 5s ease-in-out infinite}
-.cond-draw4{animation:condDraw4 5s ease-in-out infinite}
-.cond-node{
-  fill:var(--accent);transform-box:fill-box;transform-origin:center;
-  filter:drop-shadow(0 0 6px rgba(249,115,22,0.95));
-  animation:condNode 5s ease-in-out infinite;
-}
-.cond-node.n2{animation:condNode2 5s ease-in-out infinite}
-@keyframes condDraw1{
-  0%{stroke-dashoffset:340;opacity:0}4%{opacity:1}16%{stroke-dashoffset:0}
-  78%{stroke-dashoffset:0;opacity:1}92%{opacity:0}100%{stroke-dashoffset:340;opacity:0}
-}
-@keyframes condDraw2{
-  0%,16%{stroke-dashoffset:340;opacity:0}20%{opacity:1}32%{stroke-dashoffset:0}
-  78%{stroke-dashoffset:0;opacity:1}92%{opacity:0}100%{stroke-dashoffset:340;opacity:0}
-}
-@keyframes condDraw3{
-  0%,32%{stroke-dashoffset:340;opacity:0}36%{opacity:1}48%{stroke-dashoffset:0}
-  78%{stroke-dashoffset:0;opacity:1}92%{opacity:0}100%{stroke-dashoffset:340;opacity:0}
-}
-@keyframes condDraw4{
-  0%,48%{stroke-dashoffset:340;opacity:0}52%{opacity:1}64%{stroke-dashoffset:0}
-  78%{stroke-dashoffset:0;opacity:1}92%{opacity:0}100%{stroke-dashoffset:340;opacity:0}
-}
-@keyframes condNode{0%,100%{opacity:0.3;transform:scale(0.8)}10%,72%{opacity:1}50%{transform:scale(1.18)}90%{opacity:0}}
-@keyframes condNode2{0%,20%{opacity:0.2;transform:scale(0.7)}30%,72%{opacity:1}55%{transform:scale(1.15)}90%{opacity:0}}
-
-/* ===== PROBLEM (LIGHT) ===== */
-.problem{padding:96px 24px 24px}
-.problem-inner{max-width:880px;margin:0 auto;text-align:center}
-.problem-statement{
-  font-family:var(--font-serif);font-weight:400;
-  font-size:clamp(24px,3.4vw,38px);line-height:1.32;letter-spacing:-0.01em;
-  color:var(--text-primary);
-}
-.problem-statement b{font-weight:500;color:var(--accent-dark);background:linear-gradient(180deg,transparent 62%,var(--accent-light) 62%)}
-
-/* ===== HOW IT WORKS (LIGHT) ===== */
-.how{padding:88px 24px;position:relative;overflow:hidden}
-.how-bg-lines{
-  position:absolute;top:50%;left:0;width:100%;height:300px;transform:translateY(-50%);
-  opacity:0.06;pointer-events:none;z-index:0;
-}
-.how-inner{max-width:1160px;margin:0 auto;position:relative;z-index:1}
-.how-head{text-align:center;margin-bottom:56px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
-.step{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
-  padding:30px 28px;position:relative;counter-increment:step;box-shadow:var(--shadow-sm);
-  transition:transform .25s,box-shadow .25s;
-}
-.step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.step-num{
-  display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;
-  background:var(--accent-light);color:var(--accent-dark);font-weight:700;font-size:18px;margin-bottom:18px;
-}
-.step-icon{width:24px;height:24px;color:var(--accent-dark)}
-.step h3{font-size:18px;font-weight:700;margin-bottom:8px;letter-spacing:-0.01em}
-.step p{font-size:14.5px;line-height:1.6;color:var(--text-secondary)}
-.step::after{content:counter(step,decimal-leading-zero);position:absolute;top:22px;right:24px;font-family:var(--font-serif);font-size:30px;color:var(--border);font-weight:500}
-
-/* ===== CARDIAC CONDUCTION (signature) ===== */
-.conduction-section{padding:60px 24px 88px;position:relative;overflow:hidden}
-.conduction-wrapper{
-  max-width:1100px;margin:0 auto;display:grid;
-  grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;
-}
-.conduction-visual{display:flex;justify-content:center;align-items:center;position:relative}
-.heart-glow{position:absolute;width:62%;height:62%;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,0.16),transparent 70%);filter:blur(20px);z-index:0}
-.heart-container{
-  width:min(460px,90vw);height:min(460px,90vw);position:relative;z-index:1;
-  transition:transform 0.3s;
-}
-.heart-bg-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;pointer-events:none;opacity:0.4;mix-blend-mode:multiply}
-.heart-svg{position:absolute;top:0;left:0;width:100%;height:100%}
-.heart-svg .sa-node,.heart-svg .av-node{fill:var(--accent);transform-origin:center}
-.heart-svg .path-line{stroke:var(--accent);stroke-width:3;fill:none;stroke-linecap:round;stroke-dasharray:200;stroke-dashoffset:200}
-.heart-svg .dot{fill:var(--accent);opacity:0}
-.heart-svg .sa-node{opacity:0}
-.heart-svg .av-node{opacity:0}
-
-.heart-container.active .sa-node{animation:nodeAppear 0.2s cubic-bezier(0.34,1.56,0.64,1) forwards}
-.heart-container.active .path-sa-av{animation:drawPath 0.35s 0.15s linear forwards}
-.heart-container.active .av-node{animation:nodeAppear 0.15s 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards}
-.heart-container.active .path-junc{animation:drawPath 0.35s 0.15s linear forwards}
-.heart-container.active .dot-junc{animation:dotAppear 0.1s 0.5s linear forwards}
-.heart-container.active .path-his{animation:drawPath 0.25s 0.65s linear forwards}
-.heart-container.active .path-div1{animation:drawPath 0.3s 0.9s linear forwards}
-.heart-container.active .path-div2{animation:drawPath 0.3s 0.9s linear forwards}
-.heart-container.active .path-purk{animation:drawPath 0.3s 1.2s linear forwards}
-.heart-container.active .dot-early{animation:dotAppear 0.1s 1.2s linear forwards}
-.heart-container.active .dot-late{animation:dotAppear 0.1s 1.5s linear forwards}
-.heart-container.active .sa-node-pulse{animation:nodeAppear 0.2s forwards,saPulse 1.6s 1.5s ease-in-out infinite alternate}
-
-@keyframes nodeAppear{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
-@keyframes fadeOut{from{opacity:1}to{opacity:0}}
-@keyframes nodeDisappear{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}
-
-.heart-container.deactivate .dot-late{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .dot-early{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .dot-junc{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-purk{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-div1{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-div2{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-his{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-junc{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .av-node{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-sa-av{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .path-sa-junc{animation:fadeOut 0.3s linear forwards}
-.heart-container.deactivate .sa-node{animation:nodeDisappear 0.1s 0.2s linear forwards}
-.heart-container.deactivate .sa-node-pulse{animation:nodeDisappear 0.1s 0.2s linear forwards}
-@keyframes drawPath{to{stroke-dashoffset:0}}
-@keyframes dotAppear{to{opacity:1}}
-@keyframes saPulse{0%{transform:scale(1)}100%{transform:scale(1.15)}}
-
-.conduction-info .section-title{margin-bottom:18px}
-.conduction-info p{font-size:16.5px;line-height:1.72;color:var(--text-secondary);margin-bottom:16px}
-
-/* ===== PRODUCT SHOWCASE ===== */
-.showcase{padding:88px 0;overflow:hidden}
-.showcase .container{margin-bottom:40px;text-align:center}
-/* gallery sized so ~2.5 portrait phones show on desktop */
-.shots-wrap{position:relative;max-width:880px;margin:0 auto}
-/* fade-gradient edges hint that the gallery scrolls horizontally */
-.shots-wrap::before,.shots-wrap::after{
-  content:"";position:absolute;top:0;bottom:0;width:72px;z-index:2;pointer-events:none;
-}
-.shots-wrap::before{left:0;background:linear-gradient(90deg,#FFF6EC,rgba(255,246,236,0))}
-.shots-wrap::after{right:0;background:linear-gradient(270deg,#FFF6EC,rgba(255,246,236,0))}
-.shots{
-  display:flex;gap:28px;overflow-x:auto;padding:18px 48px 36px;scroll-snap-type:x proximity;
-  scroll-padding-left:48px;-webkit-overflow-scrolling:touch;scrollbar-width:none;
-}
-.shots::-webkit-scrollbar{display:none}
-/* vertical iPhone-style mockup frame */
-.shot{
-  flex:0 0 300px;width:300px;scroll-snap-align:center;
-  aspect-ratio:1080/2348;border-radius:38px;padding:8px;
-  background:linear-gradient(160deg,#1c1c22,#0c0c10);
-  box-shadow:0 32px 60px -22px rgba(20,16,8,0.45),0 6px 18px -8px rgba(20,16,8,0.25);
-  overflow:hidden;transition:transform .3s,box-shadow .3s;
-}
-.shot:hover{transform:translateY(-6px);box-shadow:0 40px 72px -22px rgba(20,16,8,0.5),0 8px 22px -8px rgba(20,16,8,0.3)}
-/* portrait screenshot fills the frame cleanly, top-aligned */
-.shot img{
-  width:100%;height:100%;display:block;border-radius:30px;
-  object-fit:cover;object-position:top center;background:#FBF6EF;
-}
-/* scroll arrow affordances */
-.shots-arrow{
-  position:absolute;top:50%;transform:translateY(-50%);z-index:3;
-  width:44px;height:44px;border-radius:50%;border:1px solid var(--border);
-  background:rgba(255,255,255,0.92);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-  color:var(--text-primary);cursor:pointer;box-shadow:var(--shadow-md);
-  display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s,background .2s;
-}
-.shots-arrow svg{width:20px;height:20px}
-.shots-arrow:hover{background:#fff;box-shadow:var(--shadow-lg);transform:translateY(-50%) scale(1.06)}
-.shots-arrow.left{left:8px}.shots-arrow.right{right:8px}
-
-/* ===== FEATURES ===== */
-.features{padding:88px 24px}
-.features-inner{max-width:1160px;margin:0 auto}
-.features-head{margin-bottom:48px}
-.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.feature-card{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;
-  box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;
-}
-.feature-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(249,115,22,0.3)}
-.feature-icon{
-  width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;
-  margin-bottom:18px;
-}
-.feature-icon svg{width:23px;height:23px}
-.feature-icon.orange{background:rgba(249,115,22,0.12);color:#EA580C}
-.feature-icon.blue{background:rgba(37,99,235,0.10);color:#2563EB}
-.feature-icon.green{background:rgba(22,163,74,0.10);color:#16A34A}
-.feature-icon.purple{background:rgba(124,58,237,0.10);color:#7C3AED}
-.feature-icon.red{background:rgba(225,29,72,0.10);color:#E11D48}
-.feature-icon.gold{background:rgba(202,138,4,0.12);color:#B45309}
-.feature-card h3{font-size:17.5px;font-weight:700;margin-bottom:8px;letter-spacing:-0.01em}
-.feature-card p{font-size:14.5px;line-height:1.62;color:var(--text-secondary)}
-
-/* ===== CREDIBILITY ===== */
-.cred{padding:84px 24px}
-.cred-inner{
-  max-width:1100px;margin:0 auto;background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius-lg);padding:48px 40px;box-shadow:var(--shadow-md);text-align:center;
-}
-.cred-head{margin-bottom:36px}
-.cred-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
-.cred-item{display:flex;flex-direction:column;align-items:center;gap:12px}
-.cred-icon{width:48px;height:48px;border-radius:14px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;color:var(--accent-dark)}
-.cred-icon svg{width:24px;height:24px}
-.cred-item h4{font-size:15.5px;font-weight:700}
-.cred-item p{font-size:13px;line-height:1.55;color:var(--text-secondary)}
-.quartiles{display:flex;gap:5px;justify-content:center;margin-top:2px}
-.q{font-size:11px;font-weight:800;padding:3px 7px;border-radius:6px;color:#fff}
-.q1{background:#16A34A}.q2{background:#65A30D}.q3{background:#D97706}.q4{background:#9A9AA3}
-
-/* ===== PRICING ===== */
-.pricing{padding:84px 24px}
-.pricing-head{text-align:center;margin-bottom:48px}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1060px;margin:0 auto;align-items:stretch}
-.plan{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
-  padding:34px 28px;display:flex;flex-direction:column;box-shadow:var(--shadow-sm);position:relative;
-}
-/* Annual = primary/recommended, visually selected */
-.plan.featured{
-  border:2px solid var(--accent);box-shadow:0 24px 60px rgba(249,115,22,0.18);
-  background:linear-gradient(180deg,#FFFDFB,var(--surface));
-  transform:scale(1.045);z-index:1;
-}
-.plan-flag{
-  position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;
-  background:var(--accent);color:#fff;
-  font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;
-  padding:6px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(249,115,22,0.35);
-}
-.plan-name{font-size:15px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;color:var(--text-secondary)}
-.plan-price{display:flex;align-items:baseline;gap:6px;margin:14px 0 4px}
-.plan-price .amt{font-family:var(--font-serif);font-size:46px;font-weight:500;letter-spacing:-0.02em;color:var(--text-primary)}
-.plan-price .per{font-size:15px;color:var(--text-tertiary)}
-.plan-sub{font-size:13.5px;color:var(--accent-dark);font-weight:600;min-height:20px;margin-bottom:22px}
-.plan-features{list-style:none;display:flex;flex-direction:column;gap:13px;margin-bottom:28px;flex:1}
-.plan-features li{display:flex;align-items:flex-start;gap:10px;font-size:14.5px;color:var(--text-secondary);line-height:1.45}
-.plan-features li svg{width:18px;height:18px;flex-shrink:0;margin-top:1px;color:var(--accent)}
-.plan .btn{width:100%}
-.save-note{display:inline-block;font-size:12px;font-weight:700;color:#16A34A;background:rgba(22,163,74,0.1);padding:3px 9px;border-radius:7px;margin-left:8px}
-
-/* ===== SPECIALTIES ===== */
-.specialties{padding:84px 24px}
-.specialties-inner{max-width:980px;margin:0 auto;text-align:center}
-.specialty-chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;max-width:820px;margin:40px auto 0}
-.chip{
-  padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;color:#fff;
-  opacity:0;animation:chipIn 0.3s ease forwards;box-shadow:0 1px 2px rgba(0,0,0,0.08);
-}
-@keyframes chipIn{to{opacity:1}}
-
-/* ===== FINAL CTA (DARK) ===== */
-.final{
-  background:radial-gradient(120% 110% at 50% 0%,#1a1a1f 0%,var(--ink) 60%);
-  color:var(--text-on-dark);padding:96px 24px;position:relative;overflow:hidden;
-}
-.final::before{
-  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(60% 62% at 48% 46%,rgba(13,13,15,0.82),rgba(13,13,15,0) 72%);
-}
-.final-inner{max-width:760px;margin:0 auto;text-align:center;position:relative;z-index:2}
-.final h2{font-family:var(--font-serif);font-weight:500;font-size:clamp(32px,5vw,56px);line-height:1.05;letter-spacing:-0.025em;color:#fff;margin-bottom:18px}
-.final p{font-size:18px;color:rgba(245,245,247,0.7);margin-bottom:34px}
-.final-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
-
-/* ===== FOOTER ===== */
-footer{background:var(--ink);color:rgba(245,245,247,0.6);padding:54px 24px 40px}
-.footer-inner{max-width:1160px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
-.footer-brand{display:flex;align-items:center;gap:10px}
-.footer-brand .nav-name{font-size:18px}
-.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px}
-.footer-links a{color:rgba(245,245,247,0.6);text-decoration:none;font-size:14px;transition:color .2s}
-.footer-links a:hover{color:var(--accent)}
-.footer-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center}
-.footer-copy{font-size:13px;color:rgba(245,245,247,0.4)}
-.footer-lang{display:flex;gap:6px}
-.footer-lang button{background:transparent;border:none;color:rgba(245,245,247,0.45);font-size:12px;font-weight:600;cursor:pointer;font-family:var(--font-ui);padding:4px 6px;border-radius:6px}
-.footer-lang button:hover,.footer-lang button.active{color:var(--accent)}
-
-/* ===== SCROLL REVEAL ===== */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal[data-delay="1"]{transition-delay:.08s}
-.reveal[data-delay="2"]{transition-delay:.16s}
-.reveal[data-delay="3"]{transition-delay:.24s}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:980px){
-  .conduction-wrapper{grid-template-columns:1fr;text-align:center;gap:30px}
-  .conduction-visual{order:-1}
-  .cred-grid{grid-template-columns:repeat(2,1fr);gap:30px 20px}
-}
-@media(max-width:980px){
-  .pricing-grid{grid-template-columns:1fr;max-width:440px}
-  .plan.featured{transform:none;order:-1}
-}
-@media(max-width:860px){
-  .nav-anchors{display:none}
-  .features-grid{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr}
-}
-@media(max-width:680px){
-  .hero{padding:128px 20px 80px}
-  .nav-cta span.cta-label{display:none}
-  .nav-cta{padding:9px 11px}
-  .features-grid{grid-template-columns:1fr}
-  .cred-grid{grid-template-columns:1fr}
-  .hero-stats{padding-top:28px;margin-top:44px}
-  .stat{padding:14px 18px}
-  .stat + .stat::before{display:none}
-  .ios-form{flex-direction:column}
-  .ios-form button{width:100%}
-  .shots{gap:16px;padding:14px 22px 32px;scroll-padding-left:22px}
-  .shot{flex-basis:72vw;width:72vw;max-width:320px}
-  .shots-arrow{display:none}
-  .shots-wrap::before,.shots-wrap::after{width:40px}
-  .cred-inner{padding:36px 22px}
-  .conduction-bg{width:108%;right:-20%;opacity:0.7}
-}
-@media(prefers-reduced-motion:reduce){
-  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;scroll-behavior:auto !important}
-  .reveal{opacity:1;transform:none;transition:none}
-}
-</style>
 </head>
 <body>
-
-<!-- ============ NAV ============ -->
-<nav class="nav">
-<div class="nav-inner">
-  <a href="#hero" class="nav-brand">
-    <img src="saluxly-logo.svg" alt="Saluxly logo" class="nav-logo" width="30" height="30">
-    <span class="nav-name">Salux<span>ly</span></span>
-  </a>
-  <div class="nav-anchors">
-    <a href="#how" class="nav-anchor" data-en="How it works" data-es="Cómo funciona" data-pt="Como funciona">How it works</a>
-    <a href="#showcase" class="nav-anchor" data-en="The app" data-es="La app" data-pt="O app">The app</a>
-    <a href="#features" class="nav-anchor" data-en="Features" data-es="Funciones" data-pt="Recursos">Features</a>
-    <a href="#pricing" class="nav-anchor" data-en="Pricing" data-es="Precios" data-pt="Preços">Pricing</a>
-    <a href="#specialties" class="nav-anchor" data-en="Specialties" data-es="Especialidades" data-pt="Especialidades">Specialties</a>
-  </div>
-  <div class="nav-right">
-    <div class="lang-toggle" role="group" aria-label="Language">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><radialGradient id="node" cx="35%" cy="30%" r="75%"><stop offset="0%" stop-color="#FFC08A"/><stop offset="45%" stop-color="#D76821"/><stop offset="100%" stop-color="#AB3402"/></radialGradient></defs></svg>
+<header class="bar" data-bar>
+  <div class="wrap bar-inner">
+    <a class="brand" href="/" aria-label="Saluxly home"><svg class="mark" viewBox="0 0 120 120" role="img" aria-label="Saluxly"><g fill="none" stroke="#D76821" stroke-linecap="round"><path d="M30 28 C 45 16, 65 15, 83 23" stroke-width="1.3"/><path d="M68 19 C 70 24, 72 28, 74 32" stroke-width="1"/><path d="M68 19 C 66 26, 67 33, 68 38" stroke-width="1"/><path d="M29 35 L59 54" stroke-width="1.3"/><path d="M31 30 C 50 26, 62 34, 62 52" stroke-width="1.2"/><path d="M22 38 C 14 52, 30 60, 58 57" stroke-width="1.2"/><path d="M26 38 C 26 50, 40 56, 58 56" stroke-width="1.2"/><path d="M64 59 L92 98" stroke-width="2"/><path d="M92 98 C 78 102, 56 96, 37 81" stroke-width="1.8"/><path d="M40 82 C 44 78, 48 74, 51 72" stroke-width="1"/><path d="M57 92 C 60 86, 63 81, 65 78" stroke-width="1"/><path d="M80 99 C 79 92, 77 86, 76 81" stroke-width="1"/><path d="M92 98 C 102 90, 101 62, 96 46" stroke-width="1.8"/><path d="M97 49 C 92 48, 85 50, 80 54" stroke-width="1"/><path d="M100 63 C 95 62, 89 61, 84 62" stroke-width="1"/><path d="M98 88 C 97 83, 95 78, 93 75" stroke-width="1"/></g><g fill="#FB9338"><circle cx="83" cy="23" r="1.5"/><circle cx="74" cy="32" r="1.5"/><circle cx="68" cy="38" r="1.5"/><circle cx="37" cy="81" r="1.5"/><circle cx="51" cy="72" r="1.5"/><circle cx="65" cy="78" r="1.5"/><circle cx="76" cy="81" r="1.5"/><circle cx="96" cy="44" r="1.5"/><circle cx="80" cy="54" r="1.5"/><circle cx="84" cy="62" r="1.5"/><circle cx="93" cy="75" r="1.5"/></g><circle cx="25" cy="32" r="6.5" fill="url(#node)"/><circle cx="62" cy="56" r="4.4" fill="url(#node)"/></svg>
+<span class="wordmark">Salux<span>ly</span></span></a>
+    <nav class="bar-nav" aria-label="Main">
+      <a href="/#how">How it works</a>
+      <a href="/#product">Product</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">Questions</a>
+    </nav>
+    <div class="bar-right">
+      <nav class="langs" aria-label="Language">
+        <a href="/" hreflang="en" lang="en" data-lang="en" aria-current="page">en</a><a href="/es/" hreflang="es" lang="es" data-lang="es">es</a><a href="/pt/" hreflang="pt" lang="pt" data-lang="pt">pt</a>
+      </nav>
+      <a class="button button--nav" href="#waitlist">Join the waitlist</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" data-menu-button>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-open" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-close" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
     </div>
-    <a href="https://app.saluxly.com" class="nav-cta" data-en="Open Web App" data-es="Abrir Web App" data-pt="Abrir Web App"><span class="cta-label">Open Web App</span></a>
   </div>
+  <div class="offer" id="offer" hidden data-offer><div class="wrap"><a href="#" data-offer-link></a><button type="button" class="offer-dismiss" data-offer-dismiss></button></div></div>
+</header>
+<div class="menu" id="menu" hidden data-menu>
+  <nav class="menu-links" aria-label="Main">
+    <a href="/#how">How it works</a>
+    <a href="/#product">Product</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/#faq">Questions</a>
+  </nav>
+  <a class="button button--form" href="#waitlist">Join the waitlist</a>
 </div>
-</nav>
 
-<!-- ============ HERO (DARK) ============ -->
-<section class="hero" id="hero">
-  <!-- Ambient cardiac conduction pathway (SA -> AV -> His -> branches -> Purkinje) -->
-  <svg class="conduction-bg" viewBox="0 0 320 320" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-    <!-- faint always-on structure -->
-    <g class="cond-base-group">
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 L 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 100,190 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 72,210 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 172,130 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 143,120 180,130"/>
-      <path class="cond-base" style="stroke-width:2" d="M 180,130 Q 176,147 180,160"/>
-      <path class="cond-base" style="stroke-width:2" d="M 180,130 Q 187,142 190,150"/>
-      <path class="cond-base" style="stroke-width:2" d="M 180,130 Q 194,131 204,136"/>
-      <path class="cond-base" style="stroke-width:4" d="M 170,190 Q 205,231 220,260"/>
-      <path class="cond-base" style="stroke-width:3" d="M 220,260 C 200,262 156,256 130,230"/>
-      <path class="cond-base" style="stroke-width:3" d="M 220,260 C 234,254 238,210 226,170"/>
-      <path class="cond-base" style="stroke-width:2" d="M 134,234 Q 142,222 152,216"/>
-      <path class="cond-base" style="stroke-width:2" d="M 160,252 Q 168,238 176,224"/>
-      <path class="cond-base" style="stroke-width:2" d="M 201,260 Q 196,246 192,230"/>
-      <path class="cond-base" style="stroke-width:2" d="M 228,176 Q 212,179 200,186"/>
-      <path class="cond-base" style="stroke-width:2" d="M 233,200 Q 220,199 206,198"/>
-      <path class="cond-base" style="stroke-width:2" d="M 230,246 Q 226,228 220,220"/>
-      <circle class="cond-node-base" cx="110" cy="150" r="9"/>
-      <circle class="cond-node-base" cx="170" cy="190" r="7"/>
-    </g>
-    <!-- glowing animated impulse, looping continuously -->
-    <g class="cond-trace-group">
-      <!-- stage 1: SA fan -->
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 L 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 100,190 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 72,210 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 172,130 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 143,120 180,130"/>
-      <!-- stage 2: junction + His -->
-      <path class="cond-trace cond-draw2" style="stroke-width:2" d="M 180,130 Q 176,147 180,160"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:2" d="M 180,130 Q 187,142 190,150"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:2" d="M 180,130 Q 194,131 204,136"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:4.5" d="M 170,190 Q 205,231 220,260"/>
-      <!-- stage 3: bundle branches -->
-      <path class="cond-trace cond-draw3" style="stroke-width:3.5" d="M 220,260 C 200,262 156,256 130,230"/>
-      <path class="cond-trace cond-draw3" style="stroke-width:3.5" d="M 220,260 C 234,254 238,210 226,170"/>
-      <!-- stage 4: Purkinje fibers -->
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 134,234 Q 142,222 152,216"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 160,252 Q 168,238 176,224"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 201,260 Q 196,246 192,230"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 228,176 Q 212,179 200,186"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 233,200 Q 220,199 206,198"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 230,246 Q 226,228 220,220"/>
-      <circle class="cond-node" cx="110" cy="150" r="9"/>
-      <circle class="cond-node n2" cx="170" cy="190" r="7"/>
-    </g>
-  </svg>
+<main id="main">
 
-  <div class="hero-inner">
-    <span class="hero-badge"><span class="dot"></span><span data-en="Curated from PubMed · Ranked by Scimago" data-es="Curado de PubMed · Clasificado por Scimago" data-pt="Curado do PubMed · Classificado pelo Scimago">Curated from PubMed · Ranked by Scimago</span></span>
-    <h1 class="hero-tagline" data-en="Let the papers<br><em>find you</em>" data-es="Deja que los artículos<br><em>te encuentren</em>" data-pt="Deixe os artigos<br><em>encontrarem você</em>">Let the papers<br><em>find you</em></h1>
-    <p class="hero-subtitle" data-en="A personalized feed of peer-reviewed medical literature, curated by AI for your specialty, training level, and interests — without the ads or noise." data-es="Un feed personalizado de literatura médica revisada por pares, curado con IA según tu especialidad, nivel de formación e intereses — sin anuncios ni ruido." data-pt="Um feed personalizado de literatura médica revisada por pares, curado por IA conforme sua especialidade, nível de formação e interesses — sem anúncios nem ruído.">A personalized feed of peer-reviewed medical literature, curated by AI for your specialty, training level, and interests — without the ads or noise.</p>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <h1>Let the papers find you.</h1>
+      <p class="lead lead--hero">Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.</p>
+      <div class="hero-form" id="waitlist">
+        
+<form class="waitlist" id="waitlist-form" method="post" action="https://api.web3forms.com/submit" novalidate data-waitlist>
+  <div class="waitlist-row">
+    <label class="field">
+      <span class="visually-hidden">Email address</span>
+      <input type="email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder="you@hospital.org" aria-describedby="waitlist-form-msg">
+    </label>
+    <div class="trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button class="button button--form" type="submit" data-label="Join the waitlist" data-busy="Joining…">Join the waitlist</button>
+  </div>
+  <p class="form-msg" id="waitlist-form-msg" aria-live="polite" data-invalid="Enter an email address like name@hospital.org." data-error="We couldn't save your email. Try again in a moment, or write to contact@saluxly.com." data-success="You're on the waitlist. We'll email you once, when Saluxly launches."></p>
+</form>
 
-    <div class="hero-actions">
-      <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.saluxly.app" aria-label="Get it on Google Play">
-        <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D4FF" d="M47 24C40 28 36 35 36 45v422c0 10 4 17 11 21l245-232z"/><path fill="#00F076" d="M47 24c5-3 12-3 19 1l298 172-72 68z"/><path fill="#FFC900" d="M364 197l72 41c20 12 20 24 0 36l-72 41-72-68z"/><path fill="#FF3A44" d="M47 488c7 4 15 4 19 1l298-172-72-68z"/></svg>
-        <span class="pt"><small data-en="Get it on" data-es="Disponible en" data-pt="Disponível no">Get it on</small><strong>Google Play</strong></span>
-      </a>
-      <a class="btn btn-outline-light" href="https://app.saluxly.com" data-en="Open Web App" data-es="Abrir Web App" data-pt="Abrir Web App">Open Web App</a>
+
+        <p class="note">Launching first on iPhone and iPad. Free for your first 7 days, no card needed. One email when we launch, nothing else.</p>
+      </div>
     </div>
-
-    <div class="hero-ios">
-      <p class="hero-ios-note" data-en="iOS coming soon — be the first to know." data-es="iOS muy pronto — sé el primero en enterarte." data-pt="iOS em breve — seja o primeiro a saber.">iOS coming soon — be the first to know.</p>
-      <form class="ios-form" novalidate>
-        <input type="email" required placeholder="you@hospital.com" data-ph-en="you@hospital.com" data-ph-es="tú@hospital.com" data-ph-pt="voce@hospital.com" aria-label="Email">
-        <button type="submit" data-en="Notify me" data-es="Avísame" data-pt="Avise-me">Notify me</button>
-      </form>
-      <p class="ios-msg" role="status" aria-live="polite"></p>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-number" data-count="600000" data-suffix="+">0</span>
-        <span class="stat-label" data-en="Curated reviews" data-es="Revisiones curadas" data-pt="Revisões curadas">Curated reviews</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number" data-count="40" data-suffix="+">0</span>
-        <span class="stat-label" data-en="Specialties" data-es="Especialidades" data-pt="Especialidades">Specialties</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number" data-count="3" data-suffix="">0</span>
-        <span class="stat-label" data-en="Languages" data-es="Idiomas" data-pt="Idiomas">Languages</span>
-      </div>
+    <div class="hero-visual" role="img" aria-label="The Saluxly feed on an iPhone, with the first page of a review article beside it.">
+      <div class="hero-mark"><svg class="mark" viewBox="0 0 120 120" role="img" aria-label="Saluxly"><g fill="none" stroke="#D76821" stroke-linecap="round"><path d="M30 28 C 45 16, 65 15, 83 23" stroke-width="1.3"/><path d="M68 19 C 70 24, 72 28, 74 32" stroke-width="1"/><path d="M68 19 C 66 26, 67 33, 68 38" stroke-width="1"/><path d="M29 35 L59 54" stroke-width="1.3"/><path d="M31 30 C 50 26, 62 34, 62 52" stroke-width="1.2"/><path d="M22 38 C 14 52, 30 60, 58 57" stroke-width="1.2"/><path d="M26 38 C 26 50, 40 56, 58 56" stroke-width="1.2"/><path d="M64 59 L92 98" stroke-width="2"/><path d="M92 98 C 78 102, 56 96, 37 81" stroke-width="1.8"/><path d="M40 82 C 44 78, 48 74, 51 72" stroke-width="1"/><path d="M57 92 C 60 86, 63 81, 65 78" stroke-width="1"/><path d="M80 99 C 79 92, 77 86, 76 81" stroke-width="1"/><path d="M92 98 C 102 90, 101 62, 96 46" stroke-width="1.8"/><path d="M97 49 C 92 48, 85 50, 80 54" stroke-width="1"/><path d="M100 63 C 95 62, 89 61, 84 62" stroke-width="1"/><path d="M98 88 C 97 83, 95 78, 93 75" stroke-width="1"/></g><g fill="#FB9338"><circle cx="83" cy="23" r="1.5"/><circle cx="74" cy="32" r="1.5"/><circle cx="68" cy="38" r="1.5"/><circle cx="37" cy="81" r="1.5"/><circle cx="51" cy="72" r="1.5"/><circle cx="65" cy="78" r="1.5"/><circle cx="76" cy="81" r="1.5"/><circle cx="96" cy="44" r="1.5"/><circle cx="80" cy="54" r="1.5"/><circle cx="84" cy="62" r="1.5"/><circle cx="93" cy="75" r="1.5"/></g><circle cx="25" cy="32" r="6.5" fill="url(#node)"/><circle cx="62" cy="56" r="4.4" fill="url(#node)"/></svg>
+</div>
+      <svg class="hero-fiber" viewBox="0 0 540 260" aria-hidden="true"><path class="fiber-path" d="M0 50 C 120 50, 160 190, 300 200 S 460 150, 520 160"/><circle cx="240" cy="188" r="2.4" fill="#FB9338"/><circle cx="470" cy="153" r="2.4" fill="#FB9338"/><circle cx="0" cy="50" r="6" fill="url(#node)"/></svg>
+      <div class="hero-phone"><div class="phone"><picture><source type="image/webp" srcset="/assets/img/screen-feed.webp"><img src="/assets/img/screen-feed.png" width="780" height="1600" alt="The feed screen: a list of review articles chosen for the reader's specialties." loading="eager" decoding="async" fetchpriority="high"></picture></div>
+</div>
+      <div class="hero-page"><div class="page" aria-hidden="true"><div class="page-head"><span class="page-kind">Systematic review</span><span>Open access</span></div><div class="page-rule"></div><div class="page-title">Aspirin for the prevention of preterm preeclampsia: a systematic review and meta-analysis</div><div class="page-authors">M. Rivera, A. Okafor, L. Chen, S. Duarte</div><div class="page-abstract"><div class="page-abstract-label">Abstract</div><div class="page-lines" style="height:2.8em"></div></div><div class="page-cols"><div class="page-col"><div class="page-lines" style="height:3.3em"></div><div class="page-lines page-lines--hi" style="height:2.3em"></div><div class="page-lines" style="height:5em"></div></div><div class="page-col"><div class="page-lines" style="height:4em"></div><div class="page-lines" style="height:1.8em;width:72%"></div><div class="page-lines" style="height:4.7em"></div></div></div><div class="page-foot"><span>BMC Pregnancy and Childbirth</span><span>3</span></div></div>
+</div>
     </div>
   </div>
 </section>
 
-<!-- ============ PROBLEM (LIGHT) ============ -->
-<section class="problem">
-  <div class="problem-inner reveal">
-    <p class="eyebrow" data-en="The problem" data-es="El problema" data-pt="O problema">The problem</p>
-    <p class="problem-statement" data-en="Clinicians lose hours hunting for relevant literature across scattered databases. Everywhere else, the feed is buried in <b>ads, sponsored posts, and pharma noise</b>. The signal is there — it just never reaches the right reader." data-es="Los clínicos pierden horas buscando literatura relevante en bases de datos dispersas. En cualquier otro lado, el feed está enterrado en <b>anuncios, contenido patrocinado y ruido de farmacéuticas</b>. La señal existe — solo que nunca llega al lector adecuado." data-pt="Os clínicos perdem horas caçando literatura relevante em bases de dados dispersas. Em qualquer outro lugar, o feed está soterrado em <b>anúncios, conteúdo patrocinado e ruído da indústria farmacêutica</b>. O sinal existe — mas nunca chega ao leitor certo.">Clinicians lose hours hunting for relevant literature across scattered databases. Everywhere else, the feed is buried in <b>ads, sponsored posts, and pharma noise</b>. The signal is there — it just never reaches the right reader.</p>
+<section class="claim">
+  <div class="wrap claim-inner">
+    <h2 class="h2 h2--claim">PubMed adds more than a million new records a year. You need five.</h2>
+    <div class="rows">
+      <div class="row"><h3 class="row-title">Review articles only, from the last five years.</h3><p class="row-text">Systematic reviews, meta-analyses, guidelines and narrative reviews. No primary studies to sift through.</p></div>
+      <div class="row"><h3 class="row-title">Journals that meet a quality bar.</h3><p class="row-text">Indexed in MEDLINE or with an established citation record, ranked by impact within each specialty.</p></div>
+      <div class="row"><h3 class="row-title">Chosen for your specialty and profession.</h3><p class="row-text">Forty-plus specialties and six professions, in English, Spanish or Portuguese.</p></div>
+      
+    </div>
   </div>
 </section>
 
-<!-- ============ HOW IT WORKS (LIGHT) ============ -->
 <section class="how" id="how">
-  <svg class="how-bg-lines" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,200 Q200,100 400,200 Q600,300 800,200 Q1000,100 1200,200" stroke="#F97316" stroke-width="2" fill="none"/>
-    <circle cx="400" cy="200" r="8" fill="#F97316"/>
-    <circle cx="800" cy="200" r="8" fill="#F97316"/>
-    <path d="M400,200 Q500,150 600,200" stroke="#F97316" stroke-width="1.5" fill="none"/>
-    <path d="M400,200 Q500,250 600,200" stroke="#F97316" stroke-width="1.5" fill="none"/>
-  </svg>
-  <div class="how-inner">
-    <div class="how-head reveal">
-      <p class="eyebrow" data-en="How it works" data-es="Cómo funciona" data-pt="Como funciona">How it works</p>
-      <h2 class="section-title center" data-en="Three steps to smarter reading" data-es="Tres pasos para leer mejor" data-pt="Três passos para uma leitura mais inteligente">Three steps to smarter reading</h2>
-    </div>
-    <div class="steps">
-      <div class="step reveal" data-delay="1">
-        <div class="step-num">
-          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
-        <h3 data-en="Pick your role &amp; specialties" data-es="Elige tu rol y especialidades" data-pt="Escolha seu perfil e especialidades">Pick your role &amp; specialties</h3>
-        <p data-en="Tell us if you're a student, resident, specialist, or nurse. Select your specialties and set how you want your interests balanced." data-es="Dinos si eres estudiante, residente, especialista o enfermero. Selecciona tus especialidades y ajusta el balance de tus intereses." data-pt="Diga se você é estudante, residente, especialista ou enfermeiro. Selecione suas especialidades e ajuste o equilíbrio dos seus interesses.">Tell us if you're a student, resident, specialist, or nurse. Select your specialties and set how you want your interests balanced.</p>
-      </div>
-      <div class="step reveal" data-delay="2">
-        <div class="step-num">
-          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3 3 3 0 0 0 0 6 3 3 0 0 0 3 3v1a3 3 0 0 0 6 0v-1a3 3 0 0 0 3-3 3 3 0 0 0 0-6 3 3 0 0 0-3-3V5a3 3 0 0 0-3-3z"/></svg>
-        </div>
-        <h3 data-en="AI curates your feed" data-es="La IA arma tu feed" data-pt="A IA monta seu feed">AI curates your feed</h3>
-        <p data-en="Our AI matches you with the most relevant reviews from PubMed — weighted by journal quality, filtered by training level, enriched with MeSH terms." data-es="Nuestra IA te conecta con las revisiones más relevantes de PubMed — ponderadas por calidad de revista, filtradas por nivel de formación, enriquecidas con términos MeSH." data-pt="Nossa IA conecta você às revisões mais relevantes do PubMed — ponderadas pela qualidade da revista, filtradas pelo nível de formação e enriquecidas com termos MeSH.">Our AI matches you with the most relevant reviews from PubMed — weighted by journal quality, filtered by training level, enriched with MeSH terms.</p>
-      </div>
-      <div class="step reveal" data-delay="3">
-        <div class="step-num">
-          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-        </div>
-        <h3 data-en="Read full articles in one tap" data-es="Lee artículos completos con un toque" data-pt="Leia artigos completos com um toque">Read full articles in one tap</h3>
-        <p data-en="Scroll your personalized feed, open structured abstracts instantly, save what matters, and reach the full PDF with a single tap." data-es="Navega tu feed personalizado, abre resúmenes estructurados al instante, guarda lo importante y llega al PDF completo con un solo toque." data-pt="Navegue pelo seu feed personalizado, abra resumos estruturados na hora, salve o que importa e chegue ao PDF completo com um único toque.">Scroll your personalized feed, open structured abstracts instantly, save what matters, and reach the full PDF with a single tap.</p>
-      </div>
+  <div class="wrap">
+    <h2 class="h2">Three steps, then it runs on its own.</h2>
+    <div class="steps-wrap">
+      <svg class="steps-fiber" viewBox="0 0 1200 44" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22 H1200" fill="none" stroke="#D76821" stroke-width="1.2"/></svg>
+      <svg class="steps-nodes" viewBox="0 0 1200 44" aria-hidden="true"><circle cx="0" cy="22" r="6" fill="url(#node)"/><circle cx="416" cy="22" r="2.4" fill="#FB9338"/><circle cx="832" cy="22" r="2.4" fill="#FB9338"/></svg>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-number" aria-hidden="true">1</span>
+          <h3 class="step-title">Choose your specialties</h3>
+          <p class="step-text">One or several. Physicians, residents, students, dentists, nurses and dietitians each get a feed of their own.</p>
+          <div class="step-visual"><div class="chips" aria-hidden="true"><span class="chip chip--on">Obstetrics</span><span class="chip chip--on">Neonatology</span><span class="chip">Cardiology</span><span class="chip">All medicine</span></div></div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">2</span>
+          <h3 class="step-title">Open the feed</h3>
+          <p class="step-text">New review articles every day, ranked for you. Heart the ones you want to keep.</p>
+          <div class="step-visual"><div class="feed-row" aria-hidden="true"><div class="thumb"><i class="thumb-head" style="background:#4B3A8C"></i><i class="thumb-line"></i><i class="thumb-line thumb-line--short"></i><div class="thumb-cols"><i></i><i></i></div></div><div class="feed-row-text"><div class="feed-row-title">Fetal growth restriction: screening, diagnosis and timing of delivery</div><div class="feed-row-journal">Journal of Clinical Medicine</div><div class="feed-row-meta"><span>Review</span><span>2025</span><span>16 pages</span></div></div><svg class="heart heart--on" viewBox="0 0 24 24" role="img" aria-label="Saved"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div></div>
+        </li>
+        <li class="step">
+          <span class="step-number" aria-hidden="true">3</span>
+          <h3 class="step-title">Read the paper</h3>
+          <p class="step-text">The original PDF opens inside the app, with highlights, notes and a plain-language summary one tap away.</p>
+          <div class="step-visual"><div class="step-read" aria-hidden="true"><div class="page-mini"><div class="page" aria-hidden="true"><div class="page-head"><span class="page-kind">Systematic review</span><span>Open access</span></div><div class="page-rule"></div><div class="page-title">Aspirin for the prevention of preterm preeclampsia: a systematic review and meta-analysis</div><div class="page-authors">M. Rivera, A. Okafor, L. Chen, S. Duarte</div><div class="page-abstract"><div class="page-abstract-label">Abstract</div><div class="page-lines" style="height:2.8em"></div></div><div class="page-cols"><div class="page-col"><div class="page-lines" style="height:3.3em"></div><div class="page-lines page-lines--hi" style="height:2.3em"></div><div class="page-lines" style="height:5em"></div></div><div class="page-col"><div class="page-lines" style="height:4em"></div><div class="page-lines" style="height:1.8em;width:72%"></div><div class="page-lines" style="height:4.7em"></div></div></div><div class="page-foot"><span>BMC Pregnancy and Childbirth</span><span>3</span></div></div>
+</div><span class="aa">Aa</span></div></div>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- ============ CARDIAC CONDUCTION (SIGNATURE) ============ -->
-<section class="conduction-section" id="conduction">
-  <div class="conduction-wrapper">
-    <div class="conduction-visual reveal">
-      <div class="heart-glow"></div>
-      <div class="heart-container" id="heartDemo" role="img" aria-label="Animated cardiac conduction system">
-        <img src="heart_anatomy.png" alt="" class="heart-bg-img">
-        <!-- Conduction overlay -->
-        <svg viewBox="0 0 320 320" class="heart-svg" id="heartSvg" aria-hidden="true">
-          <!-- SA Node -->
-          <circle class="sa-node sa-node-pulse" cx="110" cy="150" r="10" style="transform-origin:110px 150px"/>
-          <!-- SA to AV paths -->
-          <path class="path-line path-sa-av" d="M 110,150 L 170,190" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
-          <path class="path-line path-sa-av" d="M 110,150 Q 100,190 170,190" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
-          <path class="path-line path-sa-av" d="M 110,150 Q 72,210 170,190" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="100"/>
-          <path class="path-line path-sa-av" d="M 110,150 Q 172,130 170,190" stroke-width="3" stroke-dasharray="90" stroke-dashoffset="90"/>
-          <!-- SA to Junction -->
-          <path class="path-line path-sa-av" d="M 110,150 Q 143,120 180,130" stroke-width="3" stroke-dasharray="80" stroke-dashoffset="80"/>
-          <!-- AV Node -->
-          <circle class="av-node" cx="170" cy="190" r="8" style="transform-origin:170px 190px"/>
-          <!-- Junction branches -->
-          <path class="path-line path-junc" d="M 180,130 Q 176,147 180,160" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
-          <path class="path-line path-junc" d="M 180,130 Q 187,142 190,150" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
-          <path class="path-line path-junc" d="M 180,130 Q 194,131 204,136" stroke-width="2.5" stroke-dasharray="35" stroke-dashoffset="35"/>
-          <circle class="dot dot-junc" cx="180" cy="160" r="3"/>
-          <circle class="dot dot-junc" cx="190" cy="150" r="3"/>
-          <circle class="dot dot-junc" cx="204" cy="136" r="3"/>
-          <!-- Bundle of His -->
-          <path class="path-line path-his" d="M 170,190 Q 205,231 220,260" stroke-width="5" stroke-dasharray="100" stroke-dashoffset="100"/>
-          <!-- Left branch -->
-          <path class="path-line path-div1" d="M 220,260 C 200,262 156,256 130,230" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
-          <!-- Right branch -->
-          <path class="path-line path-div2" d="M 220,260 C 234,254 238,210 226,170" stroke-width="4" stroke-dasharray="110" stroke-dashoffset="110"/>
-          <!-- Purkinje left -->
-          <path class="path-line path-purk" d="M 134,234 Q 142,222 152,216" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 160,252 Q 168,238 176,224" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 201,260 Q 196,246 192,230" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <!-- Purkinje right -->
-          <path class="path-line path-purk" d="M 228,176 Q 212,179 200,186" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 233,200 Q 220,199 206,198" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <path class="path-line path-purk" d="M 230,246 Q 226,228 220,220" stroke-width="2.5" stroke-dasharray="40" stroke-dashoffset="40"/>
-          <!-- Terminal dots -->
-          <circle class="dot dot-early" cx="130" cy="230" r="3.5"/>
-          <circle class="dot dot-early" cx="226" cy="170" r="3.5"/>
-          <circle class="dot dot-late" cx="152" cy="216" r="3"/>
-          <circle class="dot dot-late" cx="176" cy="224" r="3"/>
-          <circle class="dot dot-late" cx="192" cy="230" r="3"/>
-          <circle class="dot dot-late" cx="200" cy="186" r="3"/>
-          <circle class="dot dot-late" cx="206" cy="198" r="3"/>
-          <circle class="dot dot-late" cx="220" cy="220" r="3"/>
-        </svg>
+<section class="product" id="product">
+  <div class="wrap">
+    <h2 class="h2">Built for how doctors read.</h2>
+    <p class="lead">Short on time and long on standards. Saluxly brings you the paper, not a link farm.</p>
+    <div class="blocks">
+      <div class="block">
+        <div class="block-visual"><div class="block-phone"><div class="phone"><picture><source type="image/webp" srcset="/assets/img/screen-feed.webp"><img src="/assets/img/screen-feed.png" width="780" height="1600" alt="The feed screen: a list of review articles chosen for the reader's specialties." loading="lazy" decoding="async"></picture></div>
+</div></div>
+        <div class="block-copy"><h3 class="h3">Chosen for you, not for advertisers.</h3><p class="block-text">Every paper in your feed is there because of your specialties and what you read, never because someone paid for the spot. No ads, no sponsors, no pharma.</p></div>
       </div>
-    </div>
-    <div class="conduction-info reveal">
-      <p class="eyebrow" data-en="The signature interaction" data-es="La interacción característica" data-pt="A interação característica">The signature interaction</p>
-      <h2 class="section-title" data-en="Every impulse, exactly where it belongs" data-es="Cada impulso, justo donde corresponde" data-pt="Cada impulso, exatamente onde deve chegar">Every impulse, exactly where it belongs</h2>
-      <p data-en="Like the heart's conduction system delivers each impulse precisely where it's needed — from the SA node through the Bundle of His to the Purkinje fibers — Saluxly delivers each paper to the right reader." data-es="Así como el sistema de conducción del corazón lleva cada impulso justo a donde se necesita — del nodo SA, por el Haz de His, hasta las fibras de Purkinje — Saluxly lleva cada artículo al lector adecuado." data-pt="Assim como o sistema de condução do coração leva cada impulso exatamente aonde ele é preciso — do nó SA, pelo Feixe de His, até as fibras de Purkinje — o Saluxly entrega cada artigo ao leitor certo.">Like the heart's conduction system delivers each impulse precisely where it's needed — from the SA node through the Bundle of His to the Purkinje fibers — Saluxly delivers each paper to the right reader.</p>
+      <div class="block">
+        <div class="block-visual"><div class="block-phone"><div class="phone"><picture><source type="image/webp" srcset="/assets/img/screen-reader.webp"><img src="/assets/img/screen-reader.png" width="780" height="1600" alt="The reader screen: the original PDF of a paper with a highlighted passage." loading="lazy" decoding="async"></picture></div>
+</div></div>
+        <div class="block-copy"><h3 class="h3">The original paper, as the journal published it.</h3><p class="block-text">Open-license papers (CC BY and CC0) open inside Saluxly in a native reader. Highlight, take notes and keep them offline. Everything else opens at PubMed Central or the journal’s site, clearly marked.</p></div>
+      </div>
+      <div class="block">
+        <div class="block-visual"><div class="block-phone"><div class="phone"><picture><source type="image/webp" srcset="/assets/img/screen-summary.webp"><img src="/assets/img/screen-summary.png" width="780" height="1600" alt="The summary sheet: what the paper asks, what it found and what it means for practice." loading="lazy" decoding="async"></picture></div>
+</div></div>
+        <div class="block-copy"><h3 class="h3">Understand it in two minutes.</h3><p class="block-text">Aa gives you a plain-language summary built from the paper itself. Ask AI answers your questions about what you are reading. Both can make mistakes, so the paper is always one tap away.</p></div>
+      </div>
+      <div class="block">
+        <div class="block-visual"><div class="block-phone"><div class="phone"><picture><source type="image/webp" srcset="/assets/img/screen-search.webp"><img src="/assets/img/screen-search.png" width="780" height="1600" alt="The search screen: the query “aspirina preeclampsia prevención” understood as three medical concepts, with the matching reviews." loading="lazy" decoding="async"></picture></div>
+</div></div>
+        <div class="block-copy"><h3 class="h3">Search that speaks medicine.</h3><p class="block-text">Type in English, Spanish or Portuguese, with abbreviations or typos. Saluxly maps your words to medical subject headings and returns the reviews that are about your topic, not the ones that merely mention it.</p></div>
+      </div>
+      
     </div>
   </div>
 </section>
 
-<!-- ============ PRODUCT SHOWCASE ============ -->
-<section class="showcase" id="showcase">
-  <div class="container reveal">
-    <p class="eyebrow" data-en="Inside the app" data-es="Dentro de la app" data-pt="Dentro do app">Inside the app</p>
-    <h2 class="section-title center" data-en="A feed that feels like it was made for you" data-es="Un feed que parece hecho para ti" data-pt="Um feed que parece feito para você">A feed that feels like it was made for you</h2>
-  </div>
-  <div class="shots-wrap reveal">
-  <button class="shots-arrow left" type="button" aria-label="Previous screenshots" onclick="scrollShots(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
-  <button class="shots-arrow right" type="button" aria-label="Next screenshots" onclick="scrollShots(1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
-  <div class="shots" id="shots">
-    <figure class="shot">
-      <img loading="lazy" src="https://play-lh.googleusercontent.com/nsWCu7lcdjLKJ34PqcuASV8TFxhMoShm4f_1FmyPv7xcfCiIXEgJDEA0_l8Ze0NsISzxvuV9eFPRZJ9Jm2cmnw=w1080" alt="Saluxly personalized article feed" width="1080" height="2348">
-    </figure>
-    <figure class="shot">
-      <img loading="lazy" src="https://play-lh.googleusercontent.com/Y4Z7uH3yDFJi-xx6l4ztmde7LEeXRnQsHRT251dWIwNruZk3edPhtIpzBpqoqW41mYxNTJfWqn-8WR-AKEOCXQw=w1080" alt="Saluxly article detail with structured abstract" width="1080" height="2348">
-    </figure>
-    <figure class="shot">
-      <img loading="lazy" src="https://play-lh.googleusercontent.com/RFLOmpVYq46cgRo8-gtbicVd0ZNo6rSAzSgF8CiBd8iC8C2ybVgjHLgDDz9fCNOte2WQtn3ZoPVSfR7fI2fUnJo=w1080" alt="Saluxly specialty selection screen" width="1080" height="2348">
-    </figure>
-    <figure class="shot">
-      <img loading="lazy" src="https://play-lh.googleusercontent.com/8TeCtKYw_NasyN9NnuTEg0CuPg7DZK5_uqcnKxDIP4A-fG1rbRhq4sfiE0FDwzWpetTPLcz3E5jN4lc8--qm0A=w1080" alt="Saluxly journal quality scoring" width="1080" height="2348">
-    </figure>
-    <figure class="shot">
-      <img loading="lazy" src="https://play-lh.googleusercontent.com/0JwYGgRtOssvk5A2O3f5DFH9AFI0tslPUaWpgG-sUs8Y1VhxbJeqVBXfx1n686Q_Z6wbCOVQcKUpb5Br1WJHXA=w1080" alt="Saluxly saved articles library" width="1080" height="2348">
-    </figure>
-    <figure class="shot">
-      <img loading="lazy" src="https://play-lh.googleusercontent.com/_U29dFsh6-Kbog18ERC3ucl4P6Vk7xuANVewSFSylq7HergDzlPuq34-E7-nmYN3QxwxOqfZEvLnInj_RXoclA=w1080" alt="Saluxly multilingual reading experience" width="1080" height="1645">
-    </figure>
-  </div>
+<section class="sources">
+  <div class="wrap sources-inner">
+    <div class="sources-copy">
+      <h2 class="h2">Where every paper comes from.</h2>
+      <p class="lead lead--block">The whole pipeline, with nothing hidden. Article data courtesy of the U.S. National Library of Medicine.</p>
+      <div class="legend" aria-hidden="true"><div class="page-small"><div class="page" aria-hidden="true"><div class="page-head"><span class="page-kind">Systematic review</span><span>Open access</span></div><div class="page-rule"></div><div class="page-title">Aspirin for the prevention of preterm preeclampsia: a systematic review and meta-analysis</div><div class="page-authors">M. Rivera, A. Okafor, L. Chen, S. Duarte</div><div class="page-abstract"><div class="page-abstract-label">Abstract</div><div class="page-lines" style="height:2.8em"></div></div><div class="page-cols"><div class="page-col"><div class="page-lines" style="height:3.3em"></div><div class="page-lines page-lines--hi" style="height:2.3em"></div><div class="page-lines" style="height:5em"></div></div><div class="page-col"><div class="page-lines" style="height:4em"></div><div class="page-lines" style="height:1.8em;width:72%"></div><div class="page-lines" style="height:4.7em"></div></div></div><div class="page-foot"><span>BMC Pregnancy and Childbirth</span><span>3</span></div></div>
+</div><svg class="sheet" viewBox="0 0 56 74" aria-hidden="true"><rect x="0.5" y="0.5" width="55" height="73" rx="3" fill="#221712" stroke="#6A584D"/><g fill="#6A584D"><rect x="7" y="9" width="16" height="2.4"/><rect x="7" y="17" width="38" height="2.8"/><rect x="7" y="23" width="27" height="2.8"/></g><g fill="#37271F"><rect x="7" y="34" width="42" height="1.6"/><rect x="7" y="39" width="42" height="1.6"/><rect x="7" y="44" width="42" height="1.6"/><rect x="7" y="49" width="30" height="1.6"/></g><path d="M40 62H61M57 58l4.2 4-4.2 4" fill="none" stroke="#D76821" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="62" r="3.1" fill="#FB9338"/></svg>
+</div>
+      <p class="note">A solid page means the PDF is in the app. An outlined page means it opens at its source.</p>
+    </div>
+    <ol class="pipeline">
+      <li class="pipe"><span class="pipe-node" aria-hidden="true"></span><div class="pipe-body"><h3 class="pipe-title">Indexed in PubMed</h3><p class="pipe-text">Review articles, systematic reviews, meta-analyses and guidelines published in the last five years.</p></div></li>
+      <li class="pipe"><span class="pipe-node" aria-hidden="true"></span><div class="pipe-body"><h3 class="pipe-title">Through a quality bar</h3><p class="pipe-text">Journals indexed in MEDLINE or with an established citation record, ranked by impact within their specialty.</p></div></li>
+      <li class="pipe"><span class="pipe-node" aria-hidden="true"></span><div class="pipe-body"><h3 class="pipe-title">Checked for its license</h3><p class="pipe-text">Papers with an open license (CC BY or CC0) are hosted and open inside the app. The rest open at PubMed Central or the journal’s own site.</p></div></li>
+      <li class="pipe"><span class="pipe-node" aria-hidden="true"></span><div class="pipe-body"><h3 class="pipe-title">Credited, always</h3><p class="pipe-text">Every paper carries its authors, journal, year and license, with a link to the PubMed record.</p></div></li>
+      
+    </ol>
   </div>
 </section>
 
-<!-- ============ FEATURES (LIGHT) ============ -->
-<section class="features" id="features">
-  <div class="features-inner">
-    <div class="features-head reveal">
-      <p class="eyebrow" data-en="Features" data-es="Funciones" data-pt="Recursos">Features</p>
-      <h2 class="section-title" data-en="Built for how doctors actually read" data-es="Diseñado para cómo leen los médicos" data-pt="Feito para como os médicos realmente leem">Built for how doctors actually read</h2>
+<section class="practice">
+  <div class="wrap practice-inner">
+    <div class="practice-copy">
+      <h2 class="h2">Made for the way you practice.</h2>
+      <p class="lead lead--block">Six professions, forty-plus specialties, one app. Pick yours in the first minute and change it whenever you like.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon orange">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3 3 3 0 0 0 0 6 3 3 0 0 0 3 3v1a3 3 0 0 0 6 0v-1a3 3 0 0 0 3-3 3 3 0 0 0 0-6 3 3 0 0 0-3-3V5a3 3 0 0 0-3-3z"/></svg>
-        </div>
-        <h3 data-en="AI-Powered Feed" data-es="Feed con IA" data-pt="Feed com IA">AI-Powered Feed</h3>
-        <p data-en="Articles matched to your specialty, training level, and interests using AI classification across 600,000+ review articles." data-es="Artículos adaptados a tu especialidad, nivel de formación e intereses mediante clasificación con IA sobre más de 600,000 artículos de revisión." data-pt="Artigos alinhados à sua especialidade, nível de formação e interesses por meio de classificação com IA sobre mais de 600.000 artigos de revisão.">Articles matched to your specialty, training level, and interests using AI classification across 600,000+ review articles.</p>
+    <div class="practice-detail">
+      <div class="rows rows--practice">
+        <div class="row"><h3 class="row-title">Physicians and residents</h3><p class="row-text">Your specialties, plus the reviews from all of medicine that everyone should know.</p></div>
+        <div class="row"><h3 class="row-title">Medical students</h3><p class="row-text">The core topics of the clinical years, at the level of a rotation.</p></div>
+        <div class="row"><h3 class="row-title">Dentists, nurses and dietitians</h3><p class="row-text">A feed built from your own profession’s journals, not a filtered copy of the medical one.</p></div>
+        
       </div>
-      <div class="feature-card reveal" data-delay="1">
-        <div class="feature-icon blue">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        </div>
-        <h3 data-en="Only Reviews That Matter" data-es="Solo revisiones que importan" data-pt="Só as revisões que importam">Only Reviews That Matter</h3>
-        <p data-en="Systematic reviews, meta-analyses, practice guidelines, and review articles — curated from PubMed's free full-text collection." data-es="Revisiones sistemáticas, metaanálisis, guías de práctica y artículos de revisión — curados de la colección gratuita de PubMed." data-pt="Revisões sistemáticas, metanálises, diretrizes de prática e artigos de revisão — curados da coleção gratuita de texto completo do PubMed.">Systematic reviews, meta-analyses, practice guidelines, and review articles — curated from PubMed's free full-text collection.</p>
-      </div>
-      <div class="feature-card reveal" data-delay="2">
-        <div class="feature-icon gold">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
-        </div>
-        <h3 data-en="Scimago Q1–Q4 Quality Scoring" data-es="Calidad Scimago Q1–Q4" data-pt="Pontuação de qualidade Scimago Q1–Q4">Scimago Q1–Q4 Quality Scoring</h3>
-        <p data-en="Every article is ranked by Scimago journal quartile. Q1–Q4 badges show top-tier sources at a glance — quality you can trust." data-es="Cada artículo se clasifica por cuartil Scimago. Las insignias Q1–Q4 muestran las fuentes de primer nivel de un vistazo — calidad confiable." data-pt="Cada artigo é classificado pelo quartil Scimago da revista. Os selos Q1–Q4 mostram as fontes de primeira linha num relance — qualidade em que você pode confiar.">Every article is ranked by Scimago journal quartile. Q1–Q4 badges show top-tier sources at a glance — quality you can trust.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon purple">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-        </div>
-        <h3 data-en="40+ Specialties" data-es="40+ Especialidades" data-pt="40+ Especialidades">40+ Specialties</h3>
-        <p data-en="From cardiology to dermatology, psychiatry to surgery. Each article is classified into 1–3 specialties so you see exactly what's relevant." data-es="De cardiología a dermatología, psiquiatría a cirugía. Cada artículo se clasifica en 1–3 especialidades para que veas justo lo relevante." data-pt="Da cardiologia à dermatologia, da psiquiatria à cirurgia. Cada artigo é classificado em 1–3 especialidades para você ver exatamente o que é relevante.">From cardiology to dermatology, psychiatry to surgery. Each article is classified into 1–3 specialties so you see exactly what's relevant.</p>
-      </div>
-      <div class="feature-card reveal" data-delay="1">
-        <div class="feature-icon green">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <h3 data-en="Multilingual (EN/ES/PT)" data-es="Multilingüe (EN/ES/PT)" data-pt="Multilíngue (EN/ES/PT)">Multilingual (EN/ES/PT)</h3>
-        <p data-en="Article titles translated to Spanish and Portuguese. Read in your language, access global research." data-es="Títulos de artículos traducidos al español y portugués. Lee en tu idioma, accede a investigación global." data-pt="Títulos de artigos traduzidos para espanhol e português. Leia no seu idioma e acesse a pesquisa global.">Article titles translated to Spanish and Portuguese. Read in your language, access global research.</p>
-      </div>
-      <div class="feature-card reveal" data-delay="2">
-        <div class="feature-icon red">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        </div>
-        <h3 data-en="Instant Abstracts &amp; PDFs" data-es="Resúmenes y PDFs al instante" data-pt="Resumos e PDFs instantâneos">Instant Abstracts &amp; PDFs</h3>
-        <p data-en="Structured abstracts open instantly — Background, Methods, Results, Conclusions — with the full PDF one tap away." data-es="Los resúmenes estructurados abren al instante — Antecedentes, Métodos, Resultados, Conclusiones — con el PDF completo a un toque." data-pt="Os resumos estruturados abrem na hora — Contexto, Métodos, Resultados, Conclusões — com o PDF completo a um toque de distância.">Structured abstracts open instantly — Background, Methods, Results, Conclusions — with the full PDF one tap away.</p>
-      </div>
+      <ul class="specialties" aria-label="Product">
+        <li class="chip chip--plain">Allergy &amp; immunology</li><li class="chip chip--plain">Anesthesiology</li><li class="chip chip--plain">Cardiology</li><li class="chip chip--plain">Colon &amp; rectal surgery</li><li class="chip chip--plain">Critical care</li><li class="chip chip--plain">Dentistry</li><li class="chip chip--plain">Dermatology</li><li class="chip chip--plain">Emergency medicine</li><li class="chip chip--plain">Endocrinology</li><li class="chip chip--plain">Family medicine</li><li class="chip chip--plain">Gastroenterology</li><li class="chip chip--plain">General surgery</li><li class="chip chip--plain">Genetics</li><li class="chip chip--plain">Geriatrics</li><li class="chip chip--plain">Hematology</li><li class="chip chip--plain">Infectious diseases</li><li class="chip chip--plain">Internal medicine</li><li class="chip chip--plain">Neonatology</li><li class="chip chip--plain">Nephrology</li><li class="chip chip--plain">Neurology</li><li class="chip chip--plain">Neurosurgery</li><li class="chip chip--plain">Nuclear medicine</li><li class="chip chip--plain">Nursing</li><li class="chip chip--plain">Nutrition</li><li class="chip chip--plain">Obstetrics &amp; gynecology</li><li class="chip chip--plain">Oncology</li><li class="chip chip--plain">Ophthalmology</li><li class="chip chip--plain">Orthopedics</li><li class="chip chip--plain">Otolaryngology</li><li class="chip chip--plain">Pathology</li><li class="chip chip--plain">Pediatrics</li><li class="chip chip--plain">Pharmacology</li><li class="chip chip--plain">Physical medicine &amp; rehabilitation</li><li class="chip chip--plain">Plastic surgery</li><li class="chip chip--plain">Psychiatry</li><li class="chip chip--plain">Public health</li><li class="chip chip--plain">Pulmonary disease</li><li class="chip chip--plain">Radiology</li><li class="chip chip--plain">Rheumatology</li><li class="chip chip--plain">Thoracic &amp; cardiovascular surgery</li><li class="chip chip--plain">Urology</li><li class="chip chip--plain">Vascular surgery</li>
+        <li class="chip-more chip-more--desktop">and more</li><li class="chip-more chip-more--mobile">and 26 more</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ============ CREDIBILITY ============ -->
-<section class="cred" id="credibility">
-  <div class="cred-inner reveal">
-    <div class="cred-head">
-      <p class="eyebrow" data-en="Why you can trust it" data-es="Por qué puedes confiar" data-pt="Por que você pode confiar">Why you can trust it</p>
-      <h2 class="section-title center" data-en="Evidence-based by design" data-es="Basado en evidencia por diseño" data-pt="Baseado em evidências por princípio">Evidence-based by design</h2>
-    </div>
-    <div class="cred-grid">
-      <div class="cred-item">
-        <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"/><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M7 10v6"/></svg></div>
-        <h4 data-en="Sourced from PubMed" data-es="Fuente: PubMed" data-pt="Origem no PubMed">Sourced from PubMed</h4>
-        <p data-en="Indexed by the U.S. National Library of Medicine." data-es="Indexado por la Biblioteca Nacional de Medicina de EE. UU." data-pt="Indexado pela Biblioteca Nacional de Medicina dos EUA.">Indexed by the U.S. National Library of Medicine.</p>
-      </div>
-      <div class="cred-item">
-        <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
-        <h4 data-en="Ranked by Scimago" data-es="Clasificado por Scimago" data-pt="Classificado pelo Scimago">Ranked by Scimago</h4>
-        <p data-en="Journal quality scored by quartile." data-es="Calidad de revista por cuartil." data-pt="Qualidade da revista por quartil.">Journal quality scored by quartile.</p>
-        <div class="quartiles"><span class="q q1">Q1</span><span class="q q2">Q2</span><span class="q q3">Q3</span><span class="q q4">Q4</span></div>
-      </div>
-      <div class="cred-item">
-        <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3a9 9 0 1 0 9 9"/><path d="M21 3l-9 9"/></svg></div>
-        <h4 data-en="Peer-reviewed only" data-es="Solo revisado por pares" data-pt="Apenas revisado por pares">Peer-reviewed only</h4>
-        <p data-en="Reviews, meta-analyses, and guidelines — no preprints." data-es="Revisiones, metaanálisis y guías — sin preprints." data-pt="Revisões, metanálises e diretrizes — sem preprints.">Reviews, meta-analyses, and guidelines — no preprints.</p>
-      </div>
-      <div class="cred-item">
-        <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M4.9 4.9l14.2 14.2"/></svg></div>
-        <h4 data-en="No ads. No pharma." data-es="Sin anuncios. Sin farma." data-pt="Sem anúncios. Sem farma.">No ads. No pharma.</h4>
-        <p data-en="No sponsored content, ever. Just the literature." data-es="Nunca contenido patrocinado. Solo la literatura." data-pt="Nunca conteúdo patrocinado. Só a literatura.">No sponsored content, ever. Just the literature.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PRICING ============ -->
 <section class="pricing" id="pricing">
-  <div class="pricing-head reveal">
-    <p class="eyebrow" data-en="Pricing" data-es="Precios" data-pt="Preços">Pricing</p>
-    <h2 class="section-title center" data-en="Start free. Upgrade when you're ready." data-es="Empieza gratis. Mejora cuando quieras." data-pt="Comece grátis. Faça upgrade quando quiser.">Start free. Upgrade when you're ready.</h2>
+  <div class="wrap">
+    <h2 class="h2">Free for your first 7 days. No card needed.</h2>
+    <p class="lead">Then keep the free plan or subscribe. Billing through the App Store; cancel any time.</p>
+    <table class="plans">
+      <thead><tr>
+        <th scope="col"><span class="visually-hidden">Price</span></th>
+        <th scope="col" class="plan-head"><span class="plan-name">Free</span><span class="plan-sub">After the first 7 days</span></th>
+        <th scope="col" class="plan-head plan-head--best"><span class="plan-best">Best value</span><span class="plan-name">Yearly</span><span class="plan-sub">$2.92 a month, billed once a year</span></th>
+        <th scope="col" class="plan-head"><span class="plan-name">Monthly</span><span class="plan-sub">Billed every month</span></th>
+      </tr></thead>
+      <tbody>
+        <tr><th scope="row">Daily feed</th><td>30 papers a day</td><td class="best">Endless</td><td>Endless</td></tr>
+        <tr><th scope="row">Articles you can open</th><td>3 a day</td><td class="best">Unlimited</td><td>Unlimited</td></tr>
+        <tr><th scope="row">New searches</th><td>3 a day</td><td class="best">Unlimited</td><td>Unlimited</td></tr>
+        <tr><th scope="row">Summary and Ask AI</th><td>With every article you open</td><td class="best">Included</td><td>Included</td></tr>
+        <tr><th scope="row">Save and read offline</th><td>Included</td><td class="best">Included</td><td>Included</td></tr>
+        
+        <tr class="plan-price"><th scope="row">Price</th><td>$0</td><td class="best">$34.99 a year</td><td>$4.99 a month</td></tr>
+      </tbody>
+    </table>
+    <div class="plans-stack" aria-hidden="true">
+      <div class="plan-card plan-card--best"><div class="plan-best">Best value</div><div class="plan-card-head"><span class="plan-name">Yearly</span><span class="plan-name">$34.99 a year</span></div><div class="plan-sub">$2.92 a month, billed once a year</div><div class="plan-line"><span>Daily feed</span><span>Endless</span></div><div class="plan-line"><span>Articles you can open</span><span>Unlimited</span></div><div class="plan-line"><span>New searches</span><span>Unlimited</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>Included</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
+      <div class="plan-card"><div class="plan-card-head"><span class="plan-name">Monthly</span><span class="plan-name">$4.99 a month</span></div><div class="plan-sub">Billed every month</div><div class="plan-line"><span>Daily feed</span><span>Endless</span></div><div class="plan-line"><span>Articles you can open</span><span>Unlimited</span></div><div class="plan-line"><span>New searches</span><span>Unlimited</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>Included</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
+      <div class="plan-card"><div class="plan-card-head"><span class="plan-name">Free</span><span class="plan-name">$0</span></div><div class="plan-sub">After the first 7 days</div><div class="plan-line"><span>Daily feed</span><span>30 papers a day</span></div><div class="plan-line"><span>Articles you can open</span><span>3 a day</span></div><div class="plan-line"><span>New searches</span><span>3 a day</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>With every article you open</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
+    </div>
+    <p class="note note--pricing">Prices in US dollars; local prices and taxes may vary. Subscriptions renew automatically until cancelled in your App Store settings.</p>
   </div>
-  <div class="pricing-grid">
-    <!-- FREE -->
-    <div class="plan reveal">
-      <span class="plan-name" data-en="Free" data-es="Gratis" data-pt="Grátis">Free</span>
-      <div class="plan-price"><span class="amt">$0</span></div>
-      <p class="plan-sub" data-en="Everything you need to get started" data-es="Todo para empezar" data-pt="Tudo para começar">Everything you need to get started</p>
-      <ul class="plan-features">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="1 full article per day" data-es="1 artículo completo al día" data-pt="1 artigo completo por dia">1 full article per day</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="1 search per day" data-es="1 búsqueda al día" data-pt="1 busca por dia">1 search per day</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited saved articles" data-es="Artículos guardados ilimitados" data-pt="Artigos salvos ilimitados">Unlimited saved articles</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Personalized feed across 40+ specialties" data-es="Feed personalizado en 40+ especialidades" data-pt="Feed personalizado em 40+ especialidades">Personalized feed across 40+ specialties</span></li>
-      </ul>
-      <a class="btn btn-outline-dark" href="https://app.saluxly.com" data-en="Start free" data-es="Empezar gratis" data-pt="Começar grátis">Start free</a>
-    </div>
+</section>
 
-    <!-- PREMIUM ANNUAL — recommended / pre-selected -->
-    <div class="plan featured reveal" data-delay="1">
-      <span class="plan-flag" data-en="Best value · Save 40%" data-es="Mejor valor · Ahorra 40%" data-pt="Melhor valor · Economize 40%">Best value · Save 40%</span>
-      <span class="plan-name" data-en="Premium · Annual" data-es="Premium · Anual" data-pt="Premium · Anual">Premium · Annual</span>
-      <div class="plan-price"><span class="amt">$49.99</span><span class="per" data-en="/ year" data-es="/ año" data-pt="/ ano">/ year</span></div>
-      <p class="plan-sub" data-en="$4.17/month, billed yearly · 7-day free trial" data-es="$4.17/mes, facturado anualmente · 7 días gratis" data-pt="$4,17/mês, cobrado anualmente · 7 dias grátis">$4.17/month, billed yearly · 7-day free trial</p>
-      <ul class="plan-features">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited full articles" data-es="Artículos completos ilimitados" data-pt="Artigos completos ilimitados">Unlimited full articles</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited searches" data-es="Búsquedas ilimitadas" data-pt="Buscas ilimitadas">Unlimited searches</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited saved articles" data-es="Artículos guardados ilimitados" data-pt="Artigos salvos ilimitados">Unlimited saved articles</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Save 40% vs monthly" data-es="Ahorra 40% frente al mensual" data-pt="Economize 40% vs mensal">Save 40% vs monthly</span></li>
-      </ul>
-      <a class="btn btn-accent" href="https://app.saluxly.com" data-en="Start 7-day free trial" data-es="Iniciar prueba de 7 días" data-pt="Iniciar teste de 7 dias">Start 7-day free trial</a>
-    </div>
-
-    <!-- PREMIUM MONTHLY — secondary -->
-    <div class="plan reveal" data-delay="2">
-      <span class="plan-name" data-en="Premium · Monthly" data-es="Premium · Mensual" data-pt="Premium · Mensal">Premium · Monthly</span>
-      <div class="plan-price"><span class="amt">$6.99</span><span class="per" data-en="/ month" data-es="/ mes" data-pt="/ mês">/ month</span></div>
-      <p class="plan-sub" data-en="Billed monthly · cancel anytime" data-es="Facturado mensual · cancela cuando quieras" data-pt="Cobrado mensalmente · cancele quando quiser">Billed monthly · cancel anytime</p>
-      <ul class="plan-features">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited full articles" data-es="Artículos completos ilimitados" data-pt="Artigos completos ilimitados">Unlimited full articles</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited searches" data-es="Búsquedas ilimitadas" data-pt="Buscas ilimitadas">Unlimited searches</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Unlimited saved articles" data-es="Artículos guardados ilimitados" data-pt="Artigos salvos ilimitados">Unlimited saved articles</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Everything in Free, unlimited" data-es="Todo lo de Gratis, sin límites" data-pt="Tudo do Grátis, sem limites">Everything in Free, unlimited</span></li>
-      </ul>
-      <a class="btn btn-outline-dark" href="https://app.saluxly.com" data-en="Choose monthly" data-es="Elegir mensual" data-pt="Escolher mensal">Choose monthly</a>
+<section class="faq" id="faq">
+  <div class="wrap faq-inner">
+    <h2 class="h2">Questions, answered.</h2>
+    <div class="questions">
+      <details class="q" open><summary><span>Is Saluxly a textbook or a clinical reference?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>No. Saluxly is a reading feed of review articles from the medical literature. It helps you keep up with what is being published in your field; it does not replace a clinical reference, a guideline or your own judgment.</p></details>
+      <details class="q"><summary><span>Where do the articles come from?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>From PubMed, the database of the U.S. National Library of Medicine. Saluxly keeps review articles, systematic reviews, meta-analyses and guidelines from the last five years, published in journals that pass its quality bar.</p></details>
+      <details class="q"><summary><span>Can I read the full paper?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Yes. Papers with an open license (CC BY or CC0) open inside the app as the original PDF. Other papers open at PubMed Central or on the journal’s website in a browser view, where many are free to read.</p></details>
+      <details class="q"><summary><span>Is it legal to read the PDFs in the app?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Yes. Saluxly only hosts papers whose license allows it, credits every paper to its authors and journal, and links the rest to their source instead of copying them.</p></details>
+      <details class="q"><summary><span>Which languages does it work in?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>The app runs in English, Spanish and Portuguese. Articles are in English, with titles translated automatically. You can search in any of the three languages.</p></details>
+      <details class="q"><summary><span>Do I need a hospital or university login?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>No. Everything in Saluxly is either openly licensed or free to read at its source. You only need an email address.</p></details>
+      <details class="q"><summary><span>Which devices can I use?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>iPhone and iPad first, including an iPad layout and a home-screen widget. Android follows, and a web version is planned.</p></details>
+      <details class="q"><summary><span>What do you do with my data?</span><svg class="q-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Your email signs you in. What you read and save personalizes your feed. Saluxly shows no ads, uses no advertising trackers and does not sell your data. You can delete your account from the app at any time.</p></details>
+      
     </div>
   </div>
 </section>
 
-<!-- ============ SPECIALTIES (LIGHT) ============ -->
-<section class="specialties" id="specialties">
-  <div class="specialties-inner reveal">
-    <p class="eyebrow" data-en="Specialties" data-es="Especialidades" data-pt="Especialidades">Specialties</p>
-    <h2 class="section-title center" data-en="40+ specialties. One app." data-es="40+ especialidades. Una app." data-pt="40+ especialidades. Um app.">40+ specialties. One app.</h2>
-    <div class="specialty-chips" id="chipContainer"></div>
+<section class="final">
+  <div class="wrap final-inner">
+    <div class="final-mark"><svg class="mark" viewBox="0 0 120 120" role="img" aria-label="Saluxly"><g fill="none" stroke="#D76821" stroke-linecap="round"><path d="M30 28 C 45 16, 65 15, 83 23" stroke-width="1.3"/><path d="M68 19 C 70 24, 72 28, 74 32" stroke-width="1"/><path d="M68 19 C 66 26, 67 33, 68 38" stroke-width="1"/><path d="M29 35 L59 54" stroke-width="1.3"/><path d="M31 30 C 50 26, 62 34, 62 52" stroke-width="1.2"/><path d="M22 38 C 14 52, 30 60, 58 57" stroke-width="1.2"/><path d="M26 38 C 26 50, 40 56, 58 56" stroke-width="1.2"/><path d="M64 59 L92 98" stroke-width="2"/><path d="M92 98 C 78 102, 56 96, 37 81" stroke-width="1.8"/><path d="M40 82 C 44 78, 48 74, 51 72" stroke-width="1"/><path d="M57 92 C 60 86, 63 81, 65 78" stroke-width="1"/><path d="M80 99 C 79 92, 77 86, 76 81" stroke-width="1"/><path d="M92 98 C 102 90, 101 62, 96 46" stroke-width="1.8"/><path d="M97 49 C 92 48, 85 50, 80 54" stroke-width="1"/><path d="M100 63 C 95 62, 89 61, 84 62" stroke-width="1"/><path d="M98 88 C 97 83, 95 78, 93 75" stroke-width="1"/></g><g fill="#FB9338"><circle cx="83" cy="23" r="1.5"/><circle cx="74" cy="32" r="1.5"/><circle cx="68" cy="38" r="1.5"/><circle cx="37" cy="81" r="1.5"/><circle cx="51" cy="72" r="1.5"/><circle cx="65" cy="78" r="1.5"/><circle cx="76" cy="81" r="1.5"/><circle cx="96" cy="44" r="1.5"/><circle cx="80" cy="54" r="1.5"/><circle cx="84" cy="62" r="1.5"/><circle cx="93" cy="75" r="1.5"/></g><circle cx="25" cy="32" r="6.5" fill="url(#node)"/><circle cx="62" cy="56" r="4.4" fill="url(#node)"/></svg>
+</div>
+    <h2 class="h2 h2--final">Be the first to read.</h2>
+    <p class="lead lead--block">One email when Saluxly launches on iPhone and iPad. Nothing else.</p>
+    <div class="final-form" id="waitlist-final">
+<form class="waitlist" id="waitlist-final-form" method="post" action="https://api.web3forms.com/submit" novalidate data-waitlist>
+  <div class="waitlist-row">
+    <label class="field">
+      <span class="visually-hidden">Email address</span>
+      <input type="email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder="you@hospital.org" aria-describedby="waitlist-final-form-msg">
+    </label>
+    <div class="trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button class="button button--form" type="submit" data-label="Join the waitlist" data-busy="Joining…">Join the waitlist</button>
+  </div>
+  <p class="form-msg" id="waitlist-final-form-msg" aria-live="polite" data-invalid="Enter an email address like name@hospital.org." data-error="We couldn't save your email. Try again in a moment, or write to contact@saluxly.com." data-success="You're on the waitlist. We'll email you once, when Saluxly launches."></p>
+</form>
+
+</div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA (DARK) ============ -->
-<section class="final" id="get-started">
-  <!-- Ambient cardiac conduction pathway (matches hero) -->
-  <svg class="conduction-bg" viewBox="0 0 320 320" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-    <g class="cond-base-group">
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 L 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 100,190 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 72,210 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 172,130 170,190"/>
-      <path class="cond-base" style="stroke-width:2.5" d="M 110,150 Q 143,120 180,130"/>
-      <path class="cond-base" style="stroke-width:2" d="M 180,130 Q 176,147 180,160"/>
-      <path class="cond-base" style="stroke-width:2" d="M 180,130 Q 187,142 190,150"/>
-      <path class="cond-base" style="stroke-width:2" d="M 180,130 Q 194,131 204,136"/>
-      <path class="cond-base" style="stroke-width:4" d="M 170,190 Q 205,231 220,260"/>
-      <path class="cond-base" style="stroke-width:3" d="M 220,260 C 200,262 156,256 130,230"/>
-      <path class="cond-base" style="stroke-width:3" d="M 220,260 C 234,254 238,210 226,170"/>
-      <path class="cond-base" style="stroke-width:2" d="M 134,234 Q 142,222 152,216"/>
-      <path class="cond-base" style="stroke-width:2" d="M 160,252 Q 168,238 176,224"/>
-      <path class="cond-base" style="stroke-width:2" d="M 201,260 Q 196,246 192,230"/>
-      <path class="cond-base" style="stroke-width:2" d="M 228,176 Q 212,179 200,186"/>
-      <path class="cond-base" style="stroke-width:2" d="M 233,200 Q 220,199 206,198"/>
-      <path class="cond-base" style="stroke-width:2" d="M 230,246 Q 226,228 220,220"/>
-      <circle class="cond-node-base" cx="110" cy="150" r="9"/>
-      <circle class="cond-node-base" cx="170" cy="190" r="7"/>
-    </g>
-    <g class="cond-trace-group">
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 L 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 100,190 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 72,210 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 172,130 170,190"/>
-      <path class="cond-trace cond-draw1" style="stroke-width:2.5" d="M 110,150 Q 143,120 180,130"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:2" d="M 180,130 Q 176,147 180,160"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:2" d="M 180,130 Q 187,142 190,150"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:2" d="M 180,130 Q 194,131 204,136"/>
-      <path class="cond-trace cond-draw2" style="stroke-width:4.5" d="M 170,190 Q 205,231 220,260"/>
-      <path class="cond-trace cond-draw3" style="stroke-width:3.5" d="M 220,260 C 200,262 156,256 130,230"/>
-      <path class="cond-trace cond-draw3" style="stroke-width:3.5" d="M 220,260 C 234,254 238,210 226,170"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 134,234 Q 142,222 152,216"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 160,252 Q 168,238 176,224"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 201,260 Q 196,246 192,230"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 228,176 Q 212,179 200,186"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 233,200 Q 220,199 206,198"/>
-      <path class="cond-trace cond-draw4" style="stroke-width:2.5" d="M 230,246 Q 226,228 220,220"/>
-      <circle class="cond-node" cx="110" cy="150" r="9"/>
-      <circle class="cond-node n2" cx="170" cy="190" r="7"/>
-    </g>
-  </svg>
-  <div class="final-inner">
-    <h2 data-en="Start reading smarter today" data-es="Empieza a leer mejor hoy" data-pt="Comece a ler de forma mais inteligente hoje">Start reading smarter today</h2>
-    <p data-en="Join clinicians, residents, and students who let the literature come to them." data-es="Únete a clínicos, residentes y estudiantes que dejan que la literatura llegue a ellos." data-pt="Junte-se a clínicos, residentes e estudantes que deixam a literatura chegar até eles.">Join clinicians, residents, and students who let the literature come to them.</p>
-    <div class="final-actions">
-      <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.saluxly.app" aria-label="Get it on Google Play">
-        <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D4FF" d="M47 24C40 28 36 35 36 45v422c0 10 4 17 11 21l245-232z"/><path fill="#00F076" d="M47 24c5-3 12-3 19 1l298 172-72 68z"/><path fill="#FFC900" d="M364 197l72 41c20 12 20 24 0 36l-72 41-72-68z"/><path fill="#FF3A44" d="M47 488c7 4 15 4 19 1l298-172-72-68z"/></svg>
-        <span class="pt"><small data-en="Get it on" data-es="Disponible en" data-pt="Disponível no">Get it on</small><strong>Google Play</strong></span>
-      </a>
-      <a class="btn btn-outline-light" href="https://app.saluxly.com" data-en="Open Web App" data-es="Abrir Web App" data-pt="Abrir Web App">Open Web App</a>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-about">
+      <a class="brand brand--small" href="/" aria-label="Saluxly home"><svg class="mark" viewBox="0 0 120 120" role="img" aria-label="Saluxly"><g fill="none" stroke="#D76821" stroke-linecap="round"><path d="M30 28 C 45 16, 65 15, 83 23" stroke-width="1.3"/><path d="M68 19 C 70 24, 72 28, 74 32" stroke-width="1"/><path d="M68 19 C 66 26, 67 33, 68 38" stroke-width="1"/><path d="M29 35 L59 54" stroke-width="1.3"/><path d="M31 30 C 50 26, 62 34, 62 52" stroke-width="1.2"/><path d="M22 38 C 14 52, 30 60, 58 57" stroke-width="1.2"/><path d="M26 38 C 26 50, 40 56, 58 56" stroke-width="1.2"/><path d="M64 59 L92 98" stroke-width="2"/><path d="M92 98 C 78 102, 56 96, 37 81" stroke-width="1.8"/><path d="M40 82 C 44 78, 48 74, 51 72" stroke-width="1"/><path d="M57 92 C 60 86, 63 81, 65 78" stroke-width="1"/><path d="M80 99 C 79 92, 77 86, 76 81" stroke-width="1"/><path d="M92 98 C 102 90, 101 62, 96 46" stroke-width="1.8"/><path d="M97 49 C 92 48, 85 50, 80 54" stroke-width="1"/><path d="M100 63 C 95 62, 89 61, 84 62" stroke-width="1"/><path d="M98 88 C 97 83, 95 78, 93 75" stroke-width="1"/></g><g fill="#FB9338"><circle cx="83" cy="23" r="1.5"/><circle cx="74" cy="32" r="1.5"/><circle cx="68" cy="38" r="1.5"/><circle cx="37" cy="81" r="1.5"/><circle cx="51" cy="72" r="1.5"/><circle cx="65" cy="78" r="1.5"/><circle cx="76" cy="81" r="1.5"/><circle cx="96" cy="44" r="1.5"/><circle cx="80" cy="54" r="1.5"/><circle cx="84" cy="62" r="1.5"/><circle cx="93" cy="75" r="1.5"/></g><circle cx="25" cy="32" r="6.5" fill="url(#node)"/><circle cx="62" cy="56" r="4.4" fill="url(#node)"/></svg>
+<span class="wordmark">Salux<span>ly</span></span></a>
+      <p>Saluxly is a reading tool for health professionals. It is not a medical device and does not provide medical advice. Article data courtesy of the U.S. National Library of Medicine. Saluxly is not affiliated with or endorsed by the NLM, NIH or HHS.</p>
+      <p class="footer-copy">© 2026 Saluxly, Inc.</p>
     </div>
-    <div class="hero-ios">
-      <p class="hero-ios-note" data-en="iOS coming soon — be the first to know." data-es="iOS muy pronto — sé el primero en enterarte." data-pt="iOS em breve — seja o primeiro a saber.">iOS coming soon — be the first to know.</p>
-      <form class="ios-form" novalidate>
-        <input type="email" required placeholder="you@hospital.com" data-ph-en="you@hospital.com" data-ph-es="tú@hospital.com" data-ph-pt="voce@hospital.com" aria-label="Email">
-        <button type="submit" data-en="Notify me" data-es="Avísame" data-pt="Avise-me">Notify me</button>
-      </form>
-      <p class="ios-msg" role="status" aria-live="polite"></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="footer-inner">
-    <a href="#hero" class="footer-brand">
-      <img src="saluxly-logo.svg" alt="Saluxly logo" class="nav-logo" width="28" height="28">
-      <span class="nav-name">Salux<span>ly</span></span>
-    </a>
-    <div class="footer-links">
-      <a href="https://app.saluxly.com" data-en="Web App" data-es="Web App" data-pt="Web App">Web App</a>
-      <a href="https://play.google.com/store/apps/details?id=com.saluxly.app" data-en="Google Play" data-es="Google Play" data-pt="Google Play">Google Play</a>
-      <a href="privacy.html" data-en="Privacy Policy" data-es="Política de Privacidad" data-pt="Política de Privacidade">Privacy Policy</a>
-      <a href="terms.html" data-en="Terms of Service" data-es="Términos de Servicio" data-pt="Termos de Serviço">Terms of Service</a>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/terms.html">Terms of service</a>
+      <a href="/support.html">Support</a>
+      <a href="/support.html#delete">Delete your account</a>
+    </nav>
+    <div class="footer-contact">
       <a href="mailto:contact@saluxly.com">contact@saluxly.com</a>
-    </div>
-    <div class="footer-meta">
-      <div class="footer-lang" role="group" aria-label="Language">
-        <button onclick="setLang('en')">EN</button>
-        <button onclick="setLang('es')">ES</button>
-        <button onclick="setLang('pt')">PT</button>
-      </div>
-      <p class="footer-copy">&copy; 2026 Saluxly, Inc. <span data-en="All rights reserved." data-es="Todos los derechos reservados." data-pt="Todos os direitos reservados.">All rights reserved.</span></p>
+      <nav class="langs" aria-label="Language">
+        <a href="/" hreflang="en" lang="en" data-lang="en" aria-current="page">en</a><a href="/es/" hreflang="es" lang="es" data-lang="es">es</a><a href="/pt/" hreflang="pt" lang="pt" data-lang="pt">pt</a>
+      </nav>
     </div>
   </div>
 </footer>
-
-<script>
-// === LANGUAGE (EN / ES / PT) ===
-let currentLang='en';
-function setLang(lang){
-  currentLang=lang;
-  // toolbar + footer toggles
-  document.querySelectorAll('.lang-btn').forEach(b=>{
-    b.classList.toggle('active',b.textContent.trim().toLowerCase()===lang);
-  });
-  document.querySelectorAll('.footer-lang button').forEach(b=>{
-    b.classList.toggle('active',b.textContent.trim().toLowerCase()===lang);
-  });
-  document.documentElement.lang=lang;
-  document.querySelectorAll('[data-'+lang+']').forEach(el=>{
-    const val=el.getAttribute('data-'+lang);
-    if(val!==null) el.innerHTML=val;
-  });
-  // localized placeholders
-  document.querySelectorAll('[data-ph-'+lang+']').forEach(el=>{
-    const val=el.getAttribute('data-ph-'+lang);
-    if(val!==null) el.placeholder=val;
-  });
-}
-
-// === HEART CONDUCTION (signature interaction — auto-plays on scroll) ===
-// Draw sequence logic is unchanged; only the trigger changed from click to
-// automatic-on-scroll, with a gentle periodic replay while the section is in view.
-const heartEl=document.getElementById("heartDemo");
-let heartTimer=null;
-function playHeart(){
-  if(!heartEl) return;
-  heartEl.classList.remove("active","deactivate");
-  void heartEl.offsetWidth; // force reflow so the animation restarts
-  heartEl.classList.add("active");
-}
-const heartObs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      playHeart();
-      if(!heartTimer) heartTimer=setInterval(playHeart,6500); // gentle loop while visible
-    } else if(heartTimer){
-      clearInterval(heartTimer);heartTimer=null;
-    }
-  });
-},{threshold:0.55});
-if(heartEl) heartObs.observe(heartEl);
-
-// === PRODUCT SHOWCASE — arrow scrolling ===
-function scrollShots(dir){
-  const row=document.getElementById('shots');
-  if(!row) return;
-  const card=row.querySelector('.shot');
-  const gap=parseFloat(getComputedStyle(row).columnGap)||28;
-  const step=card?(card.offsetWidth+gap):320; // phone width + gap
-  const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  row.scrollBy({left:dir*step*1.5,behavior:reduce?'auto':'smooth'});
-}
-
-// === SPECIALTY CHIPS ===
-const specs=[
-  {name:'Internal Medicine',nameEs:'Medicina Interna',namePt:'Clínica Médica',color:'#2563EB'},
-  {name:'Cardiology',nameEs:'Cardiología',namePt:'Cardiologia',color:'#DC2626'},
-  {name:'Pulmonary Disease',nameEs:'Enfermedad Pulmonar',namePt:'Pneumologia',color:'#0891B2'},
-  {name:'Neurology',nameEs:'Neurología',namePt:'Neurologia',color:'#7C3AED'},
-  {name:'Gastroenterology',nameEs:'Gastroenterología',namePt:'Gastroenterologia',color:'#92400E'},
-  {name:'Endocrinology',nameEs:'Endocrinología',namePt:'Endocrinologia',color:'#D97706'},
-  {name:'Nephrology',nameEs:'Nefrología',namePt:'Nefrologia',color:'#1E40AF'},
-  {name:'Infectious Disease',nameEs:'Infectología',namePt:'Infectologia',color:'#15803D'},
-  {name:'Oncology',nameEs:'Oncología',namePt:'Oncologia',color:'#DB2777'},
-  {name:'Hematology',nameEs:'Hematología',namePt:'Hematologia',color:'#991B1B'},
-  {name:'Rheumatology',nameEs:'Reumatología',namePt:'Reumatologia',color:'#8B5CF6'},
-  {name:'Allergy & Immunology',nameEs:'Alergia e Inmunología',namePt:'Alergia e Imunologia',color:'#E06666'},
-  {name:'Dermatology',nameEs:'Dermatología',namePt:'Dermatologia',color:'#EA580C'},
-  {name:'Pediatrics',nameEs:'Pediatría',namePt:'Pediatria',color:'#F59E0B'},
-  {name:'Neonatology',nameEs:'Neonatología',namePt:'Neonatologia',color:'#F48FB1'},
-  {name:'OB-GYN',nameEs:'Ginecología y Obstetricia',namePt:'Ginecologia e Obstetrícia',color:'#C026D3'},
-  {name:'General Surgery',nameEs:'Cirugía General',namePt:'Cirurgia Geral',color:'#475569'},
-  {name:'Vascular Surgery',nameEs:'Cirugía Vascular',namePt:'Cirurgia Vascular',color:'#8B0000'},
-  {name:'Thoracic & CV Surgery',nameEs:'Cirugía de Tórax y Cardiovascular',namePt:'Cirurgia Torácica e Cardiovascular',color:'#881337'},
-  {name:'Colorectal Surgery',nameEs:'Cirugía de Colon y Recto',namePt:'Cirurgia Colorretal',color:'#8D6E63'},
-  {name:'Neurosurgery',nameEs:'Neurocirugía',namePt:'Neurocirurgia',color:'#581C87'},
-  {name:'Orthopedics',nameEs:'Traumatología y Ortopedia',namePt:'Ortopedia e Traumatologia',color:'#64748B'},
-  {name:'Urology',nameEs:'Urología',namePt:'Urologia',color:'#0D9488'},
-  {name:'Ophthalmology',nameEs:'Oftalmología',namePt:'Oftalmologia',color:'#4338CA'},
-  {name:'ENT',nameEs:'Otorrinolaringología',namePt:'Otorrinolaringologia',color:'#0E7490'},
-  {name:'Anesthesiology',nameEs:'Anestesiología',namePt:'Anestesiologia',color:'#6B7280'},
-  {name:'Emergency Medicine',nameEs:'Medicina de Urgencias',namePt:'Medicina de Emergência',color:'#E11D48'},
-  {name:'Critical Care',nameEs:'Medicina Crítica',namePt:'Medicina Intensiva',color:'#B91C1C'},
-  {name:'Psychiatry',nameEs:'Psiquiatría',namePt:'Psiquiatria',color:'#A855F7'},
-  {name:'Radiology',nameEs:'Radiología',namePt:'Radiologia',color:'#94A3B8'},
-  {name:'Pathology',nameEs:'Patología',namePt:'Patologia',color:'#78350F'},
-  {name:'Family Medicine',nameEs:'Medicina Familiar',namePt:'Medicina de Família',color:'#16A34A'},
-  {name:'Public Health',nameEs:'Medicina Preventiva',namePt:'Saúde Pública',color:'#34D399'},
-  {name:'Geriatrics',nameEs:'Geriatría',namePt:'Geriatria',color:'#A8A29E'},
-  {name:'Physical Medicine',nameEs:'Medicina Física y Rehabilitación',namePt:'Medicina Física e Reabilitação',color:'#4DB6AC'},
-  {name:'Genetics',nameEs:'Genética Médica',namePt:'Genética Médica',color:'#D946EF'},
-  {name:'Plastic Surgery',nameEs:'Cirugía Plástica',namePt:'Cirurgia Plástica',color:'#FB7185'},
-  {name:'Nuclear Medicine',nameEs:'Medicina Nuclear',namePt:'Medicina Nuclear',color:'#A3E635'},
-  {name:'Pharmacology',nameEs:'Farmacología',namePt:'Farmacologia',color:'#2DD4BF'},
-  {name:'Nursing',nameEs:'Enfermería',namePt:'Enfermagem',color:'#06B6D4'},
-  {name:'Dentistry',nameEs:'Odontología',namePt:'Odontologia',color:'#60A5FA'},
-  {name:'Nutrition',nameEs:'Nutrición',namePt:'Nutrição',color:'#84CC16'},
-  {name:'Oral Health',nameEs:'Salud Oral',namePt:'Saúde Bucal',color:'#26A69A'},
-  {name:'Nursing Care',nameEs:'Enfermería (cuidados)',namePt:'Cuidados de Enfermagem',color:'#EC407A'},
-  {name:'Nutrition & Dietetics',nameEs:'Nutrición y Dietética',namePt:'Nutrição e Dietética',color:'#66BB6A'},
-];
-const cc=document.getElementById('chipContainer');
-specs.forEach((s,i)=>{
-  const d=document.createElement('span');
-  d.className='chip';d.style.background=s.color;
-  d.style.animationDelay=(i*0.04)+'s';
-  d.setAttribute('data-en',s.name);
-  d.setAttribute('data-es',s.nameEs);
-  d.setAttribute('data-pt',s.namePt);
-  d.textContent=s.name;cc.appendChild(d);
-});
-
-// === SCROLL REVEAL ===
-const obs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
-},{threshold:0.12});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// === ANIMATED STAT COUNTERS ===
-function animateCount(el){
-  const target=parseInt(el.getAttribute('data-count'),10);
-  const suffix=el.getAttribute('data-suffix')||'';
-  const dur=1400;const start=performance.now();
-  function frame(now){
-    const p=Math.min((now-start)/dur,1);
-    const eased=1-Math.pow(1-p,3);
-    const val=Math.floor(eased*target);
-    el.innerHTML=val.toLocaleString(currentLang==='en'?'en-US':(currentLang==='pt'?'pt-BR':'es-ES'))+(p>=1&&suffix?('<span class="plus">'+suffix+'</span>'):(suffix?'<span class="plus">'+suffix+'</span>':''));
-    if(p<1) requestAnimationFrame(frame);
-    else el.innerHTML=target.toLocaleString(currentLang==='en'?'en-US':(currentLang==='pt'?'pt-BR':'es-ES'))+(suffix?'<span class="plus">'+suffix+'</span>':'');
-  }
-  requestAnimationFrame(frame);
-}
-const statObs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){animateCount(e.target);statObs.unobserve(e.target)}});
-},{threshold:0.6});
-document.querySelectorAll('.stat-number[data-count]').forEach(el=>statObs.observe(el));
-
-// === iOS WAITLIST EMAIL CAPTURE ===
-const WAITLIST_URL='https://saluxly-backend-production.up.railway.app/api/v1/ios-waitlist';
-const MSG={
-  ok:{en:"Thanks! We'll be in touch when iOS launches.",es:"¡Gracias! Te avisaremos cuando lance iOS.",pt:"Obrigado! Avisaremos quando o iOS for lançado."},
-  invalid:{en:"Please enter a valid email.",es:"Ingresa un correo válido.",pt:"Digite um e-mail válido."},
-  sending:{en:"Sending…",es:"Enviando…",pt:"Enviando…"}
-};
-document.querySelectorAll('.ios-form').forEach(form=>{
-  form.addEventListener('submit',async(ev)=>{
-    ev.preventDefault();
-    const input=form.querySelector('input[type=email]');
-    const msg=form.parentElement.querySelector('.ios-msg');
-    const email=(input.value||'').trim();
-    const valid=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if(!valid){msg.classList.remove('ok');msg.textContent=MSG.invalid[currentLang];return;}
-    msg.classList.remove('ok');msg.textContent=MSG.sending[currentLang];
-    try{
-      await fetch(WAITLIST_URL,{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({email})
-      });
-    }catch(err){/* endpoint may not exist yet — fail gracefully */}
-    // Always thank the user regardless of backend status
-    msg.classList.add('ok');msg.textContent=MSG.ok[currentLang];
-    input.value='';
-  });
-});
-
-// === NAV BACKGROUND ON SCROLL ===
-const nav=document.querySelector('.nav');
-window.addEventListener('scroll',()=>{
-  nav.style.background = window.scrollY>40 ? 'rgba(13,13,15,0.92)' : 'rgba(13,13,15,0.72)';
-},{passive:true});
-
-// === DETECT BROWSER LANGUAGE ===
-(function(){
-  const l=(navigator.language||'en').toLowerCase();
-  if(l.startsWith('pt')) setLang('pt');
-  else if(l.startsWith('es')) setLang('es');
-})();
-</script>
+<div class="bottom-bar" hidden data-bottom-bar><a class="button button--form" href="#waitlist-final">Join the waitlist</a></div>
+<script src="/assets/site.js" defer></script>
 
 </body>
 </html>
