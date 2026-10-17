@@ -182,7 +182,10 @@ h1 { font: 500 50px/0.98 var(--serif); letter-spacing: -0.8px; text-wrap: balanc
 .hero-page { left: 14px; top: 250px; }
 .hero-page .page { font-size: 5px; box-shadow: 0 30px 60px rgba(0, 0, 0, .55); transform: rotate(-7deg); }
 .hero-visual::after { content: ""; position: absolute; left: -20px; right: -20px; bottom: 0; height: 120px; background: linear-gradient(rgba(23, 16, 12, 0), var(--bg)); pointer-events: none; }
-@media (max-width: 389px) { .hero-visual { --s: calc((100vw - 40px) / 350); transform-origin: top left; } .hero-visual > * { transform-origin: top left; } .hero-visual .hero-mark, .hero-visual .hero-phone, .hero-visual .hero-page { zoom: var(--s); } }
+/* Narrower phones: the 350 px stage shrinks in steps (a unitless scale; zoom keeps the children's layout in step). */
+.hero-visual .hero-mark, .hero-visual .hero-phone, .hero-visual .hero-page { zoom: var(--s); }
+@media (max-width: 389px) { .hero-visual { --s: .9; } }
+@media (max-width: 349px) { .hero-visual { --s: .78; } }
 @media (min-width: 1025px) {
   h1 { font-size: 86px; letter-spacing: -1.5px; }
   /* The Spanish and Portuguese headlines are longer: a size down keeps them to three lines, clear of the fibre. */
@@ -205,6 +208,7 @@ h1 { font: 500 50px/0.98 var(--serif); letter-spacing: -0.8px; text-wrap: balanc
   .hero-visual { --s: .87; width: calc(600px * var(--s)); height: calc(740px * var(--s)); }
   .hero-mark, .hero-fiber, .hero-phone, .hero-page { zoom: var(--s); }
 }
+@media (min-width: 1300px) { .hero-visual .hero-fiber { zoom: 1; } }
 .fiber-path { fill: none; stroke: var(--amber); stroke-width: 1.4; stroke-linecap: round; }
 
 /* The phone frame and the screen inside it. */
