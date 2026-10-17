@@ -11,7 +11,7 @@
     </nav>
     <div class="bar-right">
       <nav class="langs" aria-label="{{t.nav.language}}">
-        {{#each alternates}}<a href="{{path}}" hreflang="{{lang}}" lang="{{lang}}" data-lang="{{lang}}"{{#if current}} aria-current="page"{{/if}}>{{lang}}</a>{{/each}}
+        {{#each alternates}}<a href="{{path}}" hreflang="{{lang}}" lang="{{lang}}" data-lang="{{lang}}"{{#if current}} aria-current="page"{{/if}}><b>{{lang}}</b></a>{{/each}}
       </nav>
       {{#unless launched}}<a class="button button--nav" href="#waitlist">{{t.nav.join}}</a>{{/unless}}
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" aria-label="{{t.nav.menu}}" data-menu-button>
