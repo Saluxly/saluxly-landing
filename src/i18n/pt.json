@@ -5,6 +5,12 @@
   "description": "O Saluxly lê o PubMed por você e monta todo dia um feed de artigos de revisão da sua especialidade, com o PDF original dentro do app. Primeiro no iPhone e iPad.",
   "support_title": "Suporte — Saluxly",
   "support_description": "Ajuda com o Saluxly: assinaturas, restaurar uma compra, artigos que não abrem e como excluir sua conta.",
+  "delete_title": "Excluir sua conta do Saluxly — Saluxly",
+  "delete_description": "Como excluir sua conta do Saluxly pelo app ou por e-mail, e o que é apagado: sua conta e seus dados imediatamente; as cópias de backup expiram em 30 dias.",
+  "privacy_title": "Política de privacidade — Saluxly",
+  "privacy_description": "Como a Saluxly, Inc. coleta e usa informações pessoais no app Saluxly e em saluxly.com, por quanto tempo as guarda, e suas opções e direitos (em inglês).",
+  "terms_title": "Termos de serviço — Saluxly",
+  "terms_description": "Os termos para usar o app Saluxly e saluxly.com: sem aconselhamento médico, plano gratuito e assinaturas, os artigos e suas licenças, e sua conta (em inglês).",
   "nav": {
     "skip": "Ir para o conteúdo",
     "home": "Início do Saluxly",
@@ -341,10 +347,31 @@
     "delete_steps": [
       "Abra o Saluxly e vá em Perfil.",
       "Toque em Excluir conta, no final.",
-      "Confirme. Seus dados são apagados em até 30 dias."
+      "Confirme. Sua conta e seus dados são apagados dos nossos sistemas em uso imediatamente; as cópias nos nossos backups expiram em até 30 dias."
     ],
     "delete_mail_before": "Já desinstalou o app? Escreva para",
     "delete_mail_after": "a partir do e-mail da sua conta com o assunto “Delete my account”.",
-    "delete_subject": "Delete my account"
+    "delete_subject": "Delete my account",
+    "delete_more": "Instruções completas: saluxly.com/pt/delete-account.html"
+  },
+  "delete_page": {
+    "h1": "Excluir sua conta do Saluxly",
+    "lead": "Você pode excluir sua conta do Saluxly a qualquer momento, pelo app ou por e-mail. A exclusão é permanente.",
+    "in_app_h": "No app",
+    "steps": [
+      "Abra o Saluxly e vá em Perfil.",
+      "Toque em Excluir conta, no final.",
+      "Confirme."
+    ],
+    "mail_h": "Se você já desinstalou o app",
+    "mail_before": "Escreva para",
+    "mail_after": "a partir do e-mail da sua conta com o assunto “Delete my account”. Confirmamos o pedido respondendo a esse e-mail e depois excluímos a conta.",
+    "what_h": "O que é apagado, e quando",
+    "what_now": "Sua conta e seus dados são apagados dos nossos sistemas em uso imediatamente; as cópias nos nossos backups expiram em até 30 dias.",
+    "what_included": "Isso inclui seu e-mail, seu perfil, os artigos que você abriu e salvou, suas contagens diárias e o status da sua assinatura.",
+    "what_device": "Notas, destaques e cópias off-line dos artigos ficam só no seu aparelho; somem quando você apaga o app.",
+    "what_subscription": "Excluir sua conta não cancela uma assinatura comprada na App Store ou no Google Play. Cancele-a antes nos ajustes da sua conta na loja.",
+    "more_before": "Os detalhes estão na seção 8 da",
+    "more_after": " (em inglês)."
   }
 }

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+</head>
+<body>
+{{> bar}}
+<main id="main" class="support">
+  <div class="wrap support-head">
+    <h1 class="h2 h2--page">{{t.delete_page.h1}}</h1>
+    <p class="lead">{{t.delete_page.lead}}</p>
+  </div>
+  <div class="wrap support-inner">
+    <section class="delete" id="delete" aria-labelledby="in-app">
+      <h2 class="h3" id="in-app">{{t.delete_page.in_app_h}}</h2>
+      <ol>{{#each t.delete_page.steps}}<li>{{this}}</li>{{/each}}</ol>
+      <h2 class="h3" id="by-email">{{t.delete_page.mail_h}}</h2>
+      <p>{{t.delete_page.mail_before}} <a href="mailto:contact@saluxly.com?subject=Delete%20my%20account">contact@saluxly.com</a> {{t.delete_page.mail_after}}</p>
+    </section>
+    <section class="delete-what" aria-labelledby="what">
+      <h2 class="h3" id="what">{{t.delete_page.what_h}}</h2>
+      <p><strong>{{t.delete_page.what_now}}</strong></p>
+      <p>{{t.delete_page.what_included}}</p>
+      <p>{{t.delete_page.what_device}}</p>
+      <p>{{t.delete_page.what_subscription}}</p>
+      <p>{{t.delete_page.more_before}} <a href="/privacy.html#8">{{t.footer.privacy}}</a>{{t.delete_page.more_after}}</p>
+    </section>
+  </div>
+</main>
+{{> footer}}
+</body>
+</html>

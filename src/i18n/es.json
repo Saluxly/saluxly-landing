@@ -5,6 +5,12 @@
   "description": "Saluxly lee PubMed por ti y arma cada día un feed de artículos de revisión de tu especialidad, con el PDF original dentro de la app. Primero en iPhone y iPad.",
   "support_title": "Soporte — Saluxly",
   "support_description": "Ayuda con Saluxly: suscripciones, restaurar una compra, artículos que no abren y cómo borrar tu cuenta.",
+  "delete_title": "Borrar tu cuenta de Saluxly — Saluxly",
+  "delete_description": "Cómo borrar tu cuenta de Saluxly desde la app o por correo, y qué se borra: tu cuenta y sus datos de inmediato; las copias de respaldo caducan en 30 días.",
+  "privacy_title": "Política de privacidad — Saluxly",
+  "privacy_description": "Cómo Saluxly, Inc. recopila y usa información personal en la app Saluxly y en saluxly.com, cuánto tiempo la conserva, y tus opciones y derechos (en inglés).",
+  "terms_title": "Términos de servicio — Saluxly",
+  "terms_description": "Los términos para usar la app Saluxly y saluxly.com: sin consejo médico, plan gratuito y suscripciones, los artículos y sus licencias, y tu cuenta (en inglés).",
   "nav": {
     "skip": "Ir al contenido",
     "home": "Inicio de Saluxly",
@@ -341,10 +347,31 @@
     "delete_steps": [
       "Abre Saluxly y ve a Perfil.",
       "Toca Borrar cuenta, al final.",
-      "Confirma. Tus datos se eliminan en un plazo de 30 días."
+      "Confirma. Tu cuenta y sus datos se borran de nuestros sistemas en uso de inmediato; las copias en nuestros respaldos caducan en un plazo de 30 días."
     ],
     "delete_mail_before": "¿Ya desinstalaste la app? Escribe a",
     "delete_mail_after": "desde el correo de tu cuenta con el asunto “Delete my account”.",
-    "delete_subject": "Delete my account"
+    "delete_subject": "Delete my account",
+    "delete_more": "Instrucciones completas: saluxly.com/es/delete-account.html"
+  },
+  "delete_page": {
+    "h1": "Borrar tu cuenta de Saluxly",
+    "lead": "Puedes borrar tu cuenta de Saluxly cuando quieras, desde la app o por correo. El borrado es permanente.",
+    "in_app_h": "En la app",
+    "steps": [
+      "Abre Saluxly y ve a Perfil.",
+      "Toca Borrar cuenta, al final.",
+      "Confirma."
+    ],
+    "mail_h": "Si ya desinstalaste la app",
+    "mail_before": "Escribe a",
+    "mail_after": "desde el correo de tu cuenta con el asunto “Delete my account”. Confirmamos la solicitud respondiendo a ese correo y después borramos la cuenta.",
+    "what_h": "Qué se borra y cuándo",
+    "what_now": "Tu cuenta y sus datos se borran de nuestros sistemas en uso de inmediato; las copias en nuestros respaldos caducan en un plazo de 30 días.",
+    "what_included": "Eso incluye tu correo, tu perfil, los artículos que abriste y guardaste, tus conteos diarios y el estado de tu suscripción.",
+    "what_device": "Las notas, los subrayados y las copias sin conexión de los artículos viven solo en tu dispositivo; desaparecen al borrar la app.",
+    "what_subscription": "Borrar tu cuenta no cancela una suscripción comprada en el App Store o en Google Play. Cancélala primero en los ajustes de tu cuenta de la tienda.",
+    "more_before": "Los detalles están en la sección 8 de la",
+    "more_after": " (en inglés)."
   }
 }

@@ -6,22 +6,23 @@ specification live in `design/` (`DESIGN-landing.md`, the boards in `reference/`
 
 ## Layout of the repository
 
-- `src/` — what is edited: `templates/` (landing, support, legal, 404), `partials/` (head, bar, footer,
-  form, mark, phone, page, sheet), `i18n/{en,es,pt}.json` (every text of the site), `site.css`,
-  `site.js`, `config.json` (launch state and store links), `legal/sample.json` (the sample
-  content of the legal template).
-- `build.mjs` — generates the publishable root from `src/`: `/`, `/es/`, `/pt/`, `support.html` in
-  the three languages, `404.html`, `delete-account.html` (a redirect to `support.html#delete`),
-  `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, and copies `site.css` and `site.js` to
-  `assets/`. It prints the sizes against the 120 KB budget and warns when a meta description is
-  outside 150–160 characters.
+- `src/` — what is edited: `templates/` (landing, support, delete, legal, 404), `partials/` (head, bar,
+  footer, contact, store, mark, phone, page, sheet), `i18n/{en,es,pt}.json` (every text of the site),
+  `site.css`, `site.js`, `config.json` (launch state and store links), `legal/privacy.md` and
+  `legal/terms.md` (the legal texts, in English; the source of `privacy.html` and `terms.html`, never
+  edited by hand in HTML).
+- `build.mjs` — generates the publishable root from `src/`: `/`, `/es/`, `/pt/`, `support.html` and
+  `delete-account.html` in the three languages, `privacy.html` and `terms.html` (English only, from
+  the Markdown; `## 8. …` headings get the anchor `#8`), `404.html`, `sitemap.xml`, `robots.txt`,
+  `manifest.webmanifest`, and copies `site.css` and `site.js` to `assets/`. It prints the sizes
+  against the 120 KB budget and warns when a meta description is outside 150–160 characters.
+  `node build.mjs --publish` (or `launched: true` in `config.json`) refuses to build while a
+  placeholder such as `[date Saluxly is published]` is still in any page, and writes nothing.
 - `assets/` — fonts (woff2, Latin subset), images (the app screens as WebP with PNG fallback, the
   share image, the conduction mark, favicons), `site.css`, `site.js`.
 - `tools/` — `fonts.sh` (subsets the typefaces from the app's font packages), `images.py` (screens,
   share image, favicons), `preview.sh`/`preview.py` (local preview), `shots.sh`
   (full-page screenshots at six widths), `cdp.mjs` (behaviour checks in headless Chrome).
-- `privacy.html`, `terms.html` — the current legal pages, untouched until the new texts arrive.
-  `drafts/legal-template.html` shows the "Legal page" template with sample content; it is not linked.
 - `CNAME` — the custom domain. GitHub Pages serves the repository root.
 
 ## Working on it

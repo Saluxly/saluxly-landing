@@ -5,6 +5,12 @@
   "description": "Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.",
   "support_title": "Support — Saluxly",
   "support_description": "Help with Saluxly: subscriptions, restoring a purchase, articles that will not open, and how to delete your account.",
+  "delete_title": "Delete your Saluxly account — Saluxly",
+  "delete_description": "How to delete your Saluxly account from the app or by email, and what is deleted: your account and its data go immediately; backup copies expire within 30 days.",
+  "privacy_title": "Privacy policy — Saluxly",
+  "privacy_description": "How Saluxly, Inc. collects and uses personal information in the Saluxly app and on saluxly.com, how long it is kept, and the choices and rights you have.",
+  "terms_title": "Terms of service — Saluxly",
+  "terms_description": "The terms for using the Saluxly app and saluxly.com: no medical advice, the free plan and subscriptions, the articles and their licenses, and your account.",
   "nav": {
     "skip": "Skip to content",
     "home": "Saluxly home",
@@ -341,10 +347,31 @@
     "delete_steps": [
       "Open Saluxly and go to Profile.",
       "Tap Delete account, at the bottom.",
-      "Confirm. Your data is erased within 30 days."
+      "Confirm. Your account and its data are deleted from our live systems immediately; copies in our backups expire within 30 days."
     ],
     "delete_mail_before": "Already uninstalled the app? Email",
     "delete_mail_after": "from the address on your account with the subject “Delete my account”.",
-    "delete_subject": "Delete my account"
+    "delete_subject": "Delete my account",
+    "delete_more": "Full instructions: saluxly.com/delete-account.html"
+  },
+  "delete_page": {
+    "h1": "Delete your Saluxly account",
+    "lead": "You can delete your Saluxly account at any time, from the app or by email. Deletion is permanent.",
+    "in_app_h": "In the app",
+    "steps": [
+      "Open Saluxly and go to Profile.",
+      "Tap Delete account, at the bottom.",
+      "Confirm."
+    ],
+    "mail_h": "If you already uninstalled the app",
+    "mail_before": "Email",
+    "mail_after": "from the address on your account with the subject “Delete my account”. We confirm the request by replying to that address, then delete the account.",
+    "what_h": "What is deleted, and when",
+    "what_now": "Your account and its data are deleted from our live systems immediately; copies in our backups expire within 30 days.",
+    "what_included": "That includes your email address, your profile, the articles you opened and saved, your daily counts and your subscription status.",
+    "what_device": "Notes, highlights and offline copies of articles live only on your device; they go when you delete the app.",
+    "what_subscription": "Deleting your account does not cancel a subscription bought through the App Store or Google Play. Cancel it first in your store account settings.",
+    "more_before": "Details are in section 8 of the",
+    "more_after": "."
   }
 }

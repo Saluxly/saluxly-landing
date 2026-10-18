@@ -414,18 +414,48 @@ h1 { font: 500 50px/0.98 var(--serif); letter-spacing: -0.8px; text-wrap: balanc
 .legal-inner { display: flex; flex-direction: column; gap: 32px; padding-top: 24px; padding-bottom: 80px; }
 .legal-toc { display: flex; flex-direction: column; gap: 2px; font-size: 14.5px; }
 .legal-toc a { padding: 6px 0; color: var(--text2); text-decoration: none; }
-.legal-body { display: flex; flex-direction: column; gap: 36px; max-width: 640px; }
-.legal-body section { border: 0; display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 80px; }
-.legal-body .h3 { font-size: 26px; }
-.legal-body p, .glance li { color: var(--text2); font-size: 16px; line-height: 25px; }
-.glance { padding: 22px 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
-.glance ul { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
-.legal-row { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15.5px; line-height: 23px; }
-.legal-cell--key { font-weight: 600; }
+.legal-body { display: flex; flex-direction: column; gap: 14px; max-width: 680px; min-width: 0; }
+.legal-body h2 { font: 500 26px/32px var(--serif); letter-spacing: -0.01em; margin-top: 28px; scroll-margin-top: 80px; text-wrap: balance; }
+.legal-body h3 { font: 500 20px/26px var(--serif); margin-top: 12px; scroll-margin-top: 80px; }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body p, .legal-body li { color: var(--text2); font-size: 16px; line-height: 25px; }
+.legal-body strong { color: var(--text); font-weight: 600; }
+.legal-body a { color: var(--amber-light); text-decoration: underline; text-underline-offset: 3px; }
+.legal-body ul, .legal-body ol { display: flex; flex-direction: column; gap: 8px; padding-left: 22px; }
+.legal-body ul { list-style: disc; }
+.legal-body ol { list-style: decimal; }
+/* Tables keep the hairline style; a wide one scrolls sideways on a phone instead of squeezing. */
+.legal-table { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 6px 0; scroll-margin-top: 80px; }
+.legal-table:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.legal-table table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 22px; }
+.legal-table--wide table { min-width: 620px; }
+/* On a phone a wide table runs to the screen's edge, and a soft edge shows there is more to the side. */
+@media (max-width: 1024px) {
+  .legal-table--wide { margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter);
+    background:
+      linear-gradient(to right, var(--bg) 40%, rgba(23, 16, 12, 0)) left / 44px 100% no-repeat local,
+      linear-gradient(to left, var(--bg) 40%, rgba(23, 16, 12, 0)) right / 44px 100% no-repeat local,
+      linear-gradient(to right, rgba(251, 147, 56, .22), rgba(251, 147, 56, 0)) left / 18px 100% no-repeat scroll,
+      linear-gradient(to left, rgba(251, 147, 56, .22), rgba(251, 147, 56, 0)) right / 18px 100% no-repeat scroll;
+  }
+}
+.legal-table th, .legal-table td { padding: 12px 14px 12px 0; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); color: var(--text2); }
+.legal-table th { color: var(--text); font-weight: 600; }
+.legal-table thead th { font-size: 13.5px; letter-spacing: .02em; text-transform: uppercase; color: var(--text3); }
+.legal-table tr:last-child td, .legal-table tr:last-child th { border-bottom: 0; }
+.legal-table th[scope="row"] { min-width: 150px; }
+.delete-what { display: flex; flex-direction: column; gap: 12px; }
+.delete-what .h3 { font-size: 26px; }
+.delete-what p { color: var(--text2); font-size: 15.5px; line-height: 24px; }
+.delete-what strong { color: var(--text); font-weight: 600; }
+.delete-what a, .delete-more a { color: var(--amber-light); text-decoration: underline; text-underline-offset: 3px; }
+.delete .h3 + .h3, .delete ol + .h3 { margin-top: 10px; }
 @media (min-width: 1025px) {
-  .legal-inner { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 100px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
-  .legal-toc { position: sticky; top: 88px; }
-  .legal-row { grid-template-columns: 220px minmax(0, 1fr); gap: 24px; }
+  .legal-inner { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 80px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .legal-toc { position: sticky; top: 88px; max-height: calc(100vh - 110px); overflow-y: auto; }
+  .legal-body h2 { font-size: 30px; line-height: 36px; }
+  .legal-table th[scope="row"] { min-width: 180px; }
+  .delete-what .h3 { font-size: 30px; }
 }
 .notfound-inner { display: flex; flex-direction: column; gap: 24px; padding-top: 60px; padding-bottom: 80px; min-height: 70vh; }
 

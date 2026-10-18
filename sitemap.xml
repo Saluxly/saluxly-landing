@@ -15,6 +15,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://saluxly.com/support.html"/>
   </url>
   <url>
+    <loc>https://saluxly.com/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saluxly.com/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saluxly.com/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saluxly.com/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saluxly.com/delete-account.html"/>
+  </url>
+  <url>
     <loc>https://saluxly.com/es/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://saluxly.com/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://saluxly.com/es/"/>
@@ -29,6 +36,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://saluxly.com/support.html"/>
   </url>
   <url>
+    <loc>https://saluxly.com/es/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saluxly.com/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saluxly.com/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saluxly.com/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saluxly.com/delete-account.html"/>
+  </url>
+  <url>
     <loc>https://saluxly.com/pt/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://saluxly.com/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://saluxly.com/es/"/>
@@ -41,5 +55,18 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://saluxly.com/es/support.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://saluxly.com/pt/support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://saluxly.com/support.html"/>
+  </url>
+  <url>
+    <loc>https://saluxly.com/pt/delete-account.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saluxly.com/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saluxly.com/es/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saluxly.com/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saluxly.com/delete-account.html"/>
+  </url>
+  <url>
+    <loc>https://saluxly.com/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://saluxly.com/terms.html</loc>
   </url>
 </urlset>

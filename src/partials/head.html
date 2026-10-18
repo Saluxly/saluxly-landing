@@ -3,9 +3,9 @@
 <title>{{html_title}}</title>
 <meta name="description" content="{{html_description}}">
 <link rel="canonical" href="{{url}}">
-{{#each alternates}}<link rel="alternate" hreflang="{{lang}}" href="{{href}}">
+{{#unless english_only}}{{#each alternates}}<link rel="alternate" hreflang="{{lang}}" href="{{href}}">
 {{/each}}<link rel="alternate" hreflang="x-default" href="{{alternates.0.href}}">
-<meta name="theme-color" content="#17100C">
+{{/unless}}<meta name="theme-color" content="#17100C">
 <meta name="color-scheme" content="dark">
 <link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">

@@ -9,19 +9,16 @@
   <div class="wrap legal-head">
     <p class="eyebrow">{{t.footer.legal}}</p>
     <h1 class="h2 h2--page">{{doc.title}}</h1>
-    <p class="lead">{{doc.effective}}</p>
+    <p class="lead">{{{doc.effective}}}</p>
   </div>
   <div class="wrap legal-inner">
     <nav class="legal-toc" aria-label="Contents">
-      <a href="#glance">{{doc.glance_title}}</a>
       {{#each doc.sections}}<a href="#{{id}}">{{title}}</a>
       {{/each}}
     </nav>
-    <div class="legal-body">
-      <section class="glance" id="glance"><h2 class="h3">{{doc.glance_title}}</h2><ul>{{#each doc.glance}}<li>{{this}}</li>{{/each}}</ul></section>
-      {{#each doc.sections}}<section id="{{id}}"><h2 class="h3">{{title}}</h2>{{#each paragraphs}}<p>{{this}}</p>{{/each}}{{#if table}}<div class="legal-table">{{#each table}}<div class="legal-row"><div class="legal-cell legal-cell--key">{{key}}</div><div class="legal-cell">{{value}}</div></div>{{/each}}</div>{{/if}}</section>
-      {{/each}}
-    </div>
+    <article class="legal-body">
+{{{doc.html}}}
+    </article>
   </div>
 </main>
 {{> footer}}
