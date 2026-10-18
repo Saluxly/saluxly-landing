@@ -65,7 +65,7 @@
       },
       {
         "title": "Read the paper",
-        "text": "The original PDF opens inside the app, with highlights, notes and a plain-language summary one tap away."
+        "text": "The original PDF opens inside the app, with highlights and notes, and the article's details one tap away."
       }
     ],
     "chips": {
@@ -108,9 +108,9 @@
       },
       {
         "screen": "summary",
-        "title": "Understand it in two minutes.",
-        "text": "Aa gives you a plain-language summary built from the paper itself. Ask AI answers your questions about what you are reading. Both can make mistakes, so the paper is always one tap away.",
-        "alt": "The summary sheet: what the paper asks, what it found and what it means for practice."
+        "title": "The essentials at a glance. Your AI one tap away.",
+        "text": "Aa shows what you need before you open the paper: review type, authors, journal, year, topics and the published abstract. AI sends the PDF to the AI assistant you already use, so you can ask questions or get a summary there. Saluxly itself never sends your reading to an AI.",
+        "alt": "The Aa sheet of an article: review type, authors, journal, year, pages, license, topics and the published abstract."
       },
       {
         "screen": "search",
@@ -248,7 +248,7 @@
         "monthly": "Unlimited"
       },
       {
-        "label": "Summary and Ask AI",
+        "label": "Aa details and send to AI",
         "free": "With every article you open",
         "yearly": "Included",
         "monthly": "Included"

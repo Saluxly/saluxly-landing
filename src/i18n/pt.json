@@ -65,7 +65,7 @@
       },
       {
         "title": "Leia o artigo",
-        "text": "O PDF original abre dentro do app, com marcações, notas e um resumo em linguagem simples a um toque."
+        "text": "O PDF original abre dentro do app, com destaques e notas, e os dados do artigo a um toque."
       }
     ],
     "chips": {
@@ -108,9 +108,9 @@
       },
       {
         "screen": "summary",
-        "title": "Entenda em dois minutos.",
-        "text": "O Aa traz um resumo em linguagem simples feito a partir do próprio artigo. O Ask AI responde às suas perguntas sobre o que você está lendo. Os dois podem errar, por isso o artigo está sempre a um toque.",
-        "alt": "A folha de resumo: o que o artigo pergunta, o que encontrou e o que significa para a prática."
+        "title": "O essencial num relance. Sua IA a um toque.",
+        "text": "Aa mostra o que você precisa antes de abrir o artigo: tipo de revisão, autores, revista, ano, temas e o abstract publicado. AI envia o PDF ao assistente de IA que você já usa, para perguntar ou pedir um resumo lá. O Saluxly nunca envia sua leitura a uma IA por conta própria.",
+        "alt": "A folha Aa de um artigo: tipo de revisão, autores, revista, ano, páginas, licença, temas e o abstract publicado."
       },
       {
         "screen": "search",
@@ -248,7 +248,7 @@
         "monthly": "Ilimitadas"
       },
       {
-        "label": "Resumo e Ask AI",
+        "label": "Dados Aa e enviar à IA",
         "free": "Com cada artigo que você abrir",
         "yearly": "Incluídos",
         "monthly": "Incluídos"
