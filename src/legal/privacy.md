@@ -1,6 +1,6 @@
 # Saluxly Privacy Policy
 
-**Effective date:** [date Saluxly is published]
+**Effective date:** October 18, 2026
 
 Saluxly is an app for finding and reading published medical review articles. This policy explains what personal information Saluxly, Inc. collects when you use the Saluxly apps and saluxly.com, how we use it, and the choices you have.
 
@@ -120,8 +120,9 @@ These companies handle information so that Saluxly can work. We require them to 
 | RevenueCat | Confirms and tracks the status of subscriptions and free trials | Your Saluxly account number, your Apple receipt or Google purchase token and purchase records, the time the app was last used, the identifier Apple or Google gives apps for your device (not the advertising identifier), and basic device details such as device type, operating system, app version, language and currency. Like any server the app contacts, RevenueCat sees your IP address. |
 | Anthropic | Interprets search text with an AI model | Search text only. (Anthropic also receives article data for labeling, which contains nothing about you.) |
 | GitHub | Hosts the website saluxly.com (GitHub Pages) | Your IP address and the pages you request when you visit saluxly.com |
-| [Cloud hosting provider] | Runs our servers, database, file storage and backups | The information stored on our servers |
-| [Email delivery provider] | Delivers sign-in codes and service emails | Email address and the content of the message |
+| DigitalOcean, LLC | Runs our servers and database in the United States | The information stored on our servers |
+| Cloudflare, Inc. | Stores article files and encrypted backups of our database for us, and provides the DNS of saluxly.com | Article files (which contain nothing about you), encrypted database backups, and your IP address when the app fetches an article file |
+| Resend, Inc. | Delivers sign-in codes and service emails | Email address and the content of the message |
 
 Apple and Google also act on their own account when they provide their services to you, such as your Apple or Google account and store payments. Their privacy policies apply to that.
 

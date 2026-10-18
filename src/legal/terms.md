@@ -1,6 +1,6 @@
 # Saluxly Terms of Service
 
-**Effective date:** [date Saluxly is published]
+**Effective date:** October 18, 2026
 
 These terms are the agreement between you and Saluxly, Inc. for using Saluxly. The summary below is only a guide. The full terms are what apply.
 
