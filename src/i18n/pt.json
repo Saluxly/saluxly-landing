@@ -1,0 +1,377 @@
+{
+  "lang": "pt",
+  "name": "Português",
+  "title": "Saluxly — Deixe os artigos encontrarem você",
+  "description": "O Saluxly lê o PubMed por você e monta todo dia um feed de artigos de revisão da sua especialidade, com o PDF original dentro do app. Primeiro no iPhone e iPad.",
+  "support_title": "Suporte — Saluxly",
+  "support_description": "Ajuda com o Saluxly: assinaturas, restaurar uma compra, artigos que não abrem e como excluir sua conta.",
+  "delete_title": "Excluir sua conta do Saluxly — Saluxly",
+  "delete_description": "Como excluir sua conta do Saluxly pelo app ou por e-mail, e o que é apagado: sua conta e seus dados imediatamente; as cópias de backup expiram em 30 dias.",
+  "privacy_title": "Política de privacidade — Saluxly",
+  "privacy_description": "Como a Saluxly, Inc. coleta e usa informações pessoais no app Saluxly e em saluxly.com, por quanto tempo as guarda, e suas opções e direitos (em inglês).",
+  "terms_title": "Termos de serviço — Saluxly",
+  "terms_description": "Os termos para usar o app Saluxly e saluxly.com: sem aconselhamento médico, plano gratuito e assinaturas, os artigos e suas licenças, e sua conta (em inglês).",
+  "nav": {
+    "skip": "Ir para o conteúdo",
+    "home": "Início do Saluxly",
+    "how": "Como funciona",
+    "product": "Produto",
+    "pricing": "Preços",
+    "faq": "Perguntas",
+    "join": "Fale conosco",
+    "menu": "Menu",
+    "close": "Fechar menu",
+    "language": "Idioma",
+    "main": "Principal"
+  },
+  "hero": {
+    "h1": "Deixe os artigos encontrarem você.",
+    "lead": "O Saluxly lê o PubMed por você e monta todo dia um feed de artigos de revisão da sua especialidade, com o PDF original dentro do app.",
+    "note": "Primeiro no iPhone e no iPad. Experimente grátis por 7 dias.",
+    "note_launched": "Experimente grátis por 7 dias.",
+    "visual_alt": "O feed do Saluxly em um iPhone, com a primeira página de um artigo de revisão ao lado."
+  },
+  "contact": {
+    "text": "Quer saber quando o Saluxly for lançado? Escreva para",
+    "button": "Fale conosco",
+    "subject": "Saluxly launch"
+  },
+  "store": {
+    "apple": "Baixar na App Store",
+    "google": "Disponível no Google Play",
+    "qr": "Escaneie para instalar"
+  },
+  "claim": {
+    "h2": "O PubMed soma mais de um milhão de registros novos por ano. Você precisa de cinco.",
+    "rows": [
+      {
+        "title": "Só artigos de revisão, dos últimos cinco anos.",
+        "text": "Revisões sistemáticas, metanálises, diretrizes e revisões narrativas. Sem estudos primários para peneirar."
+      },
+      {
+        "title": "Revistas que passam por um filtro de qualidade.",
+        "text": "Indexadas no MEDLINE ou com um histórico consolidado de citações, ordenadas por impacto dentro de cada especialidade."
+      },
+      {
+        "title": "Escolhidos para a sua especialidade e profissão.",
+        "text": "Mais de quarenta especialidades e seis profissões, em inglês, espanhol ou português."
+      }
+    ]
+  },
+  "how": {
+    "h2": "Três passos, e depois funciona sozinho.",
+    "steps": [
+      {
+        "title": "Escolha suas especialidades",
+        "text": "Uma ou várias. Médicos, residentes, estudantes, dentistas, enfermeiros e nutricionistas têm cada um o seu próprio feed."
+      },
+      {
+        "title": "Abra o feed",
+        "text": "Artigos de revisão novos todo dia, ordenados para você. Marque com um coração os que quiser guardar."
+      },
+      {
+        "title": "Leia o artigo",
+        "text": "O PDF original abre dentro do app, com destaques e notas, e os dados do artigo a um toque."
+      }
+    ],
+    "chips": {
+      "on": [
+        "Obstetrícia",
+        "Neonatologia"
+      ],
+      "off": [
+        "Cardiologia",
+        "Toda a medicina"
+      ]
+    },
+    "row": {
+      "title": "Restrição do crescimento fetal: rastreamento, diagnóstico e momento do parto",
+      "journal": "Journal of Clinical Medicine",
+      "meta": [
+        "Revisão",
+        "2025",
+        "16 páginas"
+      ],
+      "saved": "Salvo"
+    },
+    "aa": "Aa"
+  },
+  "product": {
+    "h2": "Feito para o jeito como os médicos leem.",
+    "lead": "Pouco tempo e muita exigência. O Saluxly traz o artigo para você, não uma coleção de links.",
+    "blocks": [
+      {
+        "screen": "feed",
+        "title": "Escolhidos para você, não para anunciantes.",
+        "text": "Cada artigo do seu feed está ali por causa das suas especialidades e do que você lê, nunca porque alguém pagou pelo espaço. Sem anúncios, sem patrocínios, sem farmacêuticas.",
+        "alt": "A tela do feed: uma lista de artigos de revisão escolhidos para as especialidades do leitor."
+      },
+      {
+        "screen": "reader",
+        "title": "O artigo original, como a revista publicou.",
+        "text": "Artigos com licença aberta (CC BY e CC0) abrem dentro do Saluxly em um leitor nativo. Marque, faça anotações e guarde-os off-line. Todo o resto abre no PubMed Central ou no site da revista, claramente indicado.",
+        "alt": "A tela do leitor: o PDF original de um artigo com um trecho marcado."
+      },
+      {
+        "screen": "summary",
+        "title": "O essencial num relance. Sua IA a um toque.",
+        "text": "Aa mostra o que você precisa antes de abrir o artigo: tipo de revisão, autores, revista, ano, temas e o abstract publicado. AI envia o PDF ao assistente de IA que você já usa, para perguntar ou pedir um resumo lá. O Saluxly nunca envia sua leitura a uma IA por conta própria.",
+        "alt": "A folha Aa de um artigo: tipo de revisão, autores, revista, ano, páginas, licença, temas e o abstract publicado."
+      },
+      {
+        "screen": "search",
+        "title": "Uma busca que fala medicina.",
+        "text": "Escreva em inglês, espanhol ou português, com abreviações ou erros de digitação. O Saluxly traduz suas palavras para descritores médicos e devolve as revisões que tratam do seu tema, não as que apenas o mencionam.",
+        "alt": "A tela de busca: a consulta “aspirina preeclampsia prevención” entendida como três conceitos médicos, com as revisões correspondentes."
+      }
+    ]
+  },
+  "sources": {
+    "h2": "De onde vem cada artigo.",
+    "lead": "Todo o caminho, sem nada escondido. Dados dos artigos por cortesia da U.S. National Library of Medicine.",
+    "legend": "Uma página sólida significa que o PDF está no app. Uma página em contorno significa que ele abre na fonte.",
+    "steps": [
+      {
+        "title": "Indexado no PubMed",
+        "text": "Artigos de revisão, revisões sistemáticas, metanálises e diretrizes publicados nos últimos cinco anos."
+      },
+      {
+        "title": "Passa por um filtro de qualidade",
+        "text": "Revistas indexadas no MEDLINE ou com um histórico consolidado de citações, ordenadas por impacto dentro da sua especialidade."
+      },
+      {
+        "title": "Tem a licença verificada",
+        "text": "Artigos com licença aberta (CC BY ou CC0) são hospedados e abrem dentro do app. Os demais abrem no PubMed Central ou no site da própria revista."
+      },
+      {
+        "title": "Com crédito, sempre",
+        "text": "Cada artigo traz seus autores, revista, ano e licença, com um link para o registro no PubMed."
+      }
+    ]
+  },
+  "practice": {
+    "h2": "Feito para o jeito como você atua.",
+    "lead": "Seis profissões, mais de quarenta especialidades, um app. Escolha as suas no primeiro minuto e mude quando quiser.",
+    "rows": [
+      {
+        "title": "Médicos e residentes",
+        "text": "Suas especialidades, mais as revisões de toda a medicina que todos deveriam conhecer."
+      },
+      {
+        "title": "Estudantes de medicina",
+        "text": "Os temas centrais dos anos clínicos, no nível de um rodízio."
+      },
+      {
+        "title": "Dentistas, enfermeiros e nutricionistas",
+        "text": "Um feed feito com as revistas da sua própria profissão, não uma cópia filtrada do feed de medicina."
+      }
+    ],
+    "specialties": [
+      "Alergia e imunologia",
+      "Anestesiologia",
+      "Cardiologia",
+      "Cirurgia colorretal",
+      "Cirurgia geral",
+      "Cirurgia ortopédica",
+      "Cirurgia plástica",
+      "Cirurgia torácica e cardiovascular",
+      "Cirurgia vascular",
+      "Cuidados intensivos",
+      "Dermatologia",
+      "Doença infecciosa",
+      "Doença pulmonar",
+      "Endocrinologia",
+      "Enfermagem",
+      "Farmacologia",
+      "Gastroenterologia",
+      "Genética",
+      "Geriatria",
+      "Hematologia",
+      "Medicina de emergência",
+      "Medicina de família",
+      "Medicina física e reabilitação",
+      "Medicina interna",
+      "Medicina nuclear",
+      "Nefrologia",
+      "Neonatologia",
+      "Neurocirurgia",
+      "Neurologia",
+      "Nutrição",
+      "Obstetrícia e ginecologia",
+      "Odontologia",
+      "Oftalmologia",
+      "Oncologia",
+      "Otorrinolaringologia",
+      "Patologia",
+      "Pediatria",
+      "Psiquiatria",
+      "Radiologia",
+      "Reumatologia",
+      "Saúde pública",
+      "Urologia"
+    ],
+    "more": "e mais",
+    "more_mobile": "e mais 26"
+  },
+  "pricing": {
+    "h2": "Experimente grátis por 7 dias.",
+    "lead": "Comece um teste grátis de 7 dias em qualquer um dos dois planos; depois ele renova pelo preço do plano, a menos que você cancele. Ou fique no plano gratuito pelo tempo que quiser.",
+    "best": "Melhor valor",
+    "plans": {
+      "free": {
+        "name": "Gratuito",
+        "sub": "Sem assinatura",
+        "price": "US$ 0"
+      },
+      "yearly": {
+        "name": "Anual",
+        "sub": "US$ 2,92 por mês, cobrado uma vez por ano",
+        "price": "US$ 34,99 por ano"
+      },
+      "monthly": {
+        "name": "Mensal",
+        "sub": "Cobrado todo mês",
+        "price": "US$ 4,99 por mês"
+      }
+    },
+    "rows": [
+      {
+        "label": "Feed diário",
+        "free": "30 artigos por dia",
+        "yearly": "Sem limite",
+        "monthly": "Sem limite"
+      },
+      {
+        "label": "Artigos que você pode abrir",
+        "free": "3 por dia",
+        "yearly": "Ilimitados",
+        "monthly": "Ilimitados"
+      },
+      {
+        "label": "Buscas novas",
+        "free": "3 por dia",
+        "yearly": "Ilimitadas",
+        "monthly": "Ilimitadas"
+      },
+      {
+        "label": "Dados Aa e enviar à IA",
+        "free": "Em todos os artigos do catálogo",
+        "yearly": "Incluídos",
+        "monthly": "Incluídos"
+      },
+      {
+        "label": "Salvar e ler off-line",
+        "free": "Incluído",
+        "yearly": "Incluído",
+        "monthly": "Incluído"
+      }
+    ],
+    "price_label": "Preço",
+    "note": "Preços em dólares americanos; os preços locais e os impostos podem variar. Após o teste grátis, as assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua App Store."
+  },
+  "faq": {
+    "h2": "Perguntas, respondidas.",
+    "items": [
+      {
+        "q": "O Saluxly é um livro-texto ou uma referência clínica?",
+        "a": "Não. O Saluxly é um feed de leitura de artigos de revisão da literatura médica. Ele ajuda você a acompanhar o que está sendo publicado na sua área; não substitui uma referência clínica, uma diretriz nem o seu próprio julgamento."
+      },
+      {
+        "q": "De onde vêm os artigos?",
+        "a": "Do PubMed, a base de dados da U.S. National Library of Medicine. O Saluxly mantém artigos de revisão, revisões sistemáticas, metanálises e diretrizes dos últimos cinco anos, publicados em revistas que passam pelo seu filtro de qualidade."
+      },
+      {
+        "q": "Posso ler o artigo completo?",
+        "a": "Sim. Artigos com licença aberta (CC BY ou CC0) abrem dentro do app como o PDF original. Os demais abrem no PubMed Central ou no site da revista em uma visualização do navegador, onde muitos são gratuitos."
+      },
+      {
+        "q": "É legal ler os PDFs no app?",
+        "a": "Sim. O Saluxly só hospeda artigos cuja licença permite, dá crédito a cada artigo, aos autores e à revista, e leva os demais à fonte em vez de copiá-los."
+      },
+      {
+        "q": "Em quais idiomas ele funciona?",
+        "a": "O app funciona em inglês, espanhol e português. Os artigos estão em inglês, com os títulos traduzidos automaticamente. Você pode buscar em qualquer um dos três idiomas."
+      },
+      {
+        "q": "Preciso de login de hospital ou de universidade?",
+        "a": "Não. Tudo no Saluxly tem licença aberta ou é gratuito na fonte. Você só precisa de um e-mail."
+      },
+      {
+        "q": "Em quais aparelhos posso usar?",
+        "a": "Primeiro no iPhone e no iPad, com um layout para iPad e um widget na tela de início. O Android vem depois, e uma versão web está planejada."
+      },
+      {
+        "q": "O que vocês fazem com os meus dados?",
+        "a": "Seu e-mail serve para entrar. O que você lê e salva personaliza o seu feed. O Saluxly não mostra anúncios, não usa rastreadores de publicidade e não vende seus dados. Você pode excluir sua conta pelo app a qualquer momento."
+      }
+    ]
+  },
+  "final": {
+    "h2": "Seja um dos primeiros a ler.",
+    "lead": "Um e-mail quando o Saluxly for lançado no iPhone e no iPad. Nada mais."
+  },
+  "footer": {
+    "text": "O Saluxly é uma ferramenta de leitura para profissionais de saúde. Não é um dispositivo médico e não oferece aconselhamento médico. Dados dos artigos por cortesia da U.S. National Library of Medicine. O Saluxly não é afiliado à NLM, aos NIH ou ao HHS, nem endossado por eles.",
+    "copyright": "© 2026 Saluxly, Inc.",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de serviço",
+    "support": "Suporte",
+    "delete": "Excluir sua conta",
+    "legal": "Legal"
+  },
+  "support": {
+    "h1": "Suporte",
+    "lead": "Escreva para a gente e uma pessoa responde, normalmente em até dois dias úteis.",
+    "email_button": "Escrever para contact@saluxly.com",
+    "questions_h": "Perguntas frequentes",
+    "questions": [
+      {
+        "title": "Gerenciar ou cancelar sua assinatura",
+        "text": "As assinaturas são cobradas pela Apple. Abra os Ajustes no seu iPhone, toque no seu nome, depois em Assinaturas e escolha Saluxly. Ao cancelar, você mantém o acesso até o fim do período que pagou."
+      },
+      {
+        "title": "Restaurar uma compra em um aparelho novo",
+        "text": "Entre com a mesma conta, abra Perfil no app e toque em Restaurar compras."
+      },
+      {
+        "title": "Um artigo não abre",
+        "text": "Artigos marcados com uma página em contorno abrem no PubMed Central ou no site da revista, que pode demorar ou mostrar a própria verificação de segurança. Tente de novo em um minuto ou abra o registro do PubMed nos detalhes do artigo."
+      },
+      {
+        "title": "Mudar seu idioma, profissão ou especialidades",
+        "text": "Os três ficam em Perfil. As mudanças valem para o seu próximo feed."
+      }
+    ],
+    "delete_h": "Excluir sua conta",
+    "delete_text": "Excluir sua conta remove seu perfil, seu histórico de leitura e seus artigos salvos. As assinaturas são canceladas separadamente, nos ajustes da sua App Store.",
+    "delete_steps": [
+      "Abra o Saluxly e vá em Perfil.",
+      "Toque em Excluir conta, no final.",
+      "Confirme. Sua conta e seus dados são apagados dos nossos sistemas em uso imediatamente; as cópias nos nossos backups expiram em até 30 dias."
+    ],
+    "delete_mail_before": "Já desinstalou o app? Escreva para",
+    "delete_mail_after": "a partir do e-mail da sua conta com o assunto “Delete my account”.",
+    "delete_subject": "Delete my account",
+    "delete_more": "Instruções completas: saluxly.com/pt/delete-account.html"
+  },
+  "delete_page": {
+    "h1": "Excluir sua conta do Saluxly",
+    "lead": "Você pode excluir sua conta do Saluxly a qualquer momento, pelo app ou por e-mail. A exclusão é permanente.",
+    "in_app_h": "No app",
+    "steps": [
+      "Abra o Saluxly e vá em Perfil.",
+      "Toque em Excluir conta, no final.",
+      "Confirme."
+    ],
+    "mail_h": "Se você já desinstalou o app",
+    "mail_before": "Escreva para",
+    "mail_after": "a partir do e-mail da sua conta com o assunto “Delete my account”. Confirmamos o pedido respondendo a esse e-mail e depois excluímos a conta.",
+    "what_h": "O que é apagado, e quando",
+    "what_now": "Sua conta e seus dados são apagados dos nossos sistemas em uso imediatamente; as cópias nos nossos backups expiram em até 30 dias.",
+    "what_included": "Isso inclui seu e-mail, seu perfil, os artigos que você abriu e salvou, suas contagens diárias e o status da sua assinatura.",
+    "what_device": "Notas, destaques e cópias off-line dos artigos ficam só no seu aparelho; somem quando você apaga o app.",
+    "what_subscription": "Excluir sua conta não cancela uma assinatura comprada na App Store ou no Google Play. Cancele-a antes nos ajustes da sua conta na loja.",
+    "more_before": "Os detalhes estão na seção 8 da",
+    "more_after": " (em inglês)."
+  }
+}

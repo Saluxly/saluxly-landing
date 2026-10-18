@@ -1,0 +1,377 @@
+{
+  "lang": "en",
+  "name": "English",
+  "title": "Saluxly — Let the papers find you",
+  "description": "Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.",
+  "support_title": "Support — Saluxly",
+  "support_description": "Help with Saluxly: subscriptions, restoring a purchase, articles that will not open, and how to delete your account.",
+  "delete_title": "Delete your Saluxly account — Saluxly",
+  "delete_description": "How to delete your Saluxly account from the app or by email, and what is deleted: your account and its data go immediately; backup copies expire within 30 days.",
+  "privacy_title": "Privacy policy — Saluxly",
+  "privacy_description": "How Saluxly, Inc. collects and uses personal information in the Saluxly app and on saluxly.com, how long it is kept, and the choices and rights you have.",
+  "terms_title": "Terms of service — Saluxly",
+  "terms_description": "The terms for using the Saluxly app and saluxly.com: no medical advice, the free plan and subscriptions, the articles and their licenses, and your account.",
+  "nav": {
+    "skip": "Skip to content",
+    "home": "Saluxly home",
+    "how": "How it works",
+    "product": "Product",
+    "pricing": "Pricing",
+    "faq": "Questions",
+    "join": "Email us",
+    "menu": "Menu",
+    "close": "Close menu",
+    "language": "Language",
+    "main": "Main"
+  },
+  "hero": {
+    "h1": "Let the papers find you.",
+    "lead": "Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.",
+    "note": "Launching first on iPhone and iPad. Try it free for 7 days.",
+    "note_launched": "Try it free for 7 days.",
+    "visual_alt": "The Saluxly feed on an iPhone, with the first page of a review article beside it."
+  },
+  "contact": {
+    "text": "Want to know when Saluxly launches? Write to",
+    "button": "Email us",
+    "subject": "Saluxly launch"
+  },
+  "store": {
+    "apple": "Download on the App Store",
+    "google": "Get it on Google Play",
+    "qr": "Scan to install"
+  },
+  "claim": {
+    "h2": "PubMed adds more than a million new records a year. You need five.",
+    "rows": [
+      {
+        "title": "Review articles only, from the last five years.",
+        "text": "Systematic reviews, meta-analyses, guidelines and narrative reviews. No primary studies to sift through."
+      },
+      {
+        "title": "Journals that meet a quality bar.",
+        "text": "Indexed in MEDLINE or with an established citation record, ranked by impact within each specialty."
+      },
+      {
+        "title": "Chosen for your specialty and profession.",
+        "text": "Forty-plus specialties and six professions, in English, Spanish or Portuguese."
+      }
+    ]
+  },
+  "how": {
+    "h2": "Three steps, then it runs on its own.",
+    "steps": [
+      {
+        "title": "Choose your specialties",
+        "text": "One or several. Physicians, residents, students, dentists, nurses and dietitians each get a feed of their own."
+      },
+      {
+        "title": "Open the feed",
+        "text": "New review articles every day, ranked for you. Heart the ones you want to keep."
+      },
+      {
+        "title": "Read the paper",
+        "text": "The original PDF opens inside the app, with highlights and notes, and the article's details one tap away."
+      }
+    ],
+    "chips": {
+      "on": [
+        "Obstetrics",
+        "Neonatology"
+      ],
+      "off": [
+        "Cardiology",
+        "All medicine"
+      ]
+    },
+    "row": {
+      "title": "Fetal growth restriction: screening, diagnosis and timing of delivery",
+      "journal": "Journal of Clinical Medicine",
+      "meta": [
+        "Review",
+        "2025",
+        "16 pages"
+      ],
+      "saved": "Saved"
+    },
+    "aa": "Aa"
+  },
+  "product": {
+    "h2": "Built for how doctors read.",
+    "lead": "Short on time and long on standards. Saluxly brings you the paper, not a link farm.",
+    "blocks": [
+      {
+        "screen": "feed",
+        "title": "Chosen for you, not for advertisers.",
+        "text": "Every paper in your feed is there because of your specialties and what you read, never because someone paid for the spot. No ads, no sponsors, no pharma.",
+        "alt": "The feed screen: a list of review articles chosen for the reader's specialties."
+      },
+      {
+        "screen": "reader",
+        "title": "The original paper, as the journal published it.",
+        "text": "Open-license papers (CC BY and CC0) open inside Saluxly in a native reader. Highlight, take notes and keep them offline. Everything else opens at PubMed Central or the journal’s site, clearly marked.",
+        "alt": "The reader screen: the original PDF of a paper with a highlighted passage."
+      },
+      {
+        "screen": "summary",
+        "title": "The essentials at a glance. Your AI one tap away.",
+        "text": "Aa shows what you need before you open the paper: review type, authors, journal, year, topics and the published abstract. AI sends the PDF to the AI assistant you already use, so you can ask questions or get a summary there. Saluxly itself never sends your reading to an AI.",
+        "alt": "The Aa sheet of an article: review type, authors, journal, year, pages, license, topics and the published abstract."
+      },
+      {
+        "screen": "search",
+        "title": "Search that speaks medicine.",
+        "text": "Type in English, Spanish or Portuguese, with abbreviations or typos. Saluxly maps your words to medical subject headings and returns the reviews that are about your topic, not the ones that merely mention it.",
+        "alt": "The search screen: the query “aspirina preeclampsia prevención” understood as three medical concepts, with the matching reviews."
+      }
+    ]
+  },
+  "sources": {
+    "h2": "Where every paper comes from.",
+    "lead": "The whole pipeline, with nothing hidden. Article data courtesy of the U.S. National Library of Medicine.",
+    "legend": "A solid page means the PDF is in the app. An outlined page means it opens at its source.",
+    "steps": [
+      {
+        "title": "Indexed in PubMed",
+        "text": "Review articles, systematic reviews, meta-analyses and guidelines published in the last five years."
+      },
+      {
+        "title": "Through a quality bar",
+        "text": "Journals indexed in MEDLINE or with an established citation record, ranked by impact within their specialty."
+      },
+      {
+        "title": "Checked for its license",
+        "text": "Papers with an open license (CC BY or CC0) are hosted and open inside the app. The rest open at PubMed Central or the journal’s own site."
+      },
+      {
+        "title": "Credited, always",
+        "text": "Every paper carries its authors, journal, year and license, with a link to the PubMed record."
+      }
+    ]
+  },
+  "practice": {
+    "h2": "Made for the way you practice.",
+    "lead": "Six professions, forty-plus specialties, one app. Pick yours in the first minute and change it whenever you like.",
+    "rows": [
+      {
+        "title": "Physicians and residents",
+        "text": "Your specialties, plus the reviews from all of medicine that everyone should know."
+      },
+      {
+        "title": "Medical students",
+        "text": "The core topics of the clinical years, at the level of a rotation."
+      },
+      {
+        "title": "Dentists, nurses and dietitians",
+        "text": "A feed built from your own profession’s journals, not a filtered copy of the medical one."
+      }
+    ],
+    "specialties": [
+      "Allergy & immunology",
+      "Anesthesiology",
+      "Cardiology",
+      "Colon & rectal surgery",
+      "Critical care",
+      "Dentistry",
+      "Dermatology",
+      "Emergency medicine",
+      "Endocrinology",
+      "Family medicine",
+      "Gastroenterology",
+      "General surgery",
+      "Genetics",
+      "Geriatrics",
+      "Hematology",
+      "Infectious diseases",
+      "Internal medicine",
+      "Neonatology",
+      "Nephrology",
+      "Neurology",
+      "Neurosurgery",
+      "Nuclear medicine",
+      "Nursing",
+      "Nutrition",
+      "Obstetrics & gynecology",
+      "Oncology",
+      "Ophthalmology",
+      "Orthopedics",
+      "Otolaryngology",
+      "Pathology",
+      "Pediatrics",
+      "Pharmacology",
+      "Physical medicine & rehabilitation",
+      "Plastic surgery",
+      "Psychiatry",
+      "Public health",
+      "Pulmonary disease",
+      "Radiology",
+      "Rheumatology",
+      "Thoracic & cardiovascular surgery",
+      "Urology",
+      "Vascular surgery"
+    ],
+    "more": "and more",
+    "more_mobile": "and 26 more"
+  },
+  "pricing": {
+    "h2": "Try it free for 7 days.",
+    "lead": "Start a 7-day free trial on either plan; after that it renews at the plan price unless you cancel. Or stay on the free plan for as long as you like.",
+    "best": "Best value",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "sub": "No subscription needed",
+        "price": "$0"
+      },
+      "yearly": {
+        "name": "Yearly",
+        "sub": "$2.92 a month, billed once a year",
+        "price": "$34.99 a year"
+      },
+      "monthly": {
+        "name": "Monthly",
+        "sub": "Billed every month",
+        "price": "$4.99 a month"
+      }
+    },
+    "rows": [
+      {
+        "label": "Daily feed",
+        "free": "30 papers a day",
+        "yearly": "Endless",
+        "monthly": "Endless"
+      },
+      {
+        "label": "Articles you can open",
+        "free": "3 a day",
+        "yearly": "Unlimited",
+        "monthly": "Unlimited"
+      },
+      {
+        "label": "New searches",
+        "free": "3 a day",
+        "yearly": "Unlimited",
+        "monthly": "Unlimited"
+      },
+      {
+        "label": "Aa details and send to AI",
+        "free": "On every article in our catalog",
+        "yearly": "Included",
+        "monthly": "Included"
+      },
+      {
+        "label": "Save and read offline",
+        "free": "Included",
+        "yearly": "Included",
+        "monthly": "Included"
+      }
+    ],
+    "price_label": "Price",
+    "note": "Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled in your App Store settings."
+  },
+  "faq": {
+    "h2": "Questions, answered.",
+    "items": [
+      {
+        "q": "Is Saluxly a textbook or a clinical reference?",
+        "a": "No. Saluxly is a reading feed of review articles from the medical literature. It helps you keep up with what is being published in your field; it does not replace a clinical reference, a guideline or your own judgment."
+      },
+      {
+        "q": "Where do the articles come from?",
+        "a": "From PubMed, the database of the U.S. National Library of Medicine. Saluxly keeps review articles, systematic reviews, meta-analyses and guidelines from the last five years, published in journals that pass its quality bar."
+      },
+      {
+        "q": "Can I read the full paper?",
+        "a": "Yes. Papers with an open license (CC BY or CC0) open inside the app as the original PDF. Other papers open at PubMed Central or on the journal’s website in a browser view, where many are free to read."
+      },
+      {
+        "q": "Is it legal to read the PDFs in the app?",
+        "a": "Yes. Saluxly only hosts papers whose license allows it, credits every paper to its authors and journal, and links the rest to their source instead of copying them."
+      },
+      {
+        "q": "Which languages does it work in?",
+        "a": "The app runs in English, Spanish and Portuguese. Articles are in English, with titles translated automatically. You can search in any of the three languages."
+      },
+      {
+        "q": "Do I need a hospital or university login?",
+        "a": "No. Everything in Saluxly is either openly licensed or free to read at its source. You only need an email address."
+      },
+      {
+        "q": "Which devices can I use?",
+        "a": "iPhone and iPad first, including an iPad layout and a home-screen widget. Android follows, and a web version is planned."
+      },
+      {
+        "q": "What do you do with my data?",
+        "a": "Your email signs you in. What you read and save personalizes your feed. Saluxly shows no ads, uses no advertising trackers and does not sell your data. You can delete your account from the app at any time."
+      }
+    ]
+  },
+  "final": {
+    "h2": "Be the first to read.",
+    "lead": "One email when Saluxly launches on iPhone and iPad. Nothing else."
+  },
+  "footer": {
+    "text": "Saluxly is a reading tool for health professionals. It is not a medical device and does not provide medical advice. Article data courtesy of the U.S. National Library of Medicine. Saluxly is not affiliated with or endorsed by the NLM, NIH or HHS.",
+    "copyright": "© 2026 Saluxly, Inc.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "support": "Support",
+    "delete": "Delete your account",
+    "legal": "Legal"
+  },
+  "support": {
+    "h1": "Support",
+    "lead": "Write to us and a person answers, usually within two business days.",
+    "email_button": "Email contact@saluxly.com",
+    "questions_h": "Common questions",
+    "questions": [
+      {
+        "title": "Manage or cancel your subscription",
+        "text": "Subscriptions are billed by Apple. Open Settings on your iPhone, tap your name, then Subscriptions, and choose Saluxly. Cancelling keeps your access until the end of the period you paid for."
+      },
+      {
+        "title": "Restore a purchase on a new device",
+        "text": "Sign in with the same account, open Profile in the app and tap Restore purchases."
+      },
+      {
+        "title": "An article will not open",
+        "text": "Papers marked with an outlined page open at PubMed Central or the journal’s website, which can be slow or show its own security check. Try again in a minute, or open the PubMed record from the article details."
+      },
+      {
+        "title": "Change your language, profession or specialties",
+        "text": "All three live in Profile. Changes apply to your next feed."
+      }
+    ],
+    "delete_h": "Delete your account",
+    "delete_text": "Deleting your account removes your profile, your reading history and your saved articles. Subscriptions are cancelled separately in your App Store settings.",
+    "delete_steps": [
+      "Open Saluxly and go to Profile.",
+      "Tap Delete account, at the bottom.",
+      "Confirm. Your account and its data are deleted from our live systems immediately; copies in our backups expire within 30 days."
+    ],
+    "delete_mail_before": "Already uninstalled the app? Email",
+    "delete_mail_after": "from the address on your account with the subject “Delete my account”.",
+    "delete_subject": "Delete my account",
+    "delete_more": "Full instructions: saluxly.com/delete-account.html"
+  },
+  "delete_page": {
+    "h1": "Delete your Saluxly account",
+    "lead": "You can delete your Saluxly account at any time, from the app or by email. Deletion is permanent.",
+    "in_app_h": "In the app",
+    "steps": [
+      "Open Saluxly and go to Profile.",
+      "Tap Delete account, at the bottom.",
+      "Confirm."
+    ],
+    "mail_h": "If you already uninstalled the app",
+    "mail_before": "Email",
+    "mail_after": "from the address on your account with the subject “Delete my account”. We confirm the request by replying to that address, then delete the account.",
+    "what_h": "What is deleted, and when",
+    "what_now": "Your account and its data are deleted from our live systems immediately; copies in our backups expire within 30 days.",
+    "what_included": "That includes your email address, your profile, the articles you opened and saved, your daily counts and your subscription status.",
+    "what_device": "Notes, highlights and offline copies of articles live only on your device; they go when you delete the app.",
+    "what_subscription": "Deleting your account does not cancel a subscription bought through the App Store or Google Play. Cancel it first in your store account settings.",
+    "more_before": "Details are in section 8 of the",
+    "more_after": "."
+  }
+}

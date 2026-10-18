@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+</head>
+<body>
+{{> bar}}
+<main id="main" class="support">
+  <div class="wrap support-head">
+    <h1 class="h2 h2--page">{{t.support.h1}}</h1>
+    <p class="lead">{{t.support.lead}}</p>
+    <p><a class="button button--form" href="mailto:contact@saluxly.com">{{t.support.email_button}}</a></p>
+  </div>
+  <div class="wrap support-inner">
+    <section class="support-questions" aria-labelledby="common">
+      <h2 class="h3" id="common">{{t.support.questions_h}}</h2>
+      <div class="rows rows--stack">
+        {{#each t.support.questions}}<div class="row row--stack"><h3 class="row-title">{{title}}</h3><p class="row-text">{{text}}</p></div>
+        {{/each}}
+      </div>
+    </section>
+    <section class="delete" id="delete" aria-labelledby="delete-h">
+      <h2 class="h3" id="delete-h">{{t.support.delete_h}}</h2>
+      <p>{{t.support.delete_text}}</p>
+      <ol>{{#each t.support.delete_steps}}<li>{{this}}</li>{{/each}}</ol>
+      <p class="delete-mail">{{t.support.delete_mail_before}} <a href="mailto:contact@saluxly.com?subject=Delete%20my%20account">contact@saluxly.com</a> {{t.support.delete_mail_after}}</p>
+      <p class="delete-more"><a href="{{base}}delete-account.html">{{t.support.delete_more}}</a></p>
+    </section>
+  </div>
+</main>
+{{> footer}}
+</body>
+</html>

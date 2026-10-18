@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{html_title}}</title>
+<meta name="description" content="{{html_description}}">
+<link rel="canonical" href="{{url}}">
+{{#unless english_only}}{{#each alternates}}<link rel="alternate" hreflang="{{lang}}" href="{{href}}">
+{{/each}}<link rel="alternate" hreflang="x-default" href="{{alternates.0.href}}">
+{{/unless}}<meta name="theme-color" content="#17100C">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/favicon-180.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Saluxly">
+<meta property="og:title" content="{{html_title}}">
+<meta property="og:description" content="{{html_description}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="{{site}}/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{og_locale}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{html_title}}">
+<meta name="twitter:description" content="{{html_description}}">
+<meta name="twitter:image" content="{{site}}/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/newsreader-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/hanken-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script>window.SALUXLY={{{config_json}}}</script>
+{{#if jsonld}}<script type="application/ld+json">{{{jsonld}}}</script>{{/if}}

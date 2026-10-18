@@ -1,0 +1,7 @@
+{
+  "_comment": "Launch state and store links. Nothing is sent from the page: readers write to contact@saluxly.com.",
+  "site": "https://saluxly.com",
+  "launched": false,
+  "app_store_url": "",
+  "play_store_url": ""
+}

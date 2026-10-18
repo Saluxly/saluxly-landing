@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+{{> head}}
+</head>
+<body>
+{{> bar}}
+<main id="main" class="legal">
+  <div class="wrap legal-head">
+    <p class="eyebrow">{{t.footer.legal}}</p>
+    <h1 class="h2 h2--page">{{doc.title}}</h1>
+    <p class="lead">{{{doc.effective}}}</p>
+  </div>
+  <div class="wrap legal-inner">
+    <nav class="legal-toc" aria-label="Contents">
+      {{#each doc.sections}}<a href="#{{id}}">{{title}}</a>
+      {{/each}}
+    </nav>
+    <article class="legal-body">
+{{{doc.html}}}
+    </article>
+  </div>
+</main>
+{{> footer}}
+</body>
+</html>
