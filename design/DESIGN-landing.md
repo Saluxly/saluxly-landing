@@ -1,5 +1,7 @@
 # saluxly.com — Diseño y especificación de la landing page
 
+> **Revisión del 17 de octubre de 2026.** Cambios respecto a la primera entrega: (1) no hay formulario de lista de espera ni servicio externo; en su lugar, botón "Email us" y la invitación a escribir a contact@saluxly.com; (2) la prueba gratuita es la oferta introductoria nativa de la App Store (7 días, en los dos planes), por lo que desaparece "No card needed" y el texto pasa a "Try it free for 7 days"; (3) la app **no** genera resúmenes con IA ni responde preguntas: "Aa" muestra los datos del artículo y el abstract publicado, y "AI" envía el PDF a la app de IA que el usuario elija mediante la hoja de compartir. Se corrigieron el paso 3 de "How it works", el bloque 3 de "Product", la fila de precios y la pantalla `screens/screen-summary@2x.png`. Los párrafos de más abajo ya incorporan estos cambios.
+
 Diseño del 17 de octubre de 2026. Sustituye por completo la página actual de `saluxly-landing`. La referencia visual son los tableros "Landing page, desktop", "Landing page, phone", "Legal page template", "Support and delete account", "Share image" y "Hero after launch" del lienzo de diseño; aquí van en `reference/` como HTML y en `screenshots/` como PNG.
 
 El sitio es estático (GitHub Pages), sin frameworks, sin analítica, sin cookies, en tres idiomas. Debe sentirse como la app: mismo sistema de color, tipografía y motivos.
@@ -70,20 +72,20 @@ Medida: párrafos de 440 a 640 px en escritorio, nunca más de 72 caracteres por
 
 ## 4. Estructura y texto (inglés)
 
-Las traducciones al español (de México) y portugués (de Brasil) se hacen en el repositorio a partir de este texto y se entregan a Gus en una tabla de tres columnas para revisión antes de publicar. Mantener los mismos nombres de acción en todo el sitio: "Join the waitlist" es el único verbo del formulario.
+Las traducciones al español (de México) y portugués (de Brasil) se hacen en el repositorio a partir de este texto y se entregan a Gus en una tabla de tres columnas para revisión antes de publicar. Mantener los mismos nombres de acción en todo el sitio: "Email us" es el único verbo de contacto.
 
 ### Barra
 - Marca (SVG + "Saluxly", con "ly" en ámbar) a la izquierda.
 - Enlaces: How it works · Product · Pricing · Questions (anclas).
-- Derecha: selector EN / ES / PT y botón "Join the waitlist".
+- Derecha: selector EN / ES / PT y botón "Email us" (`mailto:contact@saluxly.com?subject=Saluxly%20launch`).
 - Al desplazarse 80 px: la barra pasa a 64 px de alto, fondo `#17100C` al 85 % con desenfoque, línea inferior.
 - Móvil: marca, selector y botón de menú. El menú es una hoja a pantalla completa con los cuatro enlaces en serif de 30 px y el botón.
 
 ### Hero
 - H1: **Let the papers find you.**
 - Entradilla: Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.
-- Formulario: campo de correo + "Join the waitlist".
-- Nota: Launching first on iPhone and iPad. Free for your first 7 days, no card needed. One email when we launch, nothing else.
+- Sin formulario. Botón "Email us" (mailto) junto al texto: Want to know when Saluxly launches? Write to contact@saluxly.com.
+- Nota: Launching first on iPhone and iPad. Try it free for 7 days, then keep the free plan or subscribe. We answer every email ourselves.
 - Visual: teléfono con el feed; página de PDF inclinada que llega desde el titular por la fibra; marca de conducción grande y tenue detrás. En móvil, el teléfono queda centrado con la página sobre su lado izquierdo y un degradado al final.
 
 ### Declaración
@@ -98,14 +100,14 @@ Las traducciones al español (de México) y portugués (de Brasil) se hacen en e
 - Fibra horizontal con tres nodos sobre las columnas. Numerales 1, 2, 3 en serif ámbar claro (es una secuencia real).
   1. **Choose your specialties.** One or several. Physicians, residents, students, dentists, nurses and dietitians each get a feed of their own. Visual: chips Obstetrics y Neonatology activos, Cardiology y All medicine inactivos.
   2. **Open the feed.** New review articles every day, ranked for you. Heart the ones you want to keep. Visual: una fila del feed con el corazón activo.
-  3. **Read the paper.** The original PDF opens inside the app, with highlights, notes and a plain-language summary one tap away. Visual: página de PDF pequeña y "Aa".
+  3. **Read the paper.** The original PDF opens inside the app, with highlights and notes, and the article's details one tap away. Visual: página de PDF pequeña y "Aa".
 
 ### Product
 - H2: Built for how doctors read. Entradilla: Short on time and long on standards. Saluxly brings you the paper, not a link farm.
 - Cuatro bloques alternando visual y texto (visual izquierda en el 1.º y 3.º). Cada visual es un panel de 620 px de alto con degradado de superficie a fondo, línea de 1 px, radio 30, con el teléfono al 90 % y un degradado al pie.
   1. **Chosen for you, not for advertisers.** Every paper in your feed is there because of your specialties and what you read, never because someone paid for the spot. No ads, no sponsors, no pharma. (pantalla: feed)
   2. **The original paper, as the journal published it.** Open-license papers (CC BY and CC0) open inside Saluxly in a native reader. Highlight, take notes and keep them offline. Everything else opens at PubMed Central or the journal's site, clearly marked. (pantalla: lector)
-  3. **Understand it in two minutes.** Aa gives you a plain-language summary built from the paper itself. Ask AI answers your questions about what you are reading. Both can make mistakes, so the paper is always one tap away. (pantalla: resumen)
+  3. **The essentials at a glance. Your AI one tap away.** Aa shows what you need before you open the paper: review type, authors, journal, year, topics and the published abstract. AI sends the PDF to the AI assistant you already use, so you can ask questions or get a summary there. Saluxly itself never sends your reading to an AI. (pantalla: hoja Aa con datos y abstract; `screens/screen-summary@2x.png`)
   4. **Search that speaks medicine.** Type in English, Spanish or Portuguese, with abbreviations or typos. Saluxly maps your words to medical subject headings and returns the reviews that are about your topic, not the ones that merely mention it. (pantalla: buscador con "aspirina preeclampsia prevención")
 
 ### Where every paper comes from
@@ -127,9 +129,9 @@ Las traducciones al español (de México) y portugués (de Brasil) se hacen en e
 - Firma: **Gustavo González, MD**, fetal medicine specialist and founder of Saluxly. *(Nombre, cargo y texto pendientes de aprobación de Gus; si prefiere no aparecer, la sección se quita entera.)*
 
 ### Pricing
-- H2: Free for your first 7 days. No card needed. Entradilla: Then keep the free plan or subscribe. Billing through the App Store; cancel any time.
-- Tabla de cuatro columnas (concepto, Free, Yearly, Monthly). La columna Yearly lleva fondo de superficie, borde superior ámbar de 2 px, radio 16 arriba y abajo y la nota "Best value" en ámbar claro. Cabeceras: Free "After the first 7 days"; Yearly "$2.92 a month, billed once a year"; Monthly "Billed every month".
-- Filas: Daily feed — 30 papers a day / Endless / Endless. Articles you can open — 3 a day / Unlimited / Unlimited. New searches — 3 a day / Unlimited / Unlimited. Summary and Ask AI — With every article you open / Included / Included. Save and read offline — Included / Included / Included. Price — $0 / $34.99 a year / $4.99 a month (serif 22).
+- H2: Try it free for 7 days. Entradilla: Then keep the free plan or subscribe. Billing through the App Store; cancel any time.
+- Tabla de cuatro columnas (concepto, Free, Yearly, Monthly). La columna Yearly lleva fondo de superficie, borde superior ámbar de 2 px, radio 16 arriba y abajo y la nota "Best value" en ámbar claro. Cabeceras: Free "No subscription needed"; Yearly "$2.92 a month, billed once a year"; Monthly "Billed every month".
+- Filas: Daily feed — 30 papers a day / Endless / Endless. Articles you can open — 3 a day / Unlimited / Unlimited. New searches — 3 a day / Unlimited / Unlimited. Aa details and send to AI — With every article you open / Included / Included. Save and read offline — Included / Included / Included. Price — $0 / $34.99 a year / $4.99 a month (serif 22).
 - Nota: Prices in US dollars; local prices and taxes may vary. Subscriptions renew automatically until cancelled in your App Store settings.
 - Móvil: tres paneles apilados en el orden Yearly (destacado), Monthly, Free, cada uno con sus filas.
 - Cuando exista Android, la nota dice "App Store or Google Play".
@@ -146,7 +148,7 @@ Las traducciones al español (de México) y portugués (de Brasil) se hacen en e
   8. **What do you do with my data?** Your email signs you in. What you read and save personalizes your feed. Saluxly shows no ads, uses no advertising trackers and does not sell your data. You can delete your account from the app at any time.
 
 ### Final
-- Marca de conducción centrada (110 px), H2 (56): Be the first to read. Entradilla: One email when Saluxly launches on iPhone and iPad. Nothing else. Formulario.
+- Marca de conducción centrada (110 px), H2 (56): Be the first to read. Entradilla: Want to know when Saluxly launches on iPhone and iPad? Write to contact@saluxly.com. Botón "Email us" (mailto). Sin formulario.
 
 ### Footer
 - Marca; texto: Saluxly is a reading tool for health professionals. It is not a medical device and does not provide medical advice. Article data courtesy of the U.S. National Library of Medicine. Saluxly is not affiliated with or endorsed by the NLM, NIH or HHS. © 2026 Saluxly, Inc.
@@ -154,13 +156,8 @@ Las traducciones al español (de México) y portugués (de Brasil) se hacen en e
 
 ## 5. Comportamiento
 
-### Formulario de lista de espera
-- `POST` a `WAITLIST_ENDPOINT` (constante en un solo archivo de configuración) con `email`, `lang` y `page`. Campo trampa oculto `website` que, si viene lleno, se descarta en silencio.
-- Validación en el cliente: formato de correo; mensaje bajo el campo: "Enter an email address like name@hospital.org."
-- Estados, en el mismo lugar del formulario y sin cambiar de página: enviando (botón con "Joining…" y deshabilitado); éxito, el formulario se sustituye por "You're on the waitlist. We'll email you once, when Saluxly launches." con un nodo ámbar; error: "We couldn't save your email. Try again in a moment, or write to contact@saluxly.com."
-- Los dos formularios de la página (hero y final) comparten lógica; el éxito en uno se refleja en el otro.
-- Destino: `/v1/waitlist` del backend de la v2 cuando esté desplegado. Mientras tanto, si Gus elige un servicio externo de formularios, se configura solo en `WAITLIST_ENDPOINT` y se nombra en la política de privacidad. Nunca Railway ni ninguna dirección vieja.
-- Sin doble confirmación. Se guardan solo correo, idioma y fecha.
+### Contacto (sustituye al formulario de lista de espera)
+- No hay formulario ni servicio externo de formularios. Los dos lugares (hero y cierre) muestran el botón "Email us" (`mailto:contact@saluxly.com?subject=Saluxly%20launch`) y el texto que invita a escribir a contact@saluxly.com. Nada se envía desde la página; no hay endpoint, ni campo trampa, ni estados de envío.
 
 ### Idiomas
 - Tres páginas estáticas generadas desde una plantilla y tres diccionarios JSON: `/` (en), `/es/` y `/pt/`. `hreflang` cruzado y `x-default` en las tres, `lang` correcto en `<html>`, `canonical` por idioma.
@@ -169,16 +166,16 @@ Las traducciones al español (de México) y portugués (de Brasil) se hacen en e
 
 ### Movimiento
 - Una sola secuencia al cargar el hero, en CSS: la fibra se dibuja (stroke-dashoffset, 900 ms) y la página de PDF entra deslizándose 24 px con un fundido (500 ms, retraso 500 ms). Nada más se anima al desplazarse.
-- Movimiento que responde al usuario: apertura del acordeón, hoja del menú, cambio de estado del formulario, desplazamiento suave a las anclas.
+- Movimiento que responde al usuario: apertura del acordeón, hoja del menú, desplazamiento suave a las anclas.
 - `prefers-reduced-motion: reduce` desactiva todo lo anterior salvo los cambios de estado.
 
 ### Móvil
-- Barra fija de 64 px. Cuando el formulario del hero sale de pantalla aparece una barra inferior fija con "Join the waitlist" (lleva al formulario final); se oculta cuando cualquiera de los dos formularios está visible y después del envío.
+- Barra fija de 64 px. Cuando el bloque de contacto del hero sale de pantalla aparece una barra inferior fija con "Email us" (mailto); se oculta cuando cualquiera de los dos bloques de contacto está visible.
 - Objetivos táctiles mínimos de 44 px. Sin desplazamiento horizontal a 360 px.
 
 ### Después del lanzamiento
-- Un indicador en la configuración (`LAUNCHED = true`) cambia los dos formularios por los botones de tienda: "Download on the App Store" (y "Get it on Google Play" cuando Android esté publicado), con los recursos oficiales de Apple y Google sin redibujar, y un código QR al enlace de la App Store solo en escritorio. Ver el tablero "Hero after launch".
-- La nota del hero pasa a "Free for your first 7 days, no card needed."
+- Un indicador en la configuración (`LAUNCHED = true`) cambia los dos bloques de contacto por los botones de tienda: "Download on the App Store" (y "Get it on Google Play" cuando Android esté publicado), con los recursos oficiales de Apple y Google sin redibujar, y un código QR al enlace de la App Store solo en escritorio. Ver el tablero "Hero after launch".
+- La nota del hero pasa a "Try it free for 7 days, then keep the free plan or subscribe."
 - Después, con reseñas reales en las tiendas, se puede añadir una franja de citas con permiso; nunca testimonios inventados.
 
 ## 6. Páginas
@@ -204,7 +201,7 @@ Las páginas legales se publican con el texto final de los documentos "Saluxly P
 ## 8. Rendimiento y accesibilidad
 - Presupuesto: HTML + CSS + JS < 120 KB; imágenes del hero < 400 KB en total (WebP con PNG de respaldo, 2x solo donde se ve). Sin librerías externas. Lighthouse ≥ 95 en las cuatro categorías, en móvil.
 - Contraste AA en todo: Texto 2 sobre fondo ≈ 9:1, Texto 3 ≈ 5.6:1, tinta sobre ámbar ≈ 7:1.
-- Enlace "Skip to content", landmarks (`header`, `main`, `nav`, `footer`), encabezados en orden, foco visible, acordeón accesible por teclado, formulario con `label`, errores anunciados con `aria-live`.
+- Enlace "Skip to content", landmarks (`header`, `main`, `nav`, `footer`), encabezados en orden, foco visible, acordeón accesible por teclado, sin formularios.
 - Sin analítica, sin cookies, sin fuentes ni scripts de terceros. Por eso no hay banner de cookies.
 
 ## 9. Lo que no debe aparecer

@@ -105,7 +105,7 @@
 | pricing.rows.3.yearly | Unlimited | Ilimitadas | Ilimitadas |
 | pricing.rows.3.monthly | Unlimited | Ilimitadas | Ilimitadas |
 | pricing.rows.4.label | Aa details and send to AI | Datos Aa y enviar a IA | Dados Aa e enviar à IA |
-| pricing.rows.4.free | With every article you open | Con cada artículo que abras | Com cada artigo que você abrir |
+| pricing.rows.4.free | On every article in our catalog | En todos los artículos del catálogo | Em todos os artigos do catálogo |
 | pricing.rows.4.yearly | Included | Incluidos | Incluídos |
 | pricing.rows.4.monthly | Included | Incluidos | Incluídos |
 | pricing.rows.5.label | Save and read offline | Guardar y leer sin conexión | Salvar e ler off-line |
