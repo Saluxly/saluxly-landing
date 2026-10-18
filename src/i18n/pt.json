@@ -12,7 +12,7 @@
     "product": "Produto",
     "pricing": "Preços",
     "faq": "Perguntas",
-    "join": "Entrar na lista",
+    "join": "Fale conosco",
     "menu": "Menu",
     "close": "Fechar menu",
     "language": "Idioma",
@@ -21,18 +21,14 @@
   "hero": {
     "h1": "Deixe os artigos encontrarem você.",
     "lead": "O Saluxly lê o PubMed por você e monta todo dia um feed de artigos de revisão da sua especialidade, com o PDF original dentro do app.",
-    "note": "Primeiro no iPhone e no iPad. Grátis nos primeiros 7 dias, sem cartão. Um e-mail quando lançarmos, nada mais.",
-    "note_launched": "Grátis nos primeiros 7 dias, sem cartão.",
+    "note": "Primeiro no iPhone e no iPad. Experimente grátis por 7 dias.",
+    "note_launched": "Experimente grátis por 7 dias.",
     "visual_alt": "O feed do Saluxly em um iPhone, com a primeira página de um artigo de revisão ao lado."
   },
-  "form": {
-    "label": "E-mail",
-    "placeholder": "voce@hospital.org",
-    "button": "Entrar na lista",
-    "joining": "Entrando…",
-    "invalid": "Digite um e-mail como nome@hospital.org.",
-    "success": "Você está na lista. Vamos escrever uma única vez, quando o Saluxly for lançado.",
-    "error": "Não conseguimos salvar seu e-mail. Tente de novo em instantes ou escreva para contact@saluxly.com."
+  "contact": {
+    "text": "Quer saber quando o Saluxly for lançado? Escreva para",
+    "button": "Fale conosco",
+    "subject": "Saluxly launch"
   },
   "store": {
     "apple": "Baixar na App Store",
@@ -212,13 +208,13 @@
     "more_mobile": "e mais 26"
   },
   "pricing": {
-    "h2": "Grátis nos primeiros 7 dias. Sem cartão.",
-    "lead": "Depois, fique com o plano gratuito ou assine. A cobrança é pela App Store; cancele quando quiser.",
+    "h2": "Experimente grátis por 7 dias.",
+    "lead": "Comece um teste grátis de 7 dias em qualquer um dos dois planos; depois ele renova pelo preço do plano, a menos que você cancele. Ou fique no plano gratuito pelo tempo que quiser.",
     "best": "Melhor valor",
     "plans": {
       "free": {
         "name": "Gratuito",
-        "sub": "Depois dos primeiros 7 dias",
+        "sub": "Sem assinatura",
         "price": "US$ 0"
       },
       "yearly": {
@@ -265,7 +261,7 @@
       }
     ],
     "price_label": "Preço",
-    "note": "Preços em dólares americanos; os preços locais e os impostos podem variar. As assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua App Store."
+    "note": "Preços em dólares americanos; os preços locais e os impostos podem variar. Após o teste grátis, as assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua App Store."
   },
   "faq": {
     "h2": "Perguntas, respondidas.",

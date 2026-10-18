@@ -1,6 +1,5 @@
 // Drives headless Chrome over the DevTools protocol to check the behaviours of the preview:
-// the form's three states, the bottom bar, the menu, the language link with the section, and
-// keyboard focus. Writes screenshots to the folder given. Needs Node 24 (global WebSocket).
+// the menu, the language link with the section, the language offer, keyboard focus and motion. Writes screenshots to the folder given. Needs Node 24 (global WebSocket).
 //   node tools/cdp.mjs OUTDIR [url]
 import { spawn } from 'node:child_process';
 import { writeFileSync, mkdirSync } from 'node:fs';
@@ -29,25 +28,10 @@ await send('Runtime.enable');
 const results = {};
 async function open(url) { await send('Page.navigate', { url }); await wait(1200); }
 
-// 1. Form: invalid, error, success (desktop).
+// 2. Language link keeps the section; keyboard focus ring; the Email us links.
 await mobile(false);
 await open(URL);
-await evaluate(`document.querySelector('#waitlist-form input[type=email]').value='nope'; document.querySelector('#waitlist-form').requestSubmit(); ''`);
-await wait(200);
-results.invalid = await evaluate(`document.querySelector('#waitlist-form-msg').textContent`);
-await shot('form-invalid');
-await evaluate(`document.querySelector('#waitlist-form input[type=email]').value='fail@example.org'; document.querySelector('#waitlist-form').requestSubmit(); ''`);
-await wait(800);
-results.error = await evaluate(`document.querySelector('#waitlist-form-msg').textContent`);
-results.buttonAfterError = await evaluate(`document.querySelector('#waitlist-form button[type=submit]').textContent + ' disabled=' + document.querySelector('#waitlist-form button[type=submit]').disabled`);
-await shot('form-error');
-await evaluate(`document.querySelector('#waitlist-form input[type=email]').value='doctor@example.org'; document.querySelector('#waitlist-form').requestSubmit(); ''`);
-await wait(800);
-results.success = await evaluate(`[...document.querySelectorAll('.form-done')].map(e => e.textContent)`);
-results.formsHidden = await evaluate(`[...document.querySelectorAll('[data-waitlist]')].map(f => getComputedStyle(f.querySelector('.waitlist-row')).display)`);
-await shot('form-success');
-
-// 2. Language link keeps the section; keyboard focus ring.
+results.mailto = await evaluate(`[...document.querySelectorAll('a[href^="mailto:"]')].map(a => a.getAttribute('href')).filter((v, i, all) => all.indexOf(v) === i)`);
 await open(URL + '#pricing');
 await wait(600);
 results.scrollY = await evaluate(`window.scrollY`);
@@ -70,14 +54,9 @@ await open(URL);
 await wait(400);
 results.offer = await evaluate(`(() => { const o = document.querySelector('[data-offer]'); return o.hidden ? 'hidden' : o.textContent.trim().replace(/\\s+/g, ' '); })()`);
 await shot('mobile-top');
-results.bottomAtTop = await evaluate(`document.querySelector('[data-bottom-bar]').hidden`);
 await evaluate(`window.scrollTo({top: 2200, behavior: 'instant'}); ''`);
 await wait(700);
-results.bottomAfterScroll = await evaluate(`document.querySelector('[data-bottom-bar]').hidden`);
-await shot('mobile-bottom-bar');
-await evaluate(`document.querySelector('#waitlist-final').scrollIntoView({behavior:'instant'}); ''`);
 await wait(700);
-results.bottomAtFinalForm = await evaluate(`document.querySelector('[data-bottom-bar]').hidden`);
 await evaluate(`window.scrollTo(0, 0); document.querySelector('[data-menu-button]').click(); ''`);
 await wait(300);
 results.menuOpen = await evaluate(`!document.querySelector('[data-menu]').hidden + ' expanded=' + document.querySelector('[data-menu-button]').getAttribute('aria-expanded') + ' focus=' + document.activeElement.textContent.trim()`);

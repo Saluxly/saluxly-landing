@@ -1,5 +1,5 @@
-/* saluxly.com — the bar, the phone menu, the language links, the waitlist forms and the bottom bar.
-   No analytics, no cookies, no third-party scripts. The only request leaves when a reader sends the form. */
+/* saluxly.com — the bar, the phone menu, the language links and the language offer.
+   No analytics, no cookies, no third-party scripts, and nothing is ever sent from the page. */
 (function () {
   'use strict';
   var CONFIG = window.SALUXLY || {};
@@ -74,75 +74,6 @@
       link.addEventListener('click', function () { remember(wanted); var id = currentSection(); if (id) link.href = '/' + wanted + '/#' + id; });
       dismiss.addEventListener('click', function () { remember('en'); offer.hidden = true; });
     }
-  }
-
-  // --- The waitlist forms (hero and final) share one state: success in one shows in both.
-  var forms = Array.prototype.slice.call(doc.querySelectorAll('[data-waitlist]'));
-  var waitlist = CONFIG.waitlist || {};
-  var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-  function message(form, kind) {
-    var msg = form.querySelector('.form-msg');
-    msg.textContent = kind ? msg.getAttribute('data-' + kind) : '';
-    msg.classList.toggle('is-error', kind === 'invalid' || kind === 'error');
-  }
-  function busy(form, on) {
-    var button = form.querySelector('button[type=submit]');
-    button.disabled = on;
-    button.textContent = button.getAttribute(on ? 'data-busy' : 'data-label');
-  }
-  function done() {
-    forms.forEach(function (form) {
-      form.classList.add('is-done');
-      message(form, '');
-      var note = doc.createElement('p');
-      note.className = 'form-done';
-      note.setAttribute('role', 'status');
-      note.textContent = form.querySelector('.form-msg').getAttribute('data-success');
-      form.appendChild(note);
-    });
-    var bottomBar = doc.querySelector('[data-bottom-bar]');
-    if (bottomBar) { bottomBar.hidden = true; doc.body.classList.remove('has-bottom-bar'); }
-    doc.body.classList.add('waitlist-done');
-  }
-
-  forms.forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      var input = form.querySelector('input[type=email]');
-      var email = input.value.trim();
-      if (!EMAIL.test(email)) { message(form, 'invalid'); input.focus(); return; }
-      var trap = form.querySelector('input[name=' + (waitlist.honeypot || 'website') + ']');
-      if (trap && trap.value) { done(); return; }   // a bot filled the hidden field: say nothing, send nothing
-      message(form, '');
-      busy(form, true);
-      var body = { email: email, lang: LANG, page: location.pathname };
-      Object.keys(waitlist.fields || {}).forEach(function (key) { body[key] = waitlist.fields[key]; });
-      fetch(waitlist.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(body) })
-        .then(function (response) { if (!response.ok) throw new Error(String(response.status)); done(); })
-        .catch(function () { busy(form, false); message(form, 'error'); });
-    });
-    form.querySelector('input[type=email]').addEventListener('input', function () { message(form, ''); });
-  });
-
-  // --- Phone: a fixed "Join the waitlist" bar when neither form is on screen.
-  var bottom = doc.querySelector('[data-bottom-bar]');
-  if (bottom && forms.length && 'IntersectionObserver' in window) {
-    var visible = {};
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) { visible[entry.target.id] = entry.isIntersecting; });
-      var anyVisible = forms.some(function (form) { return visible[form.id]; });
-      var show = !anyVisible && !doc.body.classList.contains('waitlist-done') && window.scrollY > 200;
-      bottom.hidden = !show;
-      doc.body.classList.toggle('has-bottom-bar', show);
-    }, { threshold: 0.2 });
-    forms.forEach(function (form) { observer.observe(form); });
-    window.addEventListener('scroll', function () {
-      if (doc.body.classList.contains('waitlist-done')) return;
-      var anyVisible = forms.some(function (form) { return visible[form.id]; });
-      var show = !anyVisible && window.scrollY > 200;
-      if (bottom.hidden === show) { bottom.hidden = !show; doc.body.classList.toggle('has-bottom-bar', show); }
-    }, { passive: true });
   }
 
   // --- Smooth scrolling to anchors is CSS; with reduced motion it is instant (also CSS). Nothing to do here.

@@ -12,8 +12,8 @@
     <div class="hero-copy">
       <h1>{{t.hero.h1}}</h1>
       <p class="lead lead--hero">{{t.hero.lead}}</p>
-      <div class="hero-form" id="waitlist">
-        {{> form id=waitlist-form}}
+      <div class="hero-form" id="contact">
+        {{#if launched}}{{> store}}{{else}}{{> contact}}{{/if}}
         <p class="note">{{#if launched}}{{t.hero.note_launched}}{{else}}{{t.hero.note}}{{/if}}</p>
       </div>
     </div>
@@ -155,7 +155,7 @@
     <div class="final-mark">{{> mark}}</div>
     <h2 class="h2 h2--final">{{t.final.h2}}</h2>
     <p class="lead lead--block">{{t.final.lead}}</p>
-    <div class="final-form" id="waitlist-final">{{> form id=waitlist-final-form}}</div>
+    <div class="final-form" id="contact-final">{{#if launched}}{{> store}}{{else}}{{> contact}}{{/if}}</div>
   </div>
 </section>
 

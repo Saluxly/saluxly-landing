@@ -13,7 +13,7 @@
       <nav class="langs" aria-label="{{t.nav.language}}">
         {{#each alternates}}<a href="{{path}}" hreflang="{{lang}}" lang="{{lang}}" data-lang="{{lang}}"{{#if current}} aria-current="page"{{/if}}><b>{{lang}}</b></a>{{/each}}
       </nav>
-      {{#unless launched}}<a class="button button--nav" href="#waitlist">{{t.nav.join}}</a>{{/unless}}
+      {{#unless launched}}<a class="button button--nav" href="mailto:contact@saluxly.com?subject=Saluxly%20launch">{{t.nav.join}}</a>{{/unless}}
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" aria-label="{{t.nav.menu}}" data-menu-button>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-open" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-close" d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
@@ -28,5 +28,5 @@
     <a href="{{base}}#pricing">{{t.nav.pricing}}</a>
     <a href="{{base}}#faq">{{t.nav.faq}}</a>
   </nav>
-  {{#unless launched}}<a class="button button--form" href="#waitlist">{{t.nav.join}}</a>{{/unless}}
+  {{#unless launched}}<a class="button button--form" href="mailto:contact@saluxly.com?subject=Saluxly%20launch">{{t.nav.join}}</a>{{/unless}}
 </div>

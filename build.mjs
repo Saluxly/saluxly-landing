@@ -2,10 +2,10 @@
 // Builds saluxly.com: three languages from one template and three dictionaries
 // (src/i18n), the support pages, the 404 page, the delete-account redirect, the
 // sitemap, robots.txt and the web manifest. Static files only; GitHub Pages
-// serves the repository root. No dependencies.
+// serves the repository root. No dependencies. Nothing is sent from the pages.
 //
 //   node build.mjs            → the publishable root
-//   node build.mjs --preview  → the same, with the waitlist posting to the local preview server
+//   node build.mjs --preview  → the same (kept for tools/preview.sh)
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -16,10 +16,9 @@ const PREVIEW = process.argv.includes('--preview');
 const LANGS = ['en', 'es', 'pt'];
 
 const config = JSON.parse(readFileSync(join(SRC, 'config.json'), 'utf8'));
-if (PREVIEW) config.waitlist = { endpoint: '/api/waitlist', fields: {}, honeypot: config.waitlist.honeypot };
 const dictionaries = Object.fromEntries(LANGS.map((lang) => [lang, JSON.parse(readFileSync(join(SRC, 'i18n', `${lang}.json`), 'utf8'))]));
 const partials = {};
-for (const name of ['head', 'bar', 'footer', 'form', 'mark', 'phone', 'page', 'sheet']) {
+for (const name of ['head', 'bar', 'footer', 'contact', 'store', 'mark', 'phone', 'page', 'sheet']) {
   partials[name] = readFileSync(join(SRC, 'partials', `${name}.html`), 'utf8');
 }
 
@@ -124,11 +123,10 @@ function pageData(lang, page) {
     alternates: LANGS.map((l) => ({ lang: l, href: config.site + (l === 'en' ? '/' : `/${l}/`) + file, path: (l === 'en' ? '/' : `/${l}/`) + file, current: l === lang, name: dictionaries[l].name })),
     site: config.site,
     og_locale: { en: 'en_US', es: 'es_MX', pt: 'pt_BR' }[lang],
-    waitlist_action: config.waitlist.endpoint,
     launched: config.launched,
     app_store_url: config.app_store_url,
     play_store_url: config.play_store_url,
-    config_json: JSON.stringify({ waitlist: config.waitlist, launched: config.launched }),
+    config_json: JSON.stringify({ launched: config.launched }),
     is_landing: page === 'landing',
     year: new Date().getFullYear(),
     specialties_shown: 28,
@@ -211,4 +209,3 @@ for (const lang of LANGS) {
   const n = dictionaries[lang].description.length;
   if (n < 150 || n > 160) console.warn(`warning: ${lang} description is ${n} characters (150–160 wanted)`);
 }
-if (PREVIEW) console.log('preview build: the waitlist posts to /api/waitlist of tools/preview.py');

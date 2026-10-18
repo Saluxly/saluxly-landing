@@ -1,8 +1,6 @@
 """Local preview of saluxly.com: serves the repository root the way GitHub Pages does (directory
-index.html, /404.html for what is missing) and answers the waitlist form at POST /api/waitlist,
-printing each submission; an email containing "fail" gets a 500, to see the error state.
+index.html, /404.html for what is missing).
 Run: python3 tools/preview.py [port]   (default 8080; reachable from the phone on the same network)"""
-import json
 import mimetypes
 import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -18,19 +16,6 @@ class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
-    def do_POST(self):
-        if self.path.split("?")[0] != "/api/waitlist":
-            self.send_error(404)
-            return
-        length = int(self.headers.get("Content-Length") or 0)
-        body = json.loads(self.rfile.read(length) or b"{}")
-        failing = "fail" in str(body.get("email", ""))
-        print(f"waitlist: {body}  → {'500' if failing else '200'}", flush=True)
-        self.send_response(500 if failing else 200)
-        self.send_header("Content-Type", "application/json")
-        self.end_headers()
-        self.wfile.write(b'{"ok": true}' if not failing else b'{"ok": false}')
-
     def send_error(self, code, message=None, explain=None):
         if code == 404 and (ROOT / "404.html").exists():
             page = (ROOT / "404.html").read_bytes()
@@ -45,11 +30,6 @@ class Handler(SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header("Cache-Control", "no-cache")
         super().end_headers()
-
-    def log_message(self, format, *args):
-        if "/api/" in (args[0] if args else ""):
-            return
-        super().log_message(format, *args)
 
 
 if __name__ == "__main__":

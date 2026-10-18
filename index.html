@@ -32,7 +32,7 @@
 <link rel="preload" href="/assets/fonts/newsreader-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/hanken-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
-<script>window.SALUXLY={"waitlist":{"endpoint":"https://api.web3forms.com/submit","fields":{"access_key":"PUT-THE-WEB3FORMS-ACCESS-KEY-HERE","subject":"Saluxly waitlist","from_name":"saluxly.com"},"honeypot":"website"},"launched":false}</script>
+<script>window.SALUXLY={"launched":false}</script>
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Saluxly, Inc.","url":"https://saluxly.com","email":"contact@saluxly.com","logo":"https://saluxly.com/assets/img/favicon-512.png"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Saluxly","applicationCategory":"MedicalApplication","operatingSystem":"iOS","inLanguage":["en","es","pt"],"url":"https://saluxly.com/","description":"Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. First on iPhone and iPad.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]</script>
 
 </head>
@@ -53,7 +53,7 @@
       <nav class="langs" aria-label="Language">
         <a href="/" hreflang="en" lang="en" data-lang="en" aria-current="page"><b>en</b></a><a href="/es/" hreflang="es" lang="es" data-lang="es"><b>es</b></a><a href="/pt/" hreflang="pt" lang="pt" data-lang="pt"><b>pt</b></a>
       </nav>
-      <a class="button button--nav" href="#waitlist">Join the waitlist</a>
+      <a class="button button--nav" href="mailto:contact@saluxly.com?subject=Saluxly%20launch">Email us</a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" data-menu-button>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-open" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-close" d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
@@ -68,7 +68,7 @@
     <a href="/#pricing">Pricing</a>
     <a href="/#faq">Questions</a>
   </nav>
-  <a class="button button--form" href="#waitlist">Join the waitlist</a>
+  <a class="button button--form" href="mailto:contact@saluxly.com?subject=Saluxly%20launch">Email us</a>
 </div>
 
 <main id="main">
@@ -78,22 +78,13 @@
     <div class="hero-copy">
       <h1>Let the papers find you.</h1>
       <p class="lead lead--hero">Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.</p>
-      <div class="hero-form" id="waitlist">
-        
-<form class="waitlist" id="waitlist-form" method="post" action="https://api.web3forms.com/submit" novalidate data-waitlist>
-  <div class="waitlist-row">
-    <label class="field">
-      <span class="visually-hidden">Email address</span>
-      <input type="email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder="you@hospital.org" aria-describedby="waitlist-form-msg">
-    </label>
-    <div class="trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-    <button class="button button--form" type="submit" data-label="Join the waitlist" data-busy="Joining…">Join the waitlist</button>
-  </div>
-  <p class="form-msg" id="waitlist-form-msg" aria-live="polite" data-invalid="Enter an email address like name@hospital.org." data-error="We couldn't save your email. Try again in a moment, or write to contact@saluxly.com." data-success="You're on the waitlist. We'll email you once, when Saluxly launches."></p>
-</form>
+      <div class="hero-form" id="contact">
+        <div class="contact">
+  <p class="contact-text">Want to know when Saluxly launches? Write to <a href="mailto:contact@saluxly.com?subject=Saluxly%20launch">contact@saluxly.com</a>.</p>
+  <a class="button button--form" href="mailto:contact@saluxly.com?subject=Saluxly%20launch">Email us</a>
+</div>
 
-
-        <p class="note">Launching first on iPhone and iPad. Free for your first 7 days, no card needed. One email when we launch, nothing else.</p>
+        <p class="note">Launching first on iPhone and iPad. Try it free for 7 days.</p>
       </div>
     </div>
     <div class="hero-visual" role="img" aria-label="The Saluxly feed on an iPhone, with the first page of a review article beside it.">
@@ -224,12 +215,12 @@
 
 <section class="pricing" id="pricing">
   <div class="wrap">
-    <h2 class="h2">Free for your first 7 days. No card needed.</h2>
-    <p class="lead">Then keep the free plan or subscribe. Billing through the App Store; cancel any time.</p>
+    <h2 class="h2">Try it free for 7 days.</h2>
+    <p class="lead">Start a 7-day free trial on either plan; after that it renews at the plan price unless you cancel. Or stay on the free plan for as long as you like.</p>
     <table class="plans">
       <thead><tr>
         <th scope="col"><span class="visually-hidden">Price</span></th>
-        <th scope="col" class="plan-head"><span class="plan-name">Free</span><span class="plan-sub">After the first 7 days</span></th>
+        <th scope="col" class="plan-head"><span class="plan-name">Free</span><span class="plan-sub">No subscription needed</span></th>
         <th scope="col" class="plan-head plan-head--best"><span class="plan-best">Best value</span><span class="plan-name">Yearly</span><span class="plan-sub">$2.92 a month, billed once a year</span></th>
         <th scope="col" class="plan-head"><span class="plan-name">Monthly</span><span class="plan-sub">Billed every month</span></th>
       </tr></thead>
@@ -246,9 +237,9 @@
     <div class="plans-stack" aria-hidden="true">
       <div class="plan-card plan-card--best"><div class="plan-best">Best value</div><div class="plan-card-head"><span class="plan-name">Yearly</span><span class="plan-name">$34.99 a year</span></div><div class="plan-sub">$2.92 a month, billed once a year</div><div class="plan-line"><span>Daily feed</span><span>Endless</span></div><div class="plan-line"><span>Articles you can open</span><span>Unlimited</span></div><div class="plan-line"><span>New searches</span><span>Unlimited</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>Included</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
       <div class="plan-card"><div class="plan-card-head"><span class="plan-name">Monthly</span><span class="plan-name">$4.99 a month</span></div><div class="plan-sub">Billed every month</div><div class="plan-line"><span>Daily feed</span><span>Endless</span></div><div class="plan-line"><span>Articles you can open</span><span>Unlimited</span></div><div class="plan-line"><span>New searches</span><span>Unlimited</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>Included</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
-      <div class="plan-card"><div class="plan-card-head"><span class="plan-name">Free</span><span class="plan-name">$0</span></div><div class="plan-sub">After the first 7 days</div><div class="plan-line"><span>Daily feed</span><span>30 papers a day</span></div><div class="plan-line"><span>Articles you can open</span><span>3 a day</span></div><div class="plan-line"><span>New searches</span><span>3 a day</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>With every article you open</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
+      <div class="plan-card"><div class="plan-card-head"><span class="plan-name">Free</span><span class="plan-name">$0</span></div><div class="plan-sub">No subscription needed</div><div class="plan-line"><span>Daily feed</span><span>30 papers a day</span></div><div class="plan-line"><span>Articles you can open</span><span>3 a day</span></div><div class="plan-line"><span>New searches</span><span>3 a day</span></div><div class="plan-line"><span>Summary and Ask AI</span><span>With every article you open</span></div><div class="plan-line"><span>Save and read offline</span><span>Included</span></div></div>
     </div>
-    <p class="note note--pricing">Prices in US dollars; local prices and taxes may vary. Subscriptions renew automatically until cancelled in your App Store settings.</p>
+    <p class="note note--pricing">Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled in your App Store settings.</p>
   </div>
 </section>
 
@@ -275,19 +266,10 @@
 </div>
     <h2 class="h2 h2--final">Be the first to read.</h2>
     <p class="lead lead--block">One email when Saluxly launches on iPhone and iPad. Nothing else.</p>
-    <div class="final-form" id="waitlist-final">
-<form class="waitlist" id="waitlist-final-form" method="post" action="https://api.web3forms.com/submit" novalidate data-waitlist>
-  <div class="waitlist-row">
-    <label class="field">
-      <span class="visually-hidden">Email address</span>
-      <input type="email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder="you@hospital.org" aria-describedby="waitlist-final-form-msg">
-    </label>
-    <div class="trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-    <button class="button button--form" type="submit" data-label="Join the waitlist" data-busy="Joining…">Join the waitlist</button>
-  </div>
-  <p class="form-msg" id="waitlist-final-form-msg" aria-live="polite" data-invalid="Enter an email address like name@hospital.org." data-error="We couldn't save your email. Try again in a moment, or write to contact@saluxly.com." data-success="You're on the waitlist. We'll email you once, when Saluxly launches."></p>
-</form>
-
+    <div class="final-form" id="contact-final"><div class="contact">
+  <p class="contact-text">Want to know when Saluxly launches? Write to <a href="mailto:contact@saluxly.com?subject=Saluxly%20launch">contact@saluxly.com</a>.</p>
+  <a class="button button--form" href="mailto:contact@saluxly.com?subject=Saluxly%20launch">Email us</a>
+</div>
 </div>
   </div>
 </section>
@@ -315,7 +297,6 @@
     </div>
   </div>
 </footer>
-<div class="bottom-bar" hidden data-bottom-bar><a class="button button--form" href="#waitlist-final">Join the waitlist</a></div>
 <script src="/assets/site.js" defer></script>
 
 </body>

@@ -12,7 +12,7 @@
     "product": "Product",
     "pricing": "Pricing",
     "faq": "Questions",
-    "join": "Join the waitlist",
+    "join": "Email us",
     "menu": "Menu",
     "close": "Close menu",
     "language": "Language",
@@ -21,18 +21,14 @@
   "hero": {
     "h1": "Let the papers find you.",
     "lead": "Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.",
-    "note": "Launching first on iPhone and iPad. Free for your first 7 days, no card needed. One email when we launch, nothing else.",
-    "note_launched": "Free for your first 7 days, no card needed.",
+    "note": "Launching first on iPhone and iPad. Try it free for 7 days.",
+    "note_launched": "Try it free for 7 days.",
     "visual_alt": "The Saluxly feed on an iPhone, with the first page of a review article beside it."
   },
-  "form": {
-    "label": "Email address",
-    "placeholder": "you@hospital.org",
-    "button": "Join the waitlist",
-    "joining": "Joining…",
-    "invalid": "Enter an email address like name@hospital.org.",
-    "success": "You're on the waitlist. We'll email you once, when Saluxly launches.",
-    "error": "We couldn't save your email. Try again in a moment, or write to contact@saluxly.com."
+  "contact": {
+    "text": "Want to know when Saluxly launches? Write to",
+    "button": "Email us",
+    "subject": "Saluxly launch"
   },
   "store": {
     "apple": "Download on the App Store",
@@ -212,13 +208,13 @@
     "more_mobile": "and 26 more"
   },
   "pricing": {
-    "h2": "Free for your first 7 days. No card needed.",
-    "lead": "Then keep the free plan or subscribe. Billing through the App Store; cancel any time.",
+    "h2": "Try it free for 7 days.",
+    "lead": "Start a 7-day free trial on either plan; after that it renews at the plan price unless you cancel. Or stay on the free plan for as long as you like.",
     "best": "Best value",
     "plans": {
       "free": {
         "name": "Free",
-        "sub": "After the first 7 days",
+        "sub": "No subscription needed",
         "price": "$0"
       },
       "yearly": {
@@ -265,7 +261,7 @@
       }
     ],
     "price_label": "Price",
-    "note": "Prices in US dollars; local prices and taxes may vary. Subscriptions renew automatically until cancelled in your App Store settings."
+    "note": "Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled in your App Store settings."
   },
   "faq": {
     "h2": "Questions, answered.",

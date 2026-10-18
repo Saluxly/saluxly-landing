@@ -10,23 +10,19 @@
 | nav.product | Product | Producto | Produto |
 | nav.pricing | Pricing | Precios | Preços |
 | nav.faq | Questions | Preguntas | Perguntas |
-| nav.join | Join the waitlist | Unirme a la lista | Entrar na lista |
+| nav.join | Email us | Escribirnos | Fale conosco |
 | nav.menu | Menu | Menú | Menu |
 | nav.close | Close menu | Cerrar menú | Fechar menu |
 | nav.language | Language | Idioma | Idioma |
 | nav.main | Main | Principal | Principal |
 | hero.h1 | Let the papers find you. | Deja que los artículos te encuentren. | Deixe os artigos encontrarem você. |
 | hero.lead | Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app. | Saluxly lee PubMed por ti y arma cada día un feed de artículos de revisión de tu especialidad, con el PDF original dentro de la app. | O Saluxly lê o PubMed por você e monta todo dia um feed de artigos de revisão da sua especialidade, com o PDF original dentro do app. |
-| hero.note | Launching first on iPhone and iPad. Free for your first 7 days, no card needed. One email when we launch, nothing else. | Primero en iPhone y iPad. Gratis los primeros 7 días, sin tarjeta. Un correo cuando lancemos, nada más. | Primeiro no iPhone e no iPad. Grátis nos primeiros 7 dias, sem cartão. Um e-mail quando lançarmos, nada mais. |
-| hero.note_launched | Free for your first 7 days, no card needed. | Gratis los primeros 7 días, sin tarjeta. | Grátis nos primeiros 7 dias, sem cartão. |
+| hero.note | Launching first on iPhone and iPad. Try it free for 7 days. | Primero en iPhone y iPad. Pruébala gratis 7 días. | Primeiro no iPhone e no iPad. Experimente grátis por 7 dias. |
+| hero.note_launched | Try it free for 7 days. | Pruébala gratis 7 días. | Experimente grátis por 7 dias. |
 | hero.visual_alt | The Saluxly feed on an iPhone, with the first page of a review article beside it. | El feed de Saluxly en un iPhone, con la primera página de un artículo de revisión al lado. | O feed do Saluxly em um iPhone, com a primeira página de um artigo de revisão ao lado. |
-| form.label | Email address | Correo electrónico | E-mail |
-| form.placeholder | you@hospital.org | tu@hospital.org | voce@hospital.org |
-| form.button | Join the waitlist | Unirme a la lista | Entrar na lista |
-| form.joining | Joining… | Registrando… | Entrando… |
-| form.invalid | Enter an email address like name@hospital.org. | Escribe un correo como nombre@hospital.org. | Digite um e-mail como nome@hospital.org. |
-| form.success | You're on the waitlist. We'll email you once, when Saluxly launches. | Ya estás en la lista. Te escribiremos una sola vez, cuando Saluxly salga. | Você está na lista. Vamos escrever uma única vez, quando o Saluxly for lançado. |
-| form.error | We couldn't save your email. Try again in a moment, or write to contact@saluxly.com. | No pudimos guardar tu correo. Inténtalo en un momento o escríbenos a contact@saluxly.com. | Não conseguimos salvar seu e-mail. Tente de novo em instantes ou escreva para contact@saluxly.com. |
+| contact.text | Want to know when Saluxly launches? Write to | ¿Quieres saber cuándo sale Saluxly? Escríbenos a | Quer saber quando o Saluxly for lançado? Escreva para |
+| contact.button | Email us | Escribirnos | Fale conosco |
+| contact.subject | Saluxly launch | Saluxly launch | Saluxly launch |
 | store.apple | Download on the App Store | Descárgala en el App Store | Baixar na App Store |
 | store.google | Get it on Google Play | Disponible en Google Play | Disponível no Google Play |
 | store.qr | Scan to install | Escanea para instalar | Escaneie para instalar |
@@ -87,10 +83,10 @@
 | practice.specialties | Allergy & immunology · Anesthesiology · Cardiology · Colon & rectal surgery · Critical care · Dentistry · Dermatology · Emergency medicine · Endocrinology · Family medicine · Gastroenterology · General surgery · Genetics · Geriatrics · Hematology · Infectious diseases · Internal medicine · Neonatology · Nephrology · Neurology · Neurosurgery · Nuclear medicine · Nursing · Nutrition · Obstetrics & gynecology · Oncology · Ophthalmology · Orthopedics · Otolaryngology · Pathology · Pediatrics · Pharmacology · Physical medicine & rehabilitation · Plastic surgery · Psychiatry · Public health · Pulmonary disease · Radiology · Rheumatology · Thoracic & cardiovascular surgery · Urology · Vascular surgery | Alergia e inmunología · Anestesiología · Cardiología · Cirugía de colon y recto · Cirugía de tórax y cardiovascular · Cirugía general · Cirugía plástica · Cirugía vascular · Dermatología · Endocrinología · Enfermedad pulmonar · Enfermería · Farmacología · Gastroenterología · Genética · Geriatría · Ginecología y obstetricia · Hematología · Infectología · Medicina crítica · Medicina de urgencias · Medicina familiar · Medicina física y rehabilitación · Medicina interna · Medicina nuclear · Nefrología · Neonatología · Neurocirugía · Neurología · Nutrición · Odontología · Oftalmología · Oncología · Otorrinolaringología · Patología · Pediatría · Psiquiatría · Radiología · Reumatología · Salud pública · Traumatología y ortopedia · Urología | Alergia e imunologia · Anestesiologia · Cardiologia · Cirurgia colorretal · Cirurgia geral · Cirurgia ortopédica · Cirurgia plástica · Cirurgia torácica e cardiovascular · Cirurgia vascular · Cuidados intensivos · Dermatologia · Doença infecciosa · Doença pulmonar · Endocrinologia · Enfermagem · Farmacologia · Gastroenterologia · Genética · Geriatria · Hematologia · Medicina de emergência · Medicina de família · Medicina física e reabilitação · Medicina interna · Medicina nuclear · Nefrologia · Neonatologia · Neurocirurgia · Neurologia · Nutrição · Obstetrícia e ginecologia · Odontologia · Oftalmologia · Oncologia · Otorrinolaringologia · Patologia · Pediatria · Psiquiatria · Radiologia · Reumatologia · Saúde pública · Urologia |
 | practice.more | and more | y más | e mais |
 | practice.more_mobile | and 26 more | y 26 más | e mais 26 |
-| pricing.h2 | Free for your first 7 days. No card needed. | Gratis los primeros 7 días. Sin tarjeta. | Grátis nos primeiros 7 dias. Sem cartão. |
-| pricing.lead | Then keep the free plan or subscribe. Billing through the App Store; cancel any time. | Después, quédate con el plan gratuito o suscríbete. El cobro es por el App Store; cancela cuando quieras. | Depois, fique com o plano gratuito ou assine. A cobrança é pela App Store; cancele quando quiser. |
+| pricing.h2 | Try it free for 7 days. | Pruébala gratis 7 días. | Experimente grátis por 7 dias. |
+| pricing.lead | Start a 7-day free trial on either plan; after that it renews at the plan price unless you cancel. Or stay on the free plan for as long as you like. | Empieza una prueba gratis de 7 días en cualquiera de los dos planes; después se renueva al precio del plan salvo que canceles. O quédate en el plan gratuito todo el tiempo que quieras. | Comece um teste grátis de 7 dias em qualquer um dos dois planos; depois ele renova pelo preço do plano, a menos que você cancele. Ou fique no plano gratuito pelo tempo que quiser. |
 | pricing.best | Best value | Mejor precio | Melhor valor |
-| pricing.plans.free.sub | After the first 7 days | Después de los primeros 7 días | Depois dos primeiros 7 dias |
+| pricing.plans.free.sub | No subscription needed | Sin suscripción | Sem assinatura |
 | pricing.plans.free.price | $0 | $0 | US$ 0 |
 | pricing.plans.yearly.sub | $2.92 a month, billed once a year | $2.92 al mes, en un solo cobro al año | US$ 2,92 por mês, cobrado uma vez por ano |
 | pricing.plans.yearly.price | $34.99 a year | $34.99 al año | US$ 34,99 por ano |
@@ -117,7 +113,7 @@
 | pricing.rows.5.yearly | Included | Incluido | Incluído |
 | pricing.rows.5.monthly | Included | Incluido | Incluído |
 | pricing.price_label | Price | Precio | Preço |
-| pricing.note | Prices in US dollars; local prices and taxes may vary. Subscriptions renew automatically until cancelled in your App Store settings. | Precios en dólares estadounidenses; los precios locales y los impuestos pueden variar. Las suscripciones se renuevan solas hasta que las canceles en los ajustes de tu App Store. | Preços em dólares americanos; os preços locais e os impostos podem variar. As assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua App Store. |
+| pricing.note | Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled in your App Store settings. | Precios en dólares estadounidenses; los precios locales y los impuestos pueden variar. Al terminar la prueba gratis, las suscripciones se renuevan solas hasta que las canceles en los ajustes de tu App Store. | Preços em dólares americanos; os preços locais e os impostos podem variar. Após o teste grátis, as assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua App Store. |
 | faq.h2 | Questions, answered. | Preguntas, respondidas. | Perguntas, respondidas. |
 | faq.items.1.q | Is Saluxly a textbook or a clinical reference? | ¿Saluxly es un libro de texto o una referencia clínica? | O Saluxly é um livro-texto ou uma referência clínica? |
 | faq.items.1.a | No. Saluxly is a reading feed of review articles from the medical literature. It helps you keep up with what is being published in your field; it does not replace a clinical reference, a guideline or your own judgment. | No. Saluxly es un feed de lectura de artículos de revisión de la literatura médica. Te ayuda a seguir lo que se publica en tu campo; no sustituye una referencia clínica, una guía ni tu propio juicio. | Não. O Saluxly é um feed de leitura de artigos de revisão da literatura médica. Ele ajuda você a acompanhar o que está sendo publicado na sua área; não substitui uma referência clínica, uma diretriz nem o seu próprio julgamento. |
