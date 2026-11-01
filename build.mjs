@@ -143,6 +143,7 @@ function markdown(source) {
     const line = lines[i];
     if (/^# /.test(line)) { doc.title = line.slice(2).trim(); i++; continue; }
     if (/^\*\*Effective date:\*\*/.test(line) && !doc.effective) { doc.effective = inline(line); i++; continue; }
+    if (/^\*\*Last updated:\*\*/.test(line) && doc.effective && !doc.effective.includes('Last updated')) { doc.effective += ` · ${inline(line)}`; i++; continue; }
     const heading = /^(##|###) (.+)$/.exec(line);
     if (heading) {
       flushParagraph(buffer);

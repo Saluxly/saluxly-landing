@@ -2,7 +2,9 @@
 
 **Effective date:** October 18, 2026
 
-Saluxly is an app for finding and reading published medical review articles. This policy explains what personal information Saluxly, Inc. collects when you use the Saluxly apps and saluxly.com, how we use it, and the choices you have.
+**Last updated:** November 1, 2026
+
+Saluxly is an app for finding and reading published medical review articles. This policy explains what personal information Saluxly, Inc. collects when you use the Saluxly apps, the web application at app.saluxly.com and saluxly.com, how we use it, and the choices you have.
 
 ## 1. At a glance
 
@@ -12,8 +14,8 @@ Saluxly is an app for finding and reading published medical review articles. Thi
 - **What we do not do.** We do not show ads, sell your information, share it for advertising or use it to train AI models. Saluxly contains no advertising or cross-app tracking tools.
 - **Who can see what you read.** No other user can. We keep only combined counts, such as how often an article is opened by people in the same specialty, that are not linked to anyone.
 - **Search and AI.** The text of each new search is sent to our AI provider so it can be understood in any language. It is sent without your name, email or account identifier. If the same text has been searched before, we reuse the stored interpretation instead.
-- **What stays on your device.** Your notes, highlights and offline copies of articles are stored on your device, not on our servers.
-- **Payments.** Apple or Google processes your payment, including any free trial. We never receive your card details.
+- **Highlights and notes.** Your highlights and notes are stored on our servers, linked to your account, so they sync across your devices. Offline copies of articles stay on your device.
+- **Payments.** Apple or Google processes your payment in the apps, and Stripe processes it when you subscribe at app.saluxly.com through RevenueCat's checkout. We never receive your card details.
 - **Your control.** You can change your profile at any time and delete your account in the app under Profile › Delete account.
 - **Who Saluxly is for.** Healthcare professionals and students aged 18 or older. Saluxly is not designed to hold patient information, so never enter any.
 
@@ -25,7 +27,7 @@ Saluxly, Inc. is the company responsible for your personal information. Some law
 - **Registered office:** 251 Little Falls Drive, Wilmington, DE 19808, United States
 - **Privacy contact:** Saluxly Privacy, contact@saluxly.com. Email is the fastest way to reach us, and it is where we handle privacy requests.
 
-This policy covers the Saluxly apps for iPhone, iPad and Android, the website saluxly.com, and the messages you exchange with us. It does not cover websites or apps run by others that you open from Saluxly, such as journal sites, PubMed, PubMed Central or AI apps. Section 7 explains those.
+This policy covers the Saluxly apps for iPhone, iPad and Android, the web application at app.saluxly.com, the website saluxly.com, and the messages you exchange with us. It does not cover websites or apps run by others that you open from Saluxly, such as journal sites, PubMed, PubMed Central or AI apps. Section 7 explains those.
 
 In this policy, "personal information" means information that identifies you or can reasonably be linked to you. "Saluxly", "we" and "us" mean Saluxly, Inc.
 
@@ -39,7 +41,9 @@ We collect only what we need to run and improve Saluxly. The table shows each ki
 | Profile and settings | Profession, up to three specialties, training level, feed mix, language, appearance, notification choice and your device's time zone | You and your device |
 | Opened and saved articles | The articles you open and the date you first opened each one. The articles you save. The articles placed in your feed today. How many articles and searches you have used today. | Your use of the app |
 | Searches | The text of your searches | You |
-| Subscription | Plan, status, whether you are in a free trial, purchase and renewal dates, the store you bought from and transaction identifiers | Apple or Google, through RevenueCat |
+| Highlights and notes | The page, the highlighted text, your note and timestamps, linked to your account | You |
+| Subscription | Plan, status, whether you are in a free trial, purchase and renewal dates, the store you bought from and transaction identifiers | Apple, Google or, for web purchases, Stripe, through RevenueCat |
+| Installation identifier | A random identifier assigned to each installation of the app or browser you use, sent with search requests | The app or your browser |
 | Device and technical data | Push notification token; app version and operating system version (sent in the standard request header); IP address; and the date and time of requests | Your device |
 | Messages | What you write when you contact us, and your email address | You |
 | Website visits | IP address, browser type and pages requested on saluxly.com. GitHub, which hosts the site, receives these; we do not see them (Section 6). | Your browser |
@@ -48,9 +52,23 @@ To create an account you must give us an email address or sign in with Apple or 
 
 Apple and Google also give app developers combined statistics, such as download counts and crash reports from people who agreed to share them. These do not identify you.
 
+### Highlights and notes
+
+When you highlight text or write a note, we store it on our servers (the page, the highlighted text, your note and timestamps) linked to your account, so it syncs across your devices. We do not analyze these for advertising or share them with third parties. They are deleted together with your account.
+
 ### Information that stays on your device
 
-Notes, highlights, your reading position in each article and the articles you save for offline reading are stored on your device. So is the count the app keeps of how many PubMed Central files you have opened in the last hour, which is used only to pace openings, as our Terms explain. None of this is uploaded to our servers.
+Your reading position in each article and the articles you save for offline reading are stored on your device. So is the count the app keeps of how many PubMed Central files you have opened in the last hour, which is used only to pace openings, as our Terms explain. None of this is uploaded to our servers.
+
+### Installation identifier and usage events
+
+**Installation identifier.** Each installation of the app or browser you use is assigned a random identifier that is not derived from your device or personal data. We use it to apply the free plan's daily limits and to prevent abuse. It is sent with search requests, kept with your search log for up to 7 days, and is not linked to your account after that.
+
+**Usage events.** The apps send us anonymous, aggregated counts of how articles are used (for example, how many times an article was shown, read, shared or highlighted) so we can rank and improve the catalogue. These counts are not linked to your account.
+
+### Browser storage (web app)
+
+The web app stores your session token, display preferences (text size, appearance, panel state) and a copy of your installation identifier in your browser's local storage. We do not use advertising or tracking cookies. Clearing your browser data signs you out.
 
 ### Information we do not collect
 
@@ -117,12 +135,17 @@ These companies handle information so that Saluxly can work. We require them to 
 | --- | --- | --- |
 | Apple | Sign in with Apple, push notifications and App Store purchases, including free trials | Apple gives us your email address and an account identifier when you sign in, and your purchase records. It receives your push notification token and the content of the notifications we send. |
 | Google | Sign in with Google; on Android, Google Play purchases and push notifications; hosting of our contact@saluxly.com mailbox | Google gives us your email address and an account identifier when you sign in, and your purchase records. On Android it receives your push notification token and the content of the notifications we send. The messages you send to contact@saluxly.com are stored in a Google mailbox. |
-| RevenueCat | Confirms and tracks the status of subscriptions and free trials | Your Saluxly account number, your Apple receipt or Google purchase token and purchase records, the time the app was last used, the identifier Apple or Google gives apps for your device (not the advertising identifier), and basic device details such as device type, operating system, app version, language and currency. Like any server the app contacts, RevenueCat sees your IP address. |
+| RevenueCat | Confirms and tracks the status of subscriptions and free trials; on app.saluxly.com, provides the checkout | RevenueCat receives purchase information from Apple, Google or, for web purchases, Stripe, together with your Saluxly user identifier, to validate and keep your subscription up to date across platforms. Also your email address for web purchases, your Apple receipt or Google purchase token and purchase records, the time the app was last used, the identifier Apple or Google gives apps for your device (not the advertising identifier), and basic device details such as device type, operating system, app version, language and currency. Like any server the app contacts, RevenueCat sees your IP address. |
 | Anthropic | Interprets search text with an AI model | Search text only. (Anthropic also receives article data for labeling, which contains nothing about you.) |
 | GitHub | Hosts the website saluxly.com (GitHub Pages) | Your IP address and the pages you request when you visit saluxly.com |
 | DigitalOcean, LLC | Runs our servers and database in the United States | The information stored on our servers |
 | Cloudflare, Inc. | Stores article files and encrypted backups of our database for us, and provides the DNS of saluxly.com | Article files (which contain nothing about you), encrypted database backups, and your IP address when the app fetches an article file |
 | Resend, Inc. | Delivers sign-in codes and service emails | Email address and the content of the message |
+| Stripe, Inc. | Processes payments for subscriptions bought at app.saluxly.com | Your card details, email address, billing country and, where required for tax, your billing address |
+
+### Payments on the web
+
+If you subscribe at app.saluxly.com, the checkout is provided by RevenueCat, Inc. and payments are processed by Stripe, Inc. Stripe receives your card details, email address, billing country and, where required for tax, your billing address; Saluxly does not receive or store full card numbers. RevenueCat receives your Saluxly user identifier, email address, purchase history and basic device information to manage your subscription and send receipts. When you use the web app, your browser also communicates with RevenueCat (api.revenuecat.com) to check your subscription status. See Stripe's privacy policy (stripe.com/privacy) and RevenueCat's (revenuecat.com/privacy).
 
 Apple and Google also act on their own account when they provide their services to you, such as your Apple or Google account and store payments. Their privacy policies apply to that.
 
@@ -150,27 +173,27 @@ We keep personal information only as long as we need it for the purposes in Sect
 | Information | How long we keep it |
 | --- | --- |
 | Account, profile and settings | Until you delete your account. If you do not use Saluxly for three years and have no active subscription, we delete your account after emailing you first. |
-| Opened and saved articles | Until your account is deleted |
+| Opened and saved articles, reading progress, highlights and notes | Until your account is deleted |
 | Today's feed list and daily counts | Deleted within 7 days |
-| Search text linked to your account | Deleted within 7 days |
+| Search text linked to your account, and the installation identifier kept with it | Linked for 7 days, then anonymized |
 | Sign-in codes sent by email | Deleted within one day |
 | Search cache, not linked to any account | Up to 12 months after a search was last used |
 | Search text held by our AI provider | Normally up to 30 days; longer only if flagged by the provider's safety systems or required by law |
-| Subscription records | Until your account is deleted, unless the law requires us to keep them longer |
+| Subscription records | Until your account is deleted. RevenueCat and Stripe keep transaction records as required by law (typically 7–10 years for tax purposes). |
 | Push notification token | Until you turn notifications off, sign out or delete your account, or until Apple or Google reports that it is no longer valid |
-| Server access records (IP address, date and time) | Six months. Brazilian law requires this for users in Brazil, and we keep the same period for everyone because it lets us investigate abuse and security incidents (our legitimate interest). |
+| Server access logs | Six months. Our servers keep access logs with the IP address, date and time, request path and response status for six months, as required by Brazilian law (Marco Civil da Internet, art. 15), for security and troubleshooting. Search terms and installation identifiers are not kept in these logs. |
 | Other technical logs | 30 days |
-| Backups | Up to 30 days after the information is deleted from our live systems |
+| Encrypted database backups | Up to 30 days after the information is deleted from our live systems |
 | Messages you send us | Two years after our last reply |
 | Combined statistics | Indefinitely; they are not linked to any account |
 
 ### What happens when you delete your account
 
-When you delete your account, we delete your account, profile, opened and saved articles, and subscription status from our live systems immediately. Copies in backups expire within 30 days. If you signed in with Apple, we also ask Apple to end the connection between your Apple account and Saluxly.
+When you delete your account, we delete your profile, saved articles, highlights, notes, devices and search history from our database immediately and ask RevenueCat to delete your customer record. Copies in backups expire within 30 days. If you signed in with Apple, we also ask Apple to end the connection between your Apple account and Saluxly.
 
-After deletion we keep only the following. Messages you sent us, for the period in the table. Server access records (IP address, date and time) for six months, as the table says. Copies in backups and other logs until they expire, within 30 days. The search cache and the combined statistics, which are not linked to any account. Anything the law requires us to keep. Apple, Google and RevenueCat keep the purchase records they need under their own policies.
+After deletion we keep only the following. Messages you sent us, for the period in the table. Server access logs for six months, as the table says. Stripe retains transaction records as required by financial regulations. Copies in backups and other logs until they expire, within 30 days. The search cache and the combined statistics, which are not linked to any account. Anything the law requires us to keep. Apple, Google and RevenueCat keep the purchase records they need under their own policies.
 
-Deleting your account does not cancel a subscription bought through Apple or Google. Cancel it first in your store account settings.
+Deleting your account does not cancel an active subscription: cancel it first (App Store, Google Play or the web customer portal).
 
 ## 9. Security and where your information is processed
 
@@ -219,7 +242,7 @@ Someone you authorize in writing may make a request for you.
 Saluxly is below the size thresholds of most U.S. state privacy laws, but we apply the following to everyone in the United States.
 
 - **No sale or sharing.** We do not sell personal information, and we do not share it for cross-context behavioral advertising (advertising based on your activity across other companies' apps and sites). We never have.
-- **Categories we collect.** In the terms used by California law, we collect: identifiers (email address, account identifiers, IP address and the device identifier our subscription provider receives); commercial information (subscription records); internet or network activity (your activity in the app); and professional information (profession and specialties). Sections 3, 4 and 6 describe the sources, purposes and recipients.
+- **Categories we collect.** In the terms used by California law, we collect: identifiers (email address, account identifiers, the installation identifier, IP address and the device identifier our subscription provider receives); commercial information (subscription records); internet or network activity (your activity in the app); user content (highlights and notes, saved articles); and professional information (profession and specialties). Sections 3, 4 and 6 describe the sources, purposes and recipients.
 - **Sensitive personal information.** We do not collect the kinds of sensitive personal information that California law lets you restrict, so there is nothing to limit.
 - **Your rights.** Depending on your state, you can ask to know, access, correct, delete and receive a portable copy of your personal information. Section 10 explains how. We will not discriminate against you for using these rights.
 - **Appeals.** If we decline your request, you can appeal by replying to our decision. If we decline your appeal, you can contact your state attorney general.
