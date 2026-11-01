@@ -2,13 +2,15 @@
 
 **Effective date:** October 18, 2026
 
+**Last updated:** November 1, 2026
+
 These terms are the agreement between you and Saluxly, Inc. for using Saluxly. The summary below is only a guide. The full terms are what apply.
 
 ## The short version
 
 - Saluxly helps you find and read published medical review articles. **It does not give medical advice.**
 - The articles are written and licensed by their authors and publishers, not by us. Articles you read inside the app keep their own open license; other articles open in a browser view on PubMed Central or on the journal's site.
-- You can use the free plan at no cost, with daily limits, or subscribe. A subscription may start with a free trial offered by the App Store or Google Play; after the trial it renews automatically until you cancel in your store account settings.
+- You can use the free plan at no cost, with daily limits, or subscribe in the apps or at app.saluxly.com. A subscription may start with a free trial; after the trial it renews automatically until you cancel, in your store account settings or, for a web purchase, in your customer portal.
 - You can delete your account in the app at any time.
 - We provide Saluxly "as is" and limit our liability as far as the law allows.
 
@@ -16,7 +18,7 @@ These terms are the agreement between you and Saluxly, Inc. for using Saluxly. T
 
 **Who we are.** Saluxly is provided by Saluxly, Inc., a Delaware corporation ("Saluxly", "we" or "us"). Our contact details are in Section 21.
 
-**What these terms cover.** These terms apply to the Saluxly apps for iPhone, iPad and Android, the website saluxly.com and related services. Together we call them "Saluxly" or "the service".
+**What these terms cover.** These Terms govern your use of Saluxly through our mobile applications for iOS and Android, our web application at app.saluxly.com, and our website at saluxly.com (together, the "Service"). In these terms we also call them "Saluxly" or "the service".
 
 **Accepting the terms.** By creating an account or using Saluxly, you agree to these terms. If you do not agree, do not use Saluxly.
 
@@ -46,8 +48,8 @@ We keep improving Saluxly, so its features, limits and catalog change over time.
 - **Signing in.** You need an account, created with Apple, Google or your email address. Saluxly does not use passwords. Keep your email account and your device secure, because anyone who controls them can get into your Saluxly account.
 - **One account per person.** Your account is for you alone. Do not share it, and do not create more than one account to get around the limits in Section 5.
 - **Accurate profile.** Choose the profession and specialties that really describe you. Your feed depends on them.
-- **Notes and highlights live on your device.** We do not keep a copy. If you delete the app, delete your account or lose your device, we cannot recover them.
-- **Deleting your account.** You can delete your account at any time under Profile › Delete account. If you have already uninstalled the app, follow the steps at saluxly.com/support.html#delete or write to contact@saluxly.com. Deletion is permanent. It does not cancel a subscription bought through Apple or Google, so cancel that first in your store account settings.
+- **Your highlights and notes.** Highlights and notes you create are stored on our servers so that they are available on all your devices. They remain yours; we do not publish them or use them to train models. They are deleted when you delete your account.
+- **Deleting your account.** You can delete your account at any time under Profile › Delete account. If you have already uninstalled the app, follow the steps at saluxly.com/support.html#delete or write to contact@saluxly.com. Deletion is permanent. It does not cancel a subscription: cancel a purchase made through Apple or Google first in your store account settings, and a web purchase in your customer portal (Section 5).
 
 ## 5. Free plan, subscriptions and billing
 
@@ -61,13 +63,23 @@ We keep improving Saluxly, so its features, limits and catalog change over time.
 - **What you get.** A Saluxly subscription removes the free plan's daily limits for as long as it is active, including during a free trial. The app describes what is included before you buy.
 - **Price and period.** We offer monthly and yearly subscriptions. The price and period are shown in the app and on your store's purchase screen before you confirm. At the date of these terms the prices are US$4.99 per month or US$34.99 per year before local taxes; your store shows the price in your currency. Prices can vary by country and may include taxes.
 - **Free trial.** The App Store or Google Play may offer a free trial, also called an introductory offer, when you start a subscription. At the date of these terms the trial lasts 7 days on both plans. The store decides who is eligible. Normally each store account can use the trial once, whichever plan you choose; if you have subscribed to Saluxly before, the store may not offer it again. The length of the trial and the price that applies afterwards are shown before you confirm. Unless you cancel at least 24 hours before the trial ends, the subscription continues and the store charges the plan's price. We may change or withdraw the trial for new subscribers at any time.
-- **Billing.** Purchases are made through the Apple App Store or Google Play and charged to your account with that store. We do not receive your card details. The store's own terms also apply to your purchase.
+- **Billing.** Purchases made in the apps go through the Apple App Store or Google Play and are charged to your account with that store. We do not receive your card details. The store's own terms also apply to your purchase.
 - **Automatic renewal.** Your subscription renews automatically for the same period, at the price then in effect, until you cancel. The store charges your account shortly before or when each new period begins.
 - **How to cancel.** You can cancel at any time in your account settings on the App Store or Google Play. To avoid being charged for the next period, cancel at least 24 hours before the current period or trial ends. Your access continues until the period ends. Deleting the app or your Saluxly account does not cancel your subscription.
 - **Refunds.** Apple decides refunds for App Store purchases; you can ask at reportaproblem.apple.com. Google decides refund requests made within 48 hours of a Google Play purchase; after that, write to us and we will apply Google Play's rules and the law. Except where the law requires it, payments are not refundable and we do not give credit for partly used periods.
 - **Price changes.** If we change the price of your subscription, the store will notify you in advance and, where its rules or the law require, ask for your agreement. If you do not agree, cancel before the new price takes effect.
 - **Your devices.** Your subscription is linked to your Saluxly account. Sign in with the same account to use it on your other devices, or use Restore purchases in the app.
+- **One subscription across platforms.** A subscription purchased on any platform applies to your Saluxly account on all platforms. Manage it on the platform where you bought it.
 - **Complimentary access.** We may give some accounts free access at our discretion, and we may end it at any time.
+
+### Subscriptions purchased on the web
+
+- **Web subscriptions.** On app.saluxly.com you can purchase Saluxly Premium directly from us. Web purchases are processed by our subscription partner RevenueCat, Inc. ("RevenueCat Billing") using Stripe, Inc. as payment processor. Prices on the web are shown in U.S. dollars; applicable taxes may be added at checkout depending on your location. Your card details are collected and stored by Stripe; Saluxly never receives your full card number.
+- **Free trial.** New subscribers may be offered a 7-day free trial. The trial is available once per person across all platforms. You will be charged automatically when the trial ends unless you cancel before that date.
+- **Automatic renewal.** Web subscriptions renew automatically at the end of each billing period (monthly or yearly) at the price shown when you subscribed, until you cancel. We will notify you by email before any price change takes effect; if you do not agree, you may cancel before the new price applies.
+- **Cancellation.** You can cancel at any time from Profile › Subscription › Manage subscription, which opens your customer portal. Cancellation takes effect at the end of the current billing period; you keep Premium until then and are not charged again. Deleting your account does not by itself cancel a web subscription: cancel it first from the customer portal, or write to contact@saluxly.com and we will cancel it for you.
+- **Refunds for web purchases.** Because Premium gives immediate access to digital content, payments for a billing period that has already started are non-refundable, except where the law of your country requires otherwise or where we decide at our discretion to issue a refund (for example, a duplicate charge). If you are a consumer in the European Union, the United Kingdom or another jurisdiction with a statutory right of withdrawal, you may cancel within 14 days of purchase and receive a full refund, unless you have used the Service during that period, in which case we may deduct an amount proportional to the use. Requests: contact@saluxly.com.
+- **Purchases through Apple or Google.** Subscriptions bought in the iOS or Android app are billed, renewed, cancelled and refunded by Apple or Google under their terms, as described above; Saluxly cannot issue refunds for those purchases.
 
 Nothing in this section limits the rights that consumer law gives you where you live, such as a right to cancel or to a refund in certain cases.
 
@@ -88,13 +100,15 @@ Nothing in this section limits the rights that consumer law gives you where you 
 ## 7. Saluxly's rights and your license to use the app
 
 - **What belongs to Saluxly.** The Saluxly apps, software, design, logos and text belong to Saluxly, Inc. or its licensors and are protected by law. Our catalog as a whole, and the classification data we add to it, such as specialty labels and relevance scores, are ours to the extent the law protects them. We claim no rights in the articles or their titles. "Saluxly" and the Saluxly logo are trademarks of Saluxly, Inc.
-- **Your license.** While you follow these terms, you may install and use the Saluxly apps on devices you own or control, for your own reading and study. This permission is personal to you: you cannot pass it to someone else, other users have the same permission, and we can withdraw it if you break these terms.
+- **Your license.** While you follow these terms, you may install and use the Saluxly apps on devices you own or control, and use the web application in your browser, for your own reading and study. This permission is personal to you: you cannot pass it to someone else, other users have the same permission, and we can withdraw it if you break these terms.
 - **Limits.** This license does not let you copy, modify, sell or rent the apps, or reverse engineer them, except where the law says you may. We reserve all rights that we do not expressly give you.
 - **Open-licensed articles are different.** This section is about Saluxly's own software and content. It does not limit what you may do with the articles under Section 6.
 
 ## 8. Your notes, highlights and feedback
 
-Your notes and highlights are yours, and they stay on your device. If you send us ideas or suggestions about Saluxly, you allow us to use them freely, without payment or any other obligation to you.
+**Your highlights and notes.** Highlights and notes you create are stored on our servers so that they are available on all your devices. They remain yours; we do not publish them or use them to train models. They are deleted when you delete your account.
+
+**Feedback.** If you send us ideas or suggestions about Saluxly, you allow us to use them freely, without payment or any other obligation to you.
 
 ## 9. Acceptable use
 
@@ -153,7 +167,7 @@ If someone brings a claim against Saluxly, Inc. because you broke these terms or
 
 ## 15. Suspension and termination
 
-- **By you.** You can stop using Saluxly at any time and delete your account in the app. Remember to cancel any subscription in your store account settings.
+- **By you.** You can stop using Saluxly at any time and delete your account in the app. Remember to cancel any subscription first, in your store account settings or in your web customer portal.
 - **By us.** We may suspend or end your access if you seriously or repeatedly break these terms, or if the law requires it. We may also do so if your use creates risk or harm for Saluxly or for others. Where we reasonably can, we will tell you first and give you a chance to fix the problem. We may also delete an account that has not been used for three years and has no active subscription, after emailing you first.
 - **If we discontinue Saluxly.** We will give you reasonable notice in the app or by email.
 - **Refunds when access ends.** If we discontinue Saluxly, or end your access for a reason other than your breach of these terms, we will refund the unused part of any period you have paid for. The refund comes from us or through the store.
