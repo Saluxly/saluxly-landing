@@ -162,6 +162,10 @@ h1 { font: 500 50px/0.98 var(--serif); letter-spacing: -0.8px; text-wrap: balanc
 .contact-text a:hover { text-decoration: underline; }
 .store { display: flex; flex-wrap: wrap; gap: 12px; }
 .store-badge img { height: 60px; width: auto; }
+.button--ghost { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1.5px var(--line); }
+.button--ghost:hover { background: var(--surface); }
+.menu .store { align-self: stretch; }
+.menu .store .button { align-self: auto; }
 
 .hero-visual { position: relative; --s: 1; width: calc(350px * var(--s)); height: calc(560px * var(--s)); margin: 16px auto 0; overflow: hidden; }
 .hero-stage, .hero-mark, .hero-fiber, .hero-phone, .hero-page { position: absolute; }
@@ -381,6 +385,7 @@ h1 { font: 500 50px/0.98 var(--serif); letter-spacing: -0.8px; text-wrap: balanc
 .final-form { width: 100%; max-width: 540px; }
 .final-form .contact { align-items: center; margin: 0 auto; }
 .final-form .contact-text { text-align: center; }
+.final-form .store { justify-content: center; }
 @media (min-width: 1025px) { .final-inner { gap: 26px; } .final-mark .mark { width: 110px; height: 110px; } }
 
 /* --- Footer --------------------------------------------------------------------------------------- */

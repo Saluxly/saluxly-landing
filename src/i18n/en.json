@@ -22,12 +22,13 @@
     "menu": "Menu",
     "close": "Close menu",
     "language": "Language",
-    "main": "Main"
+    "main": "Main",
+    "get": "Get the app"
   },
   "hero": {
     "h1": "Let the papers find you.",
     "lead": "Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.",
-    "note": "Launching first on iPhone and iPad. Try it free for 7 days.",
+    "note": "Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled. Cancel anytime from the App Store, Google Play or your web subscription portal.",
     "note_launched": "Try it free for 7 days.",
     "visual_alt": "The Saluxly feed on an iPhone, with the first page of a review article beside it."
   },
@@ -39,7 +40,8 @@
   "store": {
     "apple": "Download on the App Store",
     "google": "Get it on Google Play",
-    "qr": "Scan to install"
+    "qr": "Scan to install",
+    "web": "Open web app"
   },
   "claim": {
     "h2": "PubMed adds more than a million new records a year. You need five.",
@@ -298,7 +300,7 @@
       },
       {
         "q": "Which devices can I use?",
-        "a": "iPhone and iPad first, including an iPad layout and a home-screen widget. Android follows, and a web version is planned."
+        "a": "iPhone and iPad, including an iPad layout and a home-screen widget; Android; and the web app at app.saluxly.com, with the same account on every one."
       },
       {
         "q": "What do you do with my data?",

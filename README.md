@@ -44,7 +44,9 @@ Nothing is sent from the pages: the hero, the final section and the bar's button
 
 ## Launch
 
-Set `"launched": true` and the store URLs in `src/config.json`, drop Apple's official badge at
-`assets/img/app-store-badge.svg` (and Google's at `assets/img/google-play-badge.png` when Android
-ships), rebuild. The contact blocks become the store buttons and the hero note shortens. The desktop QR
-code of the "Hero after launch" board is still to be made.
+Launched on November 5, 2026: `"launched": true`, the store URLs and `web_app_url` are in
+`src/config.json`. The contact blocks are the store buttons (App Store, Google Play and "Open web
+app"), the bar's button links to the App Store and the hero note is the short one. The official badges
+are optional: while `assets/img/app-store-badge.svg` or `assets/img/google-play-badge.png` is missing,
+the build renders a plain text button in the site's own style instead (never a redrawn badge). The
+desktop QR code of the "Hero after launch" board is still to be made.

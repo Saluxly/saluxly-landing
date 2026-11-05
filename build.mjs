@@ -9,7 +9,7 @@
 //   node build.mjs --publish  → the same, but refuses to build while a placeholder like
 //                               "[date Saluxly is published]" is still in any page (also when
 //                               `launched` is true in src/config.json)
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, statSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -224,6 +224,10 @@ function pageData(lang, page) {
     launched: config.launched,
     app_store_url: config.app_store_url,
     play_store_url: config.play_store_url,
+    web_app_url: config.web_app_url,
+    // The official badges are optional files: without them the store partial renders a plain text button.
+    app_store_badge: existsSync(join(ROOT, 'assets', 'img', 'app-store-badge.svg')),
+    play_store_badge: existsSync(join(ROOT, 'assets', 'img', 'google-play-badge.png')),
     config_json: JSON.stringify({ launched: config.launched }),
     is_landing: page === 'landing',
     year: new Date().getFullYear(),
