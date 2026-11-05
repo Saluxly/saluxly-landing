@@ -28,7 +28,7 @@
   "hero": {
     "h1": "Deixe os artigos encontrarem você.",
     "lead": "O Saluxly lê o PubMed por você e monta todo dia um feed de artigos de revisão da sua especialidade, com o PDF original dentro do app.",
-    "note": "Preços em dólares americanos; os preços locais e os impostos podem variar. Após o teste grátis, as assinaturas são renovadas automaticamente até você cancelar. Cancele quando quiser pela App Store, pelo Google Play ou pelo portal da sua assinatura web.",
+    "note": "Primeiro no iPhone e no iPad. Experimente grátis por 7 dias.",
     "note_launched": "Experimente grátis por 7 dias.",
     "visual_alt": "O feed do Saluxly em um iPhone, com a primeira página de um artigo de revisão ao lado."
   },
@@ -269,7 +269,7 @@
       }
     ],
     "price_label": "Preço",
-    "note": "Preços em dólares americanos; os preços locais e os impostos podem variar. Após o teste grátis, as assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua App Store."
+    "note": "Preços em dólares americanos; os preços locais e os impostos podem variar. Após o teste grátis, as assinaturas são renovadas automaticamente até você cancelar. Cancele quando quiser pela App Store, pelo Google Play ou pelo portal da sua assinatura web."
   },
   "faq": {
     "h2": "Perguntas, respondidas.",

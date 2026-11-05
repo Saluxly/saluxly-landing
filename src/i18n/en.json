@@ -28,7 +28,7 @@
   "hero": {
     "h1": "Let the papers find you.",
     "lead": "Saluxly reads PubMed for you and builds a daily feed of review articles for your specialty, with the original PDF inside the app.",
-    "note": "Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled. Cancel anytime from the App Store, Google Play or your web subscription portal.",
+    "note": "Launching first on iPhone and iPad. Try it free for 7 days.",
     "note_launched": "Try it free for 7 days.",
     "visual_alt": "The Saluxly feed on an iPhone, with the first page of a review article beside it."
   },
@@ -269,7 +269,7 @@
       }
     ],
     "price_label": "Price",
-    "note": "Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled in your App Store settings."
+    "note": "Prices in US dollars; local prices and taxes may vary. After the free trial, subscriptions renew automatically until cancelled. Cancel anytime from the App Store, Google Play or your web subscription portal."
   },
   "faq": {
     "h2": "Questions, answered.",
