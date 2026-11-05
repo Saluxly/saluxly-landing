@@ -345,7 +345,7 @@
       }
     ],
     "delete_h": "Excluir sua conta",
-    "delete_text": "Excluir sua conta remove seu perfil, seu histórico de leitura e seus artigos salvos. As assinaturas são canceladas separadamente, nos ajustes da sua App Store.",
+    "delete_text": "Excluir sua conta remove seu perfil, seu histórico de leitura e seus artigos salvos. As assinaturas são canceladas separadamente, onde você as comprou: na App Store, no Google Play ou no portal da sua assinatura web.",
     "delete_steps": [
       "Abra o Saluxly e vá em Perfil.",
       "Toque em Excluir conta, no final.",
@@ -372,7 +372,7 @@
     "what_now": "Sua conta e seus dados são apagados dos nossos sistemas em uso imediatamente; as cópias nos nossos backups expiram em até 30 dias.",
     "what_included": "Isso inclui seu e-mail, seu perfil, os artigos que você abriu e salvou, suas contagens diárias e o status da sua assinatura.",
     "what_device": "Notas, destaques e cópias off-line dos artigos ficam só no seu aparelho; somem quando você apaga o app.",
-    "what_subscription": "Excluir sua conta não cancela uma assinatura comprada na App Store ou no Google Play. Cancele-a antes nos ajustes da sua conta na loja.",
+    "what_subscription": "Excluir sua conta não cancela uma assinatura. Cancele-a antes onde você a comprou: na App Store, no Google Play ou no portal da sua assinatura web.",
     "more_before": "Os detalhes estão na seção 8 da",
     "more_after": " (em inglês)."
   }
