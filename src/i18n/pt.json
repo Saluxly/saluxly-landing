@@ -22,7 +22,8 @@
     "menu": "Menu",
     "close": "Fechar menu",
     "language": "Idioma",
-    "main": "Principal"
+    "main": "Principal",
+    "get": "Baixar o app"
   },
   "hero": {
     "h1": "Deixe os artigos encontrarem você.",
@@ -39,7 +40,8 @@
   "store": {
     "apple": "Baixar na App Store",
     "google": "Disponível no Google Play",
-    "qr": "Escaneie para instalar"
+    "qr": "Escaneie para instalar",
+    "web": "Abrir o app web"
   },
   "claim": {
     "h2": "O PubMed soma mais de um milhão de registros novos por ano. Você precisa de cinco.",
@@ -298,7 +300,7 @@
       },
       {
         "q": "Em quais aparelhos posso usar?",
-        "a": "Primeiro no iPhone e no iPad, com um layout para iPad e um widget na tela de início. O Android vem depois, e uma versão web está planejada."
+        "a": "iPhone e iPad, com um layout para iPad e um widget na tela de início; Android; e o app web em app.saluxly.com, com a mesma conta em todos."
       },
       {
         "q": "O que vocês fazem com os meus dados?",

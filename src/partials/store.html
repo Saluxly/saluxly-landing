@@ -1,4 +1,5 @@
 <div class="store" data-store>
-  <a class="store-badge" href="{{app_store_url}}" rel="noopener"><img src="/assets/img/app-store-badge.svg" alt="{{t.store.apple}}" width="180" height="60"></a>
-  {{#if play_store_url}}<a class="store-badge" href="{{play_store_url}}" rel="noopener"><img src="/assets/img/google-play-badge.png" alt="{{t.store.google}}" width="202" height="60"></a>{{/if}}
+  {{#if app_store_badge}}<a class="store-badge" href="{{app_store_url}}" rel="noopener"><img src="/assets/img/app-store-badge.svg" alt="{{t.store.apple}}" width="180" height="60"></a>{{else}}<a class="button button--store" href="{{app_store_url}}" rel="noopener">{{t.store.apple}}</a>{{/if}}
+  {{#if play_store_url}}{{#if play_store_badge}}<a class="store-badge" href="{{play_store_url}}" rel="noopener"><img src="/assets/img/google-play-badge.png" alt="{{t.store.google}}" width="202" height="60"></a>{{else}}<a class="button button--store" href="{{play_store_url}}" rel="noopener">{{t.store.google}}</a>{{/if}}{{/if}}
+  {{#if web_app_url}}<a class="button button--store button--ghost" href="{{web_app_url}}" rel="noopener">{{t.store.web}}</a>{{/if}}
 </div>
