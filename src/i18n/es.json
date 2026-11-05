@@ -345,7 +345,7 @@
       }
     ],
     "delete_h": "Borrar tu cuenta",
-    "delete_text": "Borrar tu cuenta elimina tu perfil, tu historial de lectura y tus artículos guardados. Las suscripciones se cancelan aparte, en los ajustes de tu App Store.",
+    "delete_text": "Borrar tu cuenta elimina tu perfil, tu historial de lectura y tus artículos guardados. Las suscripciones se cancelan aparte, donde las compraste: el App Store, Google Play o el portal de tu suscripción web.",
     "delete_steps": [
       "Abre Saluxly y ve a Perfil.",
       "Toca Borrar cuenta, al final.",
@@ -372,7 +372,7 @@
     "what_now": "Tu cuenta y sus datos se borran de nuestros sistemas en uso de inmediato; las copias en nuestros respaldos caducan en un plazo de 30 días.",
     "what_included": "Eso incluye tu correo, tu perfil, los artículos que abriste y guardaste, tus conteos diarios y el estado de tu suscripción.",
     "what_device": "Las notas, los subrayados y las copias sin conexión de los artículos viven solo en tu dispositivo; desaparecen al borrar la app.",
-    "what_subscription": "Borrar tu cuenta no cancela una suscripción comprada en el App Store o en Google Play. Cancélala primero en los ajustes de tu cuenta de la tienda.",
+    "what_subscription": "Borrar tu cuenta no cancela una suscripción. Cancélala primero donde la compraste: en el App Store, en Google Play o en el portal de tu suscripción web.",
     "more_before": "Los detalles están en la sección 8 de la",
     "more_after": " (en inglés)."
   }

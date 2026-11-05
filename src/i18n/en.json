@@ -345,7 +345,7 @@
       }
     ],
     "delete_h": "Delete your account",
-    "delete_text": "Deleting your account removes your profile, your reading history and your saved articles. Subscriptions are cancelled separately in your App Store settings.",
+    "delete_text": "Deleting your account removes your profile, your reading history and your saved articles. Subscriptions are cancelled separately, where you bought them: the App Store, Google Play or your web subscription portal.",
     "delete_steps": [
       "Open Saluxly and go to Profile.",
       "Tap Delete account, at the bottom.",
@@ -372,7 +372,7 @@
     "what_now": "Your account and its data are deleted from our live systems immediately; copies in our backups expire within 30 days.",
     "what_included": "That includes your email address, your profile, the articles you opened and saved, your daily counts and your subscription status.",
     "what_device": "Notes, highlights and offline copies of articles live only on your device; they go when you delete the app.",
-    "what_subscription": "Deleting your account does not cancel a subscription bought through the App Store or Google Play. Cancel it first in your store account settings.",
+    "what_subscription": "Deleting your account does not cancel a subscription. Cancel it first where you bought it: in the App Store, in Google Play or in your web subscription portal.",
     "more_before": "Details are in section 8 of the",
     "more_after": "."
   }
